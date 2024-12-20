@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.svg-icon-outer {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-left: 8px;
+    margin-right: 5px;
+}
+
+.svg-icon-outer svg {
+    height: 16px;
+    width: 16px;
+}
+
+/*Buy pro fixed button*/
+body a.buy-pro-button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    z-index: 9999991;
+    padding: 0px 15px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.14) -4px 0px 7px -2px;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    background: #F66C5E;
+    display: inline-block;
+    color: #FFFFFF;
+}
+body a.buy-pro-button:hover,
+body a.buy-pro-button:focus,
+body a.buy-pro-button:active {
+    background-color: #086abd;
+    color: #FFFFFF;
+}
+.cart-svg-icon-outer {
+    margin-right: 8px;
+}
+
+.cart-svg-icon-outer svg {
+    height: 10px;
+    width: 12px;
+    vertical-align: inherit;
+}
+
+
+@media only screen and (max-width: 479px) {
+    body a.buy-pro-button {
+        top: 250px;
+        z-index: 9999999;
+        font-size: 12px;
+        padding: 0 8px;
+        height: 32px;
+        line-height: 32px;
+        font-weight: 500;
+    }
+}
