@@ -382,7 +382,7 @@ h1 span{
 
 .serviceContact button{
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 40px;
     text-align: start;
     border: none;
@@ -394,7 +394,7 @@ h1 span{
 }
 
 .aboutSection{
-    padding-top: 200px;
+    padding-top: 300px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -807,7 +807,7 @@ h1 span{
     align-items: center;
     gap: 10px;
     margin-bottom: 40px;
-    width: 75%;
+    width: 70%;
 }
 
 .reviewSection .reviewTop .topTitle{
@@ -1644,7 +1644,7 @@ footer  #copyright p{
 
 .aboutImages{
    width: 100%;
-   padding:0% ;
+   padding:15% ;
    display: flex;
    justify-content:center;
    align-items: center;
@@ -1652,7 +1652,7 @@ footer  #copyright p{
 }
 
 .aboutImages img:first-child{
-    height: 450px;
+    height: 400px;
     width: 750px;
     border-radius: 30px;
 }
@@ -1660,7 +1660,7 @@ footer  #copyright p{
 .aboutImages img:last-child{
     position: relative;
     margin-left: -120px;
-    height: 350px;
+    height: 320px;
     width: 490px;
     border-radius: 30px;
     border: solid 8px #fff;
@@ -3728,10 +3728,9 @@ footer  #copyright p{
 
 .shopSection{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 0% 15%;
     margin-top: -200px;
 }
 
@@ -3749,7 +3748,6 @@ footer  #copyright p{
     align-items: center;
     gap: 20px;
     padding-bottom: 100px;
-    width: 700px;
 }
 
 .shopSection .shopLeft .topBar p{
@@ -3762,12 +3760,12 @@ footer  #copyright p{
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    width: 700px;
     margin-bottom: 50px;
+    width: 700px;
 }
 
 .shopContent .product{
-    width: 320px;
+    width: 300px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -3780,7 +3778,7 @@ footer  #copyright p{
 }
 
 .shopContent .product img{
-    width: 300px;
+    width: 280px;
     height: 300px;
     border-radius: 20px;
 }
@@ -3857,6 +3855,7 @@ footer  #copyright p{
     align-items: center;
     justify-content: center;
     margin-top: 250px;
+    
 }
 
 
@@ -3910,7 +3909,7 @@ footer  #copyright p{
 
 
 .shopRight .productCategories .content .categorie img{
-    height: 130px;
+    height: 110px;
     border-radius: 20px;
 }
 
@@ -4043,13 +4042,13 @@ footer  #copyright p{
 }
 
 .searchContent .contenair .detail{
-    width: 350px;
+    width: 300px;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 20px;
+    gap: 10px;
 }
 
 
@@ -5413,6 +5412,1659 @@ border-right: solid 1px #f94c30;
     z-index: 2;
 }
 
+
+@media screen and (max-width:414px) {
+
+    
+    #navBar{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 50px;
+        background-color: #46454583;
+        box-shadow: 0 1px 0#949494;
+        color: #fff;
+        position: fixed;
+        width: 420px;
+        z-index: 99;
+
+    }
+
+    #navBar button{
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #f94c30;
+    color: #fff;
+    padding: 15px 120px;
+    width: 380px;
+    }
+
+    #menuList{
+    display: none;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+
+    }
+
+    .networkLink{
+    display: flex;
+    gap: 10px;
+    }
+
+
+    #item{
+    font-size: 50px;
+    color: #fff;
+    }
+
+    #menuList a{
+    text-decoration: none;
+    color: #fff;
+    }
+
+    .networkLink i{
+    color: #fff;
+    }
+
+    .networkLink i:hover{
+    color: #f94c30;
+    }
+
+    .introSection {
+    height: 1000px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
+    z-index: 1;
+    margin-bottom: 100px;
+    }
+
+    .introSection::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 414px;
+    height:1400px;
+    background: linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)), url('images/agency-img13-800x533.jpg');    background-size: cover;
+    background-position: top center;
+    filter: grayscale(100%); /* Applique le gris uniquement à l'image de fond */
+    z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
+    margin-top: -130px;
+}
+
+    .introSection p, .introSection h1, .introSection .introButton {
+    position: relative; /* Assure que ces éléments sont au-dessus de l'arrière-plan */
+    z-index: 1; /* Rendre le texte et les boutons visibles au-dessus de l'image de fond */
+    }
+
+
+
+    .Tag{
+    margin-top: 300px;
+    border-radius: 30px;
+    width: 230px;
+    padding: 25px 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    height: 30px;
+    color: rgb(82, 81, 81);
+    z-index: 88;
+
+    }
+
+    .Tag span{
+    height: 13px;
+    width: 15px;
+    margin: 8px;
+    border-radius: 100%;
+    background-color:#f94c30;
+    }
+
+    .Tag p{
+    font-size: 16px;
+    font-weight: 600;
+    }
+
+    h1{
+    margin-top: -70px;
+    padding: 100px;
+    text-align: center;
+    width: 600px;
+    font-size: 50px;
+    color: #fff;
+    }
+
+    h1 span{
+    color: #f94c30;
+    }
+
+    .introSection .text{
+    color: #fff;
+    padding: 0 205px;
+    width: 800px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -50px;
+
+    }
+
+    .introButton{
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    }
+
+    .discoButton{
+    padding: 18px 20px ;
+    width: 180px;
+    border-radius: 40px;
+    border: none;
+    background-color: #f94c30;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    }
+
+    .hireButton{
+    padding: 18px 5px ;
+    width: 180px;
+    border-radius: 40px;
+    border: none;
+    background-color: #fff;
+    color: rgb(80, 79, 79);
+    font-weight: 600;
+    font-size: 16px;
+    }
+
+
+
+    
+
+.serviceSection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
+    z-index: 1;
+}
+
+.serviceSection::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(41, 41, 41, 0.5), rgba(37, 37, 37, 0.8)), url('images/agency-img3.png');    background-size: cover;
+    background-position: center;
+    background-color: rgb(70, 70, 70);
+    background-attachment: scroll; /* Désactive l'effet de défilement fixe sur mobile */
+    filter: grayscale(100%); /* Applique le gris uniquement à l'image de fond */
+    z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
+}
+
+.serviceSection p, .serviceSection h1, .serviceSection  {
+    position: relative; /* Assure que ces éléments sont au-dessus de l'arrière-plan */
+    z-index: 1; /* Rendre le texte et les boutons visibles au-dessus de l'image de fond */
+}
+
+.serviceSection .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -200px;
+    width: 100%;
+    padding: 5%;
+
+}
+
+
+    .serviceSection .top .leftSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 0;
+    gap: 30px;
+    width: 300px;
+    }
+
+
+    .serviceSection .top .leftSection h2 {
+    font-size: 35px;
+    width: 120%;
+    }
+
+    .serviceSection .top .leftSection h2 span{
+    color: #f94c30;
+    }
+
+    .serviceSection .top .leftSection .text{
+    font-size: 18px;
+    width: 120%;
+    text-align: start;
+    }
+
+    .dot{
+    font-size: 18px;
+    width: 120%;
+
+    }
+
+    .dot span{
+    color: #f94c30;
+    padding-right: 10px;
+    }
+
+    .serviceDirector{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    }
+
+    .serviceDirector img{
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: solid 3px #f94c30;
+    }
+
+    .serviceDirector .directorIdentity{
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #fff;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    }
+
+    .serviceDirector button{
+    margin-top: 20px;
+    padding: 20px 40px ;
+    border-radius: 40px;
+    border: none;
+    background-color: #f94c30;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    }
+
+    .serviceDirector p:first-child{
+    font-weight: 600;
+    font-size: 20px;
+
+    }
+
+    .serviceDirector p:last-child{
+    font-size: 18px;
+    }
+
+    .rightSection{
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 240px;
+
+    }
+
+
+    .serviceBox{
+    height: 200px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.675);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    }
+
+    .serviceBox span{
+    margin-top: -80px;
+    position: relative;
+    height: 140px;
+    width: 220px;
+    border-radius: 100%;
+    background-color: rgba(128, 128, 128, 0.281);
+    z-index: 99;
+    }
+
+    .serviceBox img{
+    position: relative;
+    height: 70px;
+    margin-top: -40px;
+    z-index: 88;
+    }
+
+    .serviceBox p{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+    }
+
+
+    .bottoms{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .serviceContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background-color: #f94c30;
+    border-radius: 30px;
+    width: 90%;
+    height: 550px;
+    margin: 10%;
+    padding: 40px 40px;
+    margin-top:350px ;
+    }
+
+    .serviceContact .image img{
+    height: 90px;
+    width: 90px;
+    background-color: #f94c30;
+    padding: 10px;
+    border: solid 1px #fff;
+    border-radius: 100%;
+    }
+
+    .serviceContact .consultation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    border: none;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #fff;
+    }
+
+    .serviceContact .consultation p:first-child{
+    font-size: 16px;
+    width: 150%;
+    text-align: center;
+    font-weight: 600;
+
+    }
+    .serviceContact .consultation p:last-child{
+    font-size: 25px;
+    font-weight: 700;
+    }
+
+    .serviceContact .text{
+    font-size: 14px;
+    width: 100%;
+    }
+
+    .serviceContact button{
+    display: flex;
+    padding: 20px 30px;
+    border-radius: 40px;
+    text-align: start;
+    border: none;
+    align-items: end;
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+    font-size: 16px
+    }
+
+    .aboutSection{
+    padding-top: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    }
+
+    .aboutSection .aboutTop{
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding-bottom: 80px;
+    }
+
+    .aboutSection .aboutTop .aboutImage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    .aboutSection .aboutTop .aboutImage .imageLeft .image{
+    border: solid 10px #fff;
+    width: 370px;
+    height: 350px;
+    background-size: cover;
+    position: relative;
+    border-radius: 100%;
+    position: relative;
+    z-index: 10;
+    }
+
+    .aboutSection .aboutTop .aboutImage .imageRight .image1{
+    width: 380px;
+    height: 380px;
+    background-size: cover;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 0px;
+    border-radius: 20px;
+    z-index: 1;
+    }
+    .aboutSection .aboutTop .aboutImage .imageRight .image2 {
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+    position: relative;
+    margin-top: -80px;
+    margin-left: 20px;
+    border-radius: 40px;
+    border: solid 10px #fff;
+    z-index: 1;
+    }
+
+    .aboutSection .aboutInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    }
+
+    .aboutSection .aboutInfo .Tag{
+    margin-top: 0px;
+    width: 180px;
+    box-shadow: 0 2px 2px 2px rgba(128, 128, 128, 0.181);
+    }
+
+
+    .aboutSection .aboutInfo h2 {
+    font-size: 35px;
+    color: #0f0d33;
+    }
+
+    .aboutSection .aboutInfo h2 span{
+    color: #f94c30;
+    }
+
+    .aboutSection .aboutInfo .text{
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+
+    .aboutSection .aboutInfo .aboutExperience{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    }
+    .aboutSection .aboutInfo .aboutExperience .check p{
+    display: flex;
+    gap: 10px;
+    color:#0f0d33 ;
+    font-size: 18px;
+    font-weight: 500;
+    }
+
+    .aboutSection .aboutInfo .aboutExperience .experienceBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height:170px;
+    border: solid 3px #adacac;
+    border-radius: 40px;
+    }
+
+    .aboutSection .aboutInfo .aboutExperience .experienceBox h3{
+    font-size: 58px;
+    font-weight: 800;
+    color: #f94c30;
+    }
+
+    .aboutSection .aboutInfo .aboutExperience .experienceBox .text1{
+    color: #949494;
+    font-weight: 700;
+    font-size: 25px;
+    }
+
+    .aboutSection .aboutInfo .aboutExperience .experienceBox .text2{
+    color: #949494;
+    font-weight: 600;
+    font-size: 20px;
+    }
+
+    .aboutSection .aboutInfo  button{
+    display: flex;
+    padding: 20px 30px;
+    border-radius: 40px;
+    border: none;
+    width: 230px;
+    margin-top: 20px;
+    background-color: #f94c30;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px
+    }
+
+    .aboutSection .aboutBottom{
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 40px;
+    }
+
+    .aboutSection .aboutBottom .aboutPartner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+    }
+
+    
+    .aboutBottom .aboutPartner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.aboutBottom .aboutPartner .img{
+    width: 200px;
+    height: 150px;
+    border-radius: 0px;
+}
+
+.aboutBottom .aboutPartner {
+    width: 100%;
+    overflow: hidden; /* Masque le débordement */
+    position: relative;
+}
+
+.aboutBottom .aboutPartner{
+    display: flex; /* Les images s'alignent horizontalement */
+    gap: 20px; /* Espacement entre les images */
+    transition: transform 0.3s ease-in-out; /* Animation pour un effet fluide */
+}
+
+.aboutBottom .aboutPartner img {
+    width: 180px;
+    height: 180px;
+    border-radius: 0px;
+    object-fit: cover; /* Les images gardent leurs proportions */
+}
+
+.aboutBottom .aboutPartner {
+    scroll-snap-type: x mandatory; /* Défilement horizontal obligatoire */
+    overflow-x: auto; /* Active le défilement horizontal */
+    display: flex;
+}
+
+.aboutBottom .aboutPartner{
+    scroll-snap-align: center; /* Les images s'alignent au centre */
+}
+
+.aboutBottom .aboutPartner {
+    scrollbar-width: none; /* Pour Firefox */
+    -ms-overflow-style: none; /* Pour Internet Explorer */
+}
+
+.aboutBottom .aboutPartner::-webkit-scrollbar {
+    display: none; /* Pour Chrome, Safari */
+}
+
+
+
+
+    .goalSection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
+    z-index: 1;
+    }
+
+    .goalSection::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(41, 41, 41, 0.5), rgba(37, 37, 37, 0.8)), url('images/agency-img3.png');    background-size: cover;
+    background-position: center;
+    background-color: rgb(70, 70, 70);
+    filter: grayscale(100%); /* Applique le gris uniquement à l'image de fond */
+    z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
+    }
+
+    .goalSection p, .goalSection h1, .goalSection  {
+    position: relative; /* Assure que ces éléments sont au-dessus de l'arrière-plan */
+    z-index: 1; /* Rendre le texte et les boutons visibles au-dessus de l'image de fond */
+    }
+
+    .goalSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    align-items: center;
+    gap: 50px;
+    }
+
+
+    .goalSection .goalLeft{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .goalSection .circle{
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    background-color: #7d372c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    .goalSection .circle .Tag{
+        width: 180px;
+        margin-top: 20px;
+    }
+
+    .goalSection .circle h2 {
+    font-size: 35px;
+    padding: 10px;
+    color: #fff;
+    }
+
+    .goalSection .circle h2 span{
+    color: #f94c30;
+    }
+
+    .goalSection .circle .text {
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    width: 400px;
+    }
+
+    .goalSection .goalRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    }
+
+    .goalSection .goalRight img{
+    height: 120px;
+    width: 120px;
+    position: relative;
+    margin-left: 90px;
+    margin-top: 20px;
+    align-items: center;
+    }
+
+    .goalSection .goalRight h4{
+    position: relative;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    }
+
+    .goalSection .goalRight .text{
+    color: #adacac;
+    font-size: 12px;
+    }
+    .circ{
+    display: flex;flex-direction: row;
+    }
+
+    .circ p{
+    position: relative;
+    margin-left: -85px;
+    margin-top:60px ;
+    font-size: 25px;
+    font-weight: 700;
+    }
+
+    .porfolioSection{
+    height: 330px;
+    display: flex;flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 100px;
+    width: 97%;
+    }
+
+    .porfolioSection h2 {
+    margin-top: 0px;
+    font-size: 35px;
+    color: #0f0d33;
+    width: 410px;
+    }
+
+    .porfolioSection h2 span{
+    color: #f94c30;
+    }
+
+    .porfolioSection .Tag{
+    margin-top: 30px;
+    width: 190px;
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+
+    }
+
+    .porfolioSection .text{
+    width: 380px;
+    font-size: 20px;
+    color: #adacac;
+    }
+
+    .teamSection{
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 100px;
+    gap: 20px;
+    width: 100%;
+    }
+
+    .teamSection .Tag{
+    margin-top: 100px;
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    width: 180px;
+    }
+
+    .teamSection h2 {
+    font-size: 35px;
+    color: #0f0d33;
+    width: 300px;
+    }
+
+    .teamSection h2 span{
+    color: #f94c30;
+    }
+
+    .teamSection .text{
+        width: 380px;
+        font-size: 20px;
+        color: #adacac;
+    }
+
+
+    .teamSection .teamMembers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 100px;
+    }
+
+
+    .teamSection .teamMembers .teamMember{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 380px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow:2px 1px 1px 2px rgb(236, 235, 240) ;
+    }
+
+    .teamSection .teamMembers .teamMember img{
+        height: 400px;
+    }
+
+    .teamSection .teamMembers .teamMember .memberPost{
+    background-color: #f94c30;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    width: 330px;
+    padding: 40px;
+    position: relative;
+    margin: 0 20px;
+    margin-top: -40px;
+    margin-left: 20px;
+    }
+
+    .teamSection .teamMembers .teamMember .memberPost h4{
+    font-size: 28px;
+    font-weight: 600;
+    }
+
+    .teamSection .teamMembers .teamMember .memberPost p{
+    font-size: 20px;
+    font-weight: 600;
+    }
+
+    .memberNetwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+    }
+    .memberNetwork i{
+    border: solid 1px #505050;
+    border-radius: 100%;
+    color: #0a0a0a;
+    padding: 5px;
+    font-size: 9px;
+    }
+
+
+    .reviewSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
+    z-index: 1;
+    }
+
+    .reviewSection::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(41, 41, 41, 0.5), rgba(37, 37, 37, 0.8)), url('images/agency-img3.png');    background-size: cover;
+    background-position: center;
+    background-color: rgba(7, 7, 7, 0.801);
+    filter: grayscale(100%); /* Applique le gris uniquement à l'image de fond */
+    z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
+    }
+
+    .reviewSection p, .reviewSection h1, .reviewSection  {
+    position: relative; /* Assure que ces éléments sont au-dessus de l'arrière-plan */
+    z-index: 1; /* Rendre le texte et les boutons visibles au-dessus de l'image de fond */
+    }
+
+    .reviewSection{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    }
+
+    .reviewSection .reviewTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    }
+
+
+    .reviewTop .Tag{
+        margin-top: 100px;
+        text-align: center;
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+        width: 200px;
+    }
+    
+
+
+    .reviewSection .reviewTop .topTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    }
+
+    .reviewSection .reviewTop .text{
+    font-size: 20px;
+    width: 380px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    }
+
+    .reviewSection .reviewTop button{
+    display: flex;
+    padding: 20px 40px;
+    border-radius: 40px;
+    text-align: start;
+    border: none;
+    margin-bottom: -60px;
+    align-items: end;
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+    font-size: 18px
+    }
+
+
+    .reviewSection h2 {
+    font-size: 35px;
+    color: #fff;
+    }
+
+    .reviewSection h2 span{
+    color: #f94c30;
+    }
+
+    .reviewBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 40px;
+    margin-bottom: 100px;
+    }
+
+    .reviewBottom .client{
+    background-color: #0a0a0ac9;
+    width: 380px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;justify-content: space-between;
+    padding: 20px 30px 30px 20px;
+    border-radius: 20px;
+    }
+
+    .reviewBottom .client img{
+    height: 150px;
+    border-radius: 100%;
+    position: relative;
+    margin-top: -90px;
+    margin-left: 100px;
+    border: solid 6px #333333;
+    }
+
+    .reviewBottom .client .text{
+    font-size: 20px;
+    width: 340px;
+    text-align: center;
+    border-bottom: solid 2px #3a3a3a;
+    padding-bottom: 20px;
+    }
+
+    .clientNote{
+        position: relative;
+        margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    }
+
+    .reviewBottom .client p:first-child{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: top 20px;
+    }
+
+
+    .reviewBottom .client p:last-child{
+    font-size: 16px;
+    text-align: center;
+    }
+
+
+    .reviewBottom .client i{
+    color: #f94c30;
+    width: 15px;
+    }
+
+    .half-colored {
+    font-size: 16px; /* Taille de l'icône */
+    background: linear-gradient(to right, #f94c30 60%, #f8f8f8 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+
+    .ralf-colored {
+    font-size: 16px; /* Taille de l'icône */
+    background: linear-gradient(to right, #f8f8f8 60%, #f8f8f8 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+
+    .contactSection{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #f2f7f4;
+    margin-bottom: 100px;
+
+
+    }
+
+    .contactSection .contactTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    .contactSection .contactTop .contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    }
+
+    .contactSection h2 {
+    font-size: 33px;
+    color: #0f0d33;
+    width: 150%;
+    }
+
+    .contactSection h2 span{
+    color: #f94c30;
+    }
+
+    .contactSection .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    width: 180px;
+    height: 40px;
+    margin-top: 100px;
+    }
+
+
+    .contactSection .text{
+        font-size: 20px;
+    }
+
+
+    .contactSection .contactTop .contactImage{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 140px;
+    z-index: 20;
+    }
+
+    .contactSection .contactTop img{
+    height: 560px;
+    width: 400px;
+    padding-left: 30px;
+    position: static;
+    z-index: 10;
+    }
+
+    .contactSection .contactTop .text{
+    color: #505050;
+    padding: 20px 0;
+    }
+
+    .contactSection .contactElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+    }
+
+    .contactSection .contactElement img{
+    background-color: #0a0a0a;
+    height: 100px;
+    width: 100px;
+    border-radius: 40px;
+    padding: 20px;
+    }
+
+    .contactSection .contactElement p:first-child{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px ;
+    }
+
+
+    .contactSection .contactElement p:last-child{
+    font-size: 18px;
+    color: #8a8989;
+    }
+
+    .contactSection .contactMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    top: -140px;
+    height: 700px;
+    width: 380px;
+    padding: 40px;
+    overflow: hidden;
+    margin-left: 0px;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 3px rgb(234, 233, 238);
+    position: relative;
+    z-index: 0;
+    gap: 20px;
+    }
+
+    .contactSection .contactMessage form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    height: 470px;
+    padding: 30px;
+    position: relative;
+    z-index: 0;
+    }
+
+    .contactSection .contactMessage form input{
+    border: none;
+    outline: none;
+    width: 320px;
+    height: 80px;
+    border: solid 1px #c0bebe;
+    border-radius: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    }
+
+    .contactSection .contactMessage form textarea{
+    border: none;
+    outline: none;
+    width: 320px;
+    height: 180px;
+    border: solid 1px #c0bebe;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+
+    }
+
+    .contactSection .contactMessage form button{
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f94c30;
+    color: #fff;
+    padding: 20px 40px;
+    }
+
+    .contactSection .contactMessage h4{
+    font-size: 30px;
+    }
+
+    .contactSection .contactMessage p{
+    color: #505050;
+    font-size: 18px;
+    text-align: center;
+    }
+
+
+    .contactBottom{
+    display: flex;
+    flex-direction: column;
+    background-color: #f94c30;
+    width: 90%;
+    height: auto;
+    padding: 10px 60px;
+    border-radius: 20px;
+    align-self: center;
+    position: relative;
+    margin-top: 0px;
+
+    }
+
+
+    .contactBottom .realisations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 0 20px;
+    }
+
+
+    .contactBottom .realisations div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-bottom: solid 1px #cab1b1;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 90%;
+    }
+
+    .contactBottom .realisations div:last-child{
+    border-bottom: solid 1px #f94c30;
+
+    }
+
+
+
+    .contactBottom  div .realisationCard img{
+    height: 90px;
+    }
+
+
+    .contactBottom  div .realisationCard h4{
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    }
+
+    .contactBottom  div .realisationCard p{
+    color: #fff;
+    font-size: 12px;
+    }
+
+    .blogSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+    padding-bottom: 20px;
+    }
+
+    .blogSection h2 {
+    font-size: 33px;
+    color: #0f0d33;
+    padding: 20px;
+    }
+
+    .blogSection h2 span{
+    color: #f94c30;
+    }
+
+    .blogSection .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    width: 180px;
+    }
+
+    .blogSection .text{
+    text-align: center;
+    color: #505050;
+    width: 80%;
+    font-size: 20px;
+    color: #868585;
+    }
+
+
+    .blogContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    }
+    .blogContent .blogBox{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 3px rgb(234, 233, 238);
+    margin-top: 40px;
+    width: 380px;
+    }
+
+    .blogContent .blogBox .title{
+    background-color: #f94c30;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width:max-content ;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    }
+
+    .blogSection .blogContent .blogBox h4{
+    color: #0f0d33;
+    text-align: center;
+    padding: 20px 10px ;
+    font-size: 20px;
+    }
+
+    .blogBox .text2{
+    color: #505050;
+    text-align: center;
+    padding: 10px 5px ;
+    height: 100px;
+    }
+
+
+    .blogBox img{
+    height: 300px;
+    }
+
+    .suscribSection{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #f2f5f3;
+    gap: 20px;
+    }
+
+    .suscribSection .suscribeLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    }
+
+    .suscribSection .suscribeLeft h2 {
+    font-size: 33px;
+    color: #0f0d33;
+    text-align: center;
+    }
+
+    .suscribSection  .suscribeLeft h2 span{
+    color: #f94c30;
+    }
+
+    .suscribSection .suscribeLeft .Tag{
+    margin-top: 100px;
+    box-shadow: 0 2px 2px 2px rgb(208, 207,216);
+    width: 180px;
+    }
+
+
+    .suscribSection .suscribeRight{
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    align-items:  center;
+    width: 100%;
+    margin-top: 50px;
+    }
+
+    .suscribSection .suscribeRight .text{
+        font-size: 18px;
+        color: #8a8989;
+        text-align: center;
+    }
+
+    .suscribSection .suscribeRight form{
+    width:100%px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    .suscribSection .suscribeRight form input{
+    border: none;
+    border: solid 1px #d1d0d0 ;
+    border-radius: 40px;
+    width: 390px;
+    padding: 10px;
+    }
+
+    .suscribSection .suscribeRight form button{
+    border-radius: 40px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #f94c30;
+    color: #fff;
+    padding: 10px 20px;
+    }
+
+
+    footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
+    z-index: 1;
+    }
+
+    footer::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(41, 41, 41, 0.5), rgba(37, 37, 37, 0.8)), url('images/agency-img3.png');    background-size: cover;
+    background-position: center;
+    background-color: rgba(7, 7, 7, 0.801);
+    filter: grayscale(100%); /* Applique le gris uniquement à l'image de fond */
+    z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
+    }
+
+    footer p, footer h1, footer  {
+    position: relative; /* Assure que ces éléments sont au-dessus de l'arrière-plan */
+    z-index: 1; /* Rendre le texte et les boutons visibles au-dessus de l'image de fond */
+    }
+
+    footer .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 70%;
+    padding: 80px 0 40px 0  ;
+    border-bottom: solid 1px #5e5c5c;
+    }
+
+    footer .bottom .description{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    }
+
+    footer .bottom .description p{
+    font-size: 13px;
+    color: #c5c5c5;
+
+    }
+
+    footer .bottom .description .networkLink i{
+    background-color: #f94c30;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    padding: 8px 4px 6px 8px;
+    align-items: center;
+    }
+
+
+    footer .bottom .Links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 180px;
+    }
+
+    .Links h4{
+    font-size: 16px;
+    font-weight: 200px;
+    padding-bottom: 20px;
+    }
+
+
+    .Links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    }
+
+    footer .bottom .Links li{
+    list-style: none;
+    font-size: 13px;
+    color: #c5c5c5;
+
+    }
+
+    footer .bottom .Support{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 180px;
+    }
+
+    .Support h4{
+    font-size: 16px;
+    font-weight: 200px;
+    padding-bottom: 20px;
+    }
+
+
+    .Support ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    }
+
+    footer .bottom .Support li{
+    list-style: none;
+    font-size: 13px;
+    color: #c5c5c5;
+
+    }
+
+
+    footer .bottom .Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+    width: 240px;
+    }
+
+    footer .bottom .Contact p{
+    font-size: 13px;
+    color: #c5c5c5;
+
+    }
+
+    footer .bottom .Contact .info{
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    }
+
+    footer .bottom .Contact .info img{
+    height: 16px;
+    }
+
+    footer .bottom .Contact .info span{
+    padding-right: 10px;
+    align-items: center;
+    }
+
+    footer  #copyright p{
+    font-size: 13px;
+    padding: 20px;
+    color: #c5c5c5;
+    }
+
+}
 
 
 
