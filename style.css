@@ -583,12 +583,6 @@ h1 span{
     gap: 100px;
 }
 
-
-.goalSection .goalLeft{
-
-}
-
-
 .goalSection .circle{
     height: 300px;
     width: 300px;
@@ -4388,10 +4382,6 @@ footer  #copyright p{
 }
 
 
-.circleProcess h4{
-
-}
-
 .circleProcess p{
     color: #918f8f;
     font-size: 14px;
@@ -6879,11 +6869,14 @@ border-right: solid 1px #f94c30;
         font-size: 18px;
         color: #8a8989;
         text-align: center;
+        padding-bottom: 100px;
     }
 
     .suscribSection .suscribeRight form{
-    width:100%px;
-    height: 50px;
+    width:100%;
+    height: auto;
+    margin-top: -150px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -6893,7 +6886,8 @@ border-right: solid 1px #f94c30;
     border: none;
     border: solid 1px #d1d0d0 ;
     border-radius: 40px;
-    width: 390px;
+    width: 380px;
+    height: 60px;
     padding: 10px;
     }
 
@@ -6904,7 +6898,8 @@ border-right: solid 1px #f94c30;
     font-weight: 600;
     background-color: #f94c30;
     color: #fff;
-    padding: 10px 20px;
+    width: 380px;
+    height: 50px;
     }
 
 
@@ -6939,23 +6934,26 @@ border-right: solid 1px #f94c30;
 
     footer .bottom{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    width: 70%;
+    width: 100%;
     padding: 80px 0 40px 0  ;
     border-bottom: solid 1px #5e5c5c;
     }
 
     footer .bottom .description{
-    width: 250px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 25px;
     }
 
     footer .bottom .description p{
-    font-size: 13px;
+    font-size: 18px;
     color: #c5c5c5;
 
     }
@@ -6967,6 +6965,8 @@ border-right: solid 1px #f94c30;
     border-radius: 100%;
     padding: 8px 4px 6px 8px;
     align-items: center;
+    text-align: center;
+
     }
 
 
@@ -6974,12 +6974,14 @@ border-right: solid 1px #f94c30;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
+    text-align: center;
+
     width: 180px;
     }
 
     .Links h4{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 200px;
     padding-bottom: 20px;
     }
@@ -6988,12 +6990,14 @@ border-right: solid 1px #f94c30;
     .Links ul{
     display: flex;
     flex-direction: column;
+    text-align: center;
+
     gap: 25px;
     }
 
     footer .bottom .Links li{
     list-style: none;
-    font-size: 13px;
+    font-size: 18px;
     color: #c5c5c5;
 
     }
@@ -7002,12 +7006,14 @@ border-right: solid 1px #f94c30;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
+    text-align: center;
+
     width: 180px;
     }
 
     .Support h4{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 200px;
     padding-bottom: 20px;
     }
@@ -7017,11 +7023,14 @@ border-right: solid 1px #f94c30;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    align-items: center;
+    text-align: center;
+
     }
 
     footer .bottom .Support li{
     list-style: none;
-    font-size: 13px;
+    font-size: 18px;
     color: #c5c5c5;
 
     }
@@ -7031,21 +7040,31 @@ border-right: solid 1px #f94c30;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
+    text-align: center;
     gap: 30px;
-    width: 240px;
+    width: 100%;
     }
 
     footer .bottom .Contact p{
-    font-size: 13px;
+    font-size: 18px;
     color: #c5c5c5;
+
+    }
+
+
+    footer .bottom .Contact h4{
+    font-size: 20px;
+    color: #fff;
 
     }
 
     footer .bottom .Contact .info{
     display: flex;flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
+    text-align: center;
+
     gap: 10px;
     }
 
@@ -7059,10 +7078,544 @@ border-right: solid 1px #f94c30;
     }
 
     footer  #copyright p{
-    font-size: 13px;
+    font-size: 18px;
     padding: 20px;
     color: #c5c5c5;
     }
+
+
+    /* style de La page 404*/
+
+.introSection.error {
+    height: 400px; /* Ajustement de la hauteur de la section */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligne le contenu à gauche */
+    justify-content: flex-start; /* Aligne le contenu en haut */
+    position: relative; /* Permet au pseudo-élément de se positionner correctement */
+    z-index: 1;
+}
+
+/* Pseudo-élément pour l'image de fond */
+.introSection.error::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 400px; /* L'image couvre toute la hauteur de la section */
+    background:
+        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+        url('images/agency-img13-800x533.jpg'); /* Image de fond */
+    background-size: cover; /* L'image couvre tout l'espace sans déformation */
+    background-position: top; /* Garde le haut de l'image visible */
+    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+.errorSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    height: 600px;
+}
+
+.errorSection h4{
+    position: relative;
+    font-size: 200px;
+    font-weight: 800;
+    color: #cfcece;
+    margin-top: -250px;
+    z-index: -1;
+}
+
+.errorSection .oups{
+    position: relative;
+    margin-top: -150px;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.errorSection .text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.search p{
+    font-weight: 600;
+}
+
+.search form{
+    width: 350px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    overflow: hidden;
+    border: none;
+}
+
+.search form input{
+    width: 350px;
+    padding: 15px;
+    border-radius: 20px 0 0 20px;
+    border: solid 1px #f5c9c2;
+    background-color: #f1f3f3;
+    font-size: 20px;
+}
+
+.search form button{
+    background-color: #f94c30;
+    border: none;
+    width: 60px;
+}
+
+.search form button i{
+    color: #fff;
+}
+
+
+
+/*style de la page about*/
+
+.introSection.about {
+    height: 50%; /* Ajustement de la hauteur de la section */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligne le contenu à gauche */
+    justify-content: center; /* Aligne le contenu en haut */
+    align-items: center;
+    position: relative; /* Permet au pseudo-élément de se positionner correctement */
+    z-index: 1;
+}
+
+/* Pseudo-élément pour l'image de fond */
+.introSection.about::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 150%;
+    height: 100%; /* L'image couvre toute la hauteur de la section */
+    background:
+        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+        url('images/agency-img13-800x533.jpg'); /* Image de fond */
+    background-size: cover; /* L'image couvre tout l'espace sans déformation */
+    background-position: 50% 50%; /* Garde le haut de l'image visible */
+    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+
+.introSection.about h2{
+    color: #fff;
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutSection .aboutTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    font-size: 20px;
+    margin-top:-600px;
+}
+
+.aboutSection .aboutTop .aboutTopLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.aboutSection .aboutTop .aboutTopLeft h2 {
+    font-size: 35px;
+    color: #0f0d33;
+}
+
+.aboutSection .aboutTop .aboutTopLeft h2 span{
+    color: #f94c30;
+}
+
+.aboutSection .aboutTop .aboutTopLeft .Tag{
+    margin-top: 0;
+    box-shadow: 0 2px 10px 2px rgb(208, 207, 216);
+    width: 180px;
+}
+
+.aboutSection .aboutTop .aboutTopRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+    gap: 20px;
+    color: #a1a1a1;
+}
+
+.aboutCards{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.aboutCards .card{
+    box-shadow: 0 2px 10px 5px #f2f2f2;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #adacac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.aboutCards .card h4{
+    color: #0a0a0a;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.aboutCards .card img{
+    height: 140px;
+}
+
+.aboutImages{
+   width: 100%;
+   padding:15% ;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   height: 600px;
+   padding-top: 200px;
+   padding-bottom: 500px;
+}
+
+.aboutImages img:first-child{
+    height: 300px;
+    width: 380px;
+    border-radius: 30px;
+}
+
+.aboutImages img:last-child{
+    position: absolute;
+    margin-bottom: -450px;
+    margin-left: 0px;
+    height: 250px;
+    width: 330px;
+    border-radius: 30px;
+    border: solid 8px #fff;
+}
+
+
+/*style de la page blog*/
+
+.introSection.blog {
+    height: 400px; /* Ajustement de la hauteur de la section */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligne le contenu à gauche */
+    justify-content: center; /* Aligne le contenu en haut */
+    align-items: center;
+    position: relative; /* Permet au pseudo-élément de se positionner correctement */
+    z-index: 1;
+}
+
+/* Pseudo-élément pour l'image de fond */
+.introSection.blog::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 100%; /* L'image couvre toute la hauteur de la section */
+    background:
+        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+        url('images/agency-img13-800x533.jpg'); /* Image de fond */
+    background-size: cover; /* L'image couvre tout l'espace sans déformation */
+    background-position: 20% 20%; /* Garde le haut de l'image visible */
+    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+
+.introSection.blog h2{
+    color: #fff;
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+.archivesSection{
+    width: 100%;
+    padding: 0% 0%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogContent{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+}
+
+.blogContent .blogBox.blog{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 3px rgb(234, 233, 238);
+    margin-top: 40px;
+    width: 450px;
+    height: auto;
+}
+
+.blogContent .blogBox .blog .title{
+    background-color: #f94c30;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 3px 15px;
+    width:max-content ;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.blogContent .blogBox.blog  h4{
+    color: #0f0d33;
+    text-align: start;
+    padding: 10px 10px ;
+    font-size: 22px;
+}
+
+
+.blogContent .blogBox.blog  h3{
+    color: #f94c30;
+    padding: 10px 10px ;
+    font-size: 14px;
+    text-align: start;
+    margin-top: 40px;
+}
+
+.blogBox.blog .text2{
+    color: #505050;
+    font-size: 20px;
+    text-align: start;
+    padding: 10px 10px ;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+
+.blogBox .blog img{
+    height: 180px;
+}
+
+.archivesInfo{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+
+.archivesInfo .Tag{
+    margin-top: 100px;
+    box-shadow: 0 2px 10px 2px #f1f1f1;
+    width: 250px;
+}
+
+
+.archivesInfo .directorInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+
+.archivesInfo .directorInfo img{
+    border-radius: 100%;
+    height: 150px;
+}
+
+.archivesInfo .directorInfo h4{
+    font-size: 28px;
+}
+
+
+.archivesInfo .directorInfo .text{
+    text-align: center;
+    font-size: 20px;
+    color: #868585;
+}
+
+
+
+.archivesInfo .directorInfo .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    width: 250px;
+}
+
+.archivesInfo .directorInfo .networkLink i{
+    color:#fff ;
+    background-color: #f94c30;
+    border-radius: 100%;
+    padding: 8px;
+}
+
+
+.archivesInfo .postsInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.archivesInfo .postsInfo .postContent{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.archivesInfo .postsInfo .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+}
+
+
+.archivesInfo .postsInfo .postContent img{
+    background-color: #fff;
+    border: solid 2px #fff;
+    overflow: hidden;
+    height: 100px;
+    width: 150px;
+    image-resolution: 1000px;
+    image-orientation: from-image;
+    border-radius: 30px;
+    background-size: cover;
+
+}
+
+.archivesInfo .postsInfo .postContent p:first-child{
+    font-size: 22px;
+    color: #0a0a0a;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.archivesInfo .postsInfo .postContent p:last-child{
+    font-size: 18px;
+    color: #5e5c5c;
+    font-weight: 600;
+}
+
+.infoLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.infoLinks .Tag{
+    width: 200px;
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+}
+
+
+.infoLinks .buttonLink{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.infoLinks .buttonLink button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #f94c30;
+    color: #fff;
+    padding: px 20px;
+}
+
+.infoLinks .buttonLink button i {
+    color: #fff;
+}
+
+.infoLinks .buttonLink button:nth-child(5){
+    border-radius: 30px;
+    border: none;
+    font-size:20px;
+    font-weight: 600;
+    background-color: #f94c30;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 12px;
+}
+
+.infoLinks .buttonLink button:nth-child(6){
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #f94c30;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 12px;
+}
+
 
 }
 
