@@ -7957,12 +7957,360 @@ border-right: solid 1px #f94c30;
 }
 
 
+/*style de la page careeerDetail*/
+.introSection.CD {
+    height: 500px ; /* Ajustement de la hauteur de la section */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligne le contenu à gauche */
+    justify-content: center; /* Aligne le contenu en haut */
+    align-items: center;
+    position: relative; /* Permet au pseudo-élément de se positionner correctement */
+    z-index: 1;
+}
 
+/* Pseudo-élément pour l'image de fond */
+.introSection.CD::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    zoom: 110%;
+    height: 100%; /* L'image couvre toute la hauteur de la section */
+    background:
+        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+        url('images/agency-img13-800x533.jpg'); /* Image de fond */
+    background-position: 45% 0%; /* Garde le haut de l'image visible */
+    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+
+.introSection.CD h2{
+    color: #fff;
+    font-size: 50px;
+    margin-top: 100px;
+    width: 500px;
+    text-align: center;
+}
+
+.careerDetailSecton{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 20%;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.careerDetailSecton .detailLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.careerDetailSecton .detailLeft .box1{
+    width: 380px;
+    background-color: #f0eded;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.careerDetailSecton .detailLeft .box2{
+    width: 380px;
+    background-color: #f0eded;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.careerDetailSecton .detailLeft .box2 div{
+    width: 290px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 2px 1px 2px 1px #c5c5c5;
+    gap: 20px;
+    padding: 20px; color: #0f0d33;
+}
+
+.careerDetailSecton .detailLeft .box3{
+    width: 380px;
+    background-color: #eeeded;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.careerDetailSecton .detailLeft .box3 h5{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.careerDetailSecton .detailLeft .box3 .or{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.careerDetailSecton .detailLeft .box3 .or span{
+    background-color: #868585;
+    width: 30px;
+    height: 2px;
+}
+
+.careerDetailSecton .detailLeft .box3 p{
+    text-align: center;
+    color: #5e5c5c;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.careerDetailSecton .detailLeft .box3 p span{
+    text-align: center;
+    color: #f94c30;
+    font-weight: 600;
+    font-size: 14px;
+}
+.careerDetailSecton .detailLeft .box3 button{
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #f94c30;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.careerDetailSecton .detailLeft .box3 img{
+    height: 110px;
+    width: 110px;
+}
+
+.careerDetailSecton .detailLeft .box1 p{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5e5c5c;
+}
+
+.careerDetailSecton .detailLeft .box2 h5{
+    background-color:  #f94c30;
+    text-align: center;
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.careerDetailSecton .detailLeft .box1 h5{
+    background-color:  #f94c30;
+    text-align: center;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.careerDetailSecton .detailRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: auto;
+
+}
+
+.careerDetailSecton .detailRight .rightTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.careerDetailSecton .detailRight .rightTop .topText{
+    background-color: #0e0c38;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 20px;
+    width: 380px;
+}
+
+.careerDetailSecton .detailRight .rightTop .topText div{
+    border: none;
+    border-bottom: solid 1px #fff;
+    padding: 30px 0;
+    font-weight: 600;
+    width: 100%;
+}
+
+.careerDetailSecton .detailRight .rightTop .topText div p:last-child{
+    font-size: 20px;
+    text-align: center;
+}
+
+.careerDetailSecton .detailRight .rightTop .topText div p:first-child{
+    font-size: 20px;
+}
+
+.careerDetailSecton .detailRight .rightTop .topText div:last-child{
+    border-bottom: solid 2px #0e0c38;
+    padding-bottom: 40px;
+    margin-left: 50px;
+
+}
+
+.careerDetailSecton .detailRight .rightTop img{
+    height: 250px;
+    width: 380px;
+    z-index: 1;
+    margin-top: -50px;
+}
+
+.careerDetailSecton .detailRight .rightBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    border: solid 2px #868585;
+    width: 380px;
+    padding: 20px;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 
 
+.careerDetailSecton .detailRight .rightBottom li:nth-child(2){
+    display: none;
+}
+.careerDetailSecton .detailRight .rightBottom li:nth-child(3){
+    display: none;
+}
 
+.careerDetailSecton .detailRight .rightBottom .theme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px;
+    width: 358px;
+    padding-bottom: 10px;
+    gap: 60px;
+    list-style: none;
+}
+
+.careerDetailSecton .detailRight .rightBottom .theme li{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.careerDetailSecton .detailRight .rightBottom .theme2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    color: #5e5c5c;
+    padding-left: 5px;
+}
+
+.careerDetailSecton .detailRight .rightBottom p{
+    color: #5e5c5c;
+}
+
+
+.involveSection{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-attachment: fixed;
+    position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
+    z-index: 1;
+}
+
+.involveSection::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: -100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)), url('images/agency-img15.jpg');
+    background-position: center;
+    z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
+}
+
+.involveSection .Tag{
+    margin-top: 0;
+}
+
+.involveSection h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    width: 100%;
+}
+
+
+.involveSection .text{
+    color: #fff;
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+.involveSection h2 span{
+    color: #f94c30;
+}
+.involveSection button{
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #f94c30;
+    color: #fff;
+    padding: 20px 30px;
+
+}
+
+
+}
 
 
 
