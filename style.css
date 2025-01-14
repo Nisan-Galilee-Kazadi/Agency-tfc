@@ -5420,7 +5420,7 @@ border-right: solid 1px #f94c30;
         box-shadow: 0 1px 0#949494;
         color: #fff;
         position: fixed;
-        width: 420px;
+        width: 414px;
         z-index: 99;
 
     }
@@ -6925,7 +6925,7 @@ border-right: solid 1px #f94c30;
     background: linear-gradient(180deg, rgba(41, 41, 41, 0.5), rgba(37, 37, 37, 0.8)), url('images/agency-img3.png');    background-size: cover;
     background-position: center;
     background-color: rgba(7, 7, 7, 0.801);
-    filter: grayscale(100%); /* Applique le gris uniquement à l'image de fond */
+    filter: grayscale(200%); /* Applique le gris uniquement à l'image de fond */
     z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
     }
 
@@ -7080,1394 +7080,1652 @@ border-right: solid 1px #f94c30;
     }
 
     footer  #copyright p{
-    font-size: 18px;
+    font-size: 16px;
     padding: 20px;
     color: #c5c5c5;
     }
 
 
-    /* style de La page 404*/
+        /* style de La page 404*/
 
-.introSection.error {
-    height: 400px; /* Ajustement de la hauteur de la section */
+    .introSection.error {
+        height: 400px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: flex-start; /* Aligne le contenu en haut */
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.error::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 400px; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-size: cover; /* L'image couvre tout l'espace sans déformation */
+        background-position: top; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+    .errorSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+        height: 600px;
+    }
+
+    .errorSection h4{
+        position: relative;
+        font-size: 200px;
+        font-weight: 800;
+        color: #cfcece;
+        margin-top: -250px;
+        z-index: -1;
+    }
+
+    .errorSection .oups{
+        position: relative;
+        margin-top: -150px;
+        font-size: 50px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .errorSection .text{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .search{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding-bottom: 100px;
+    }
+
+    .search p{
+        font-weight: 600;
+    }
+
+    .search form{
+        width: 350px;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 30px;
+        overflow: hidden;
+        border: none;
+    }
+
+    .search form input{
+        width: 350px;
+        padding: 15px;
+        border-radius: 20px 0 0 20px;
+        border: solid 1px #f5c9c2;
+        background-color: #f1f3f3;
+        font-size: 20px;
+    }
+
+    .search form button{
+        background-color: #f94c30;
+        border: none;
+        width: 60px;
+    }
+
+    .search form button i{
+        color: #fff;
+    }
+
+
+
+    /*style de la page about*/
+
+    .introSection.about {
+        height: 50%; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.about::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 150%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-size: cover; /* L'image couvre tout l'espace sans déformation */
+        background-position: 50% 50%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+
+    .introSection.about h2{
+        color: #fff;
+        font-size: 50px;
+        margin-top: 150px;
+    }
+
+    .aboutSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutSection .aboutTop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        gap: 20px;
+        font-size: 20px;
+        margin-top:-600px;
+    }
+
+    .aboutSection .aboutTop .aboutTopLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .aboutSection .aboutTop .aboutTopLeft h2 {
+        font-size: 35px;
+        color: #0f0d33;
+    }
+
+    .aboutSection .aboutTop .aboutTopLeft h2 span{
+        color: #f94c30;
+    }
+
+    .aboutSection .aboutTop .aboutTopLeft .Tag{
+        margin-top: 0;
+        box-shadow: 0 2px 10px 2px rgb(208, 207, 216);
+        width: 180px;
+    }
+
+    .aboutSection .aboutTop .aboutTopRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-top: 0px;
+        gap: 20px;
+        color: #a1a1a1;
+    }
+
+    .aboutCards{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .aboutCards .card{
+        box-shadow: 0 2px 10px 5px #f2f2f2;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 20px;
+        color: #adacac;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .aboutCards .card h4{
+        color: #0a0a0a;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .aboutCards .card img{
+        height: 140px;
+    }
+
+    .aboutImages{
     width: 100%;
+    padding:15% ;
     display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: flex-start; /* Aligne le contenu en haut */
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.error::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: 400px; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-size: cover; /* L'image couvre tout l'espace sans déformation */
-    background-position: top; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-.errorSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    gap: 40px;
-    width: 100%;
     height: 600px;
-}
-
-.errorSection h4{
-    position: relative;
-    font-size: 200px;
-    font-weight: 800;
-    color: #cfcece;
-    margin-top: -250px;
-    z-index: -1;
-}
-
-.errorSection .oups{
-    position: relative;
-    margin-top: -150px;
-    font-size: 50px;
-    font-weight: 800;
-    text-align: center;
-}
-
-.errorSection .text{
-    font-size: 20px;
-    text-align: center;
-}
-
-.search{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    padding-bottom: 100px;
-}
-
-.search p{
-    font-weight: 600;
-}
-
-.search form{
-    width: 350px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 30px;
-    overflow: hidden;
-    border: none;
-}
-
-.search form input{
-    width: 350px;
-    padding: 15px;
-    border-radius: 20px 0 0 20px;
-    border: solid 1px #f5c9c2;
-    background-color: #f1f3f3;
-    font-size: 20px;
-}
-
-.search form button{
-    background-color: #f94c30;
-    border: none;
-    width: 60px;
-}
-
-.search form button i{
-    color: #fff;
-}
-
-
-
-/*style de la page about*/
-
-.introSection.about {
-    height: 50%; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.about::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 150%;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-size: cover; /* L'image couvre tout l'espace sans déformation */
-    background-position: 50% 50%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-
-.introSection.about h2{
-    color: #fff;
-    font-size: 50px;
-    margin-top: 150px;
-}
-
-.aboutSection{
-    display: flex;
-    flex-direction: column;
-}
-
-.aboutSection .aboutTop{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    gap: 20px;
-    font-size: 20px;
-    margin-top:-600px;
-}
-
-.aboutSection .aboutTop .aboutTopLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    width: 100%;
-}
-
-.aboutSection .aboutTop .aboutTopLeft h2 {
-    font-size: 35px;
-    color: #0f0d33;
-}
-
-.aboutSection .aboutTop .aboutTopLeft h2 span{
-    color: #f94c30;
-}
-
-.aboutSection .aboutTop .aboutTopLeft .Tag{
-    margin-top: 0;
-    box-shadow: 0 2px 10px 2px rgb(208, 207, 216);
-    width: 180px;
-}
-
-.aboutSection .aboutTop .aboutTopRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin-top: 0px;
-    gap: 20px;
-    color: #a1a1a1;
-}
-
-.aboutCards{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.aboutCards .card{
-    box-shadow: 0 2px 10px 5px #f2f2f2;
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 20px;
-    color: #adacac;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-}
-
-.aboutCards .card h4{
-    color: #0a0a0a;
-    font-size: 25px;
-    font-weight: 500;
-}
-
-.aboutCards .card img{
-    height: 140px;
-}
-
-.aboutImages{
-   width: 100%;
-   padding:15% ;
-   display: flex;
-   justify-content:center;
-   align-items: center;
-   height: 600px;
-   padding-top: 200px;
-   padding-bottom: 500px;
-}
-
-.aboutImages img:first-child{
-    height: 300px;
-    width: 380px;
-    border-radius: 30px;
-}
-
-.aboutImages img:last-child{
-    position: absolute;
-    margin-bottom: -450px;
-    margin-left: 0px;
-    height: 250px;
-    width: 330px;
-    border-radius: 30px;
-    border: solid 8px #fff;
-}
-
-
-/*style de la page blog*/
-
-.introSection.blog {
-    height: 400px; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.blog::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-size: cover; /* L'image couvre tout l'espace sans déformation */
-    background-position: 20% 20%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-
-.introSection.blog h2{
-    color: #fff;
-    font-size: 50px;
-    margin-top: 150px;
-}
-
-.archivesSection{
-    width: 100%;
-    padding: 0% 0%;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.blogContent{
-    display: flex;
-    flex-flow: row wrap ;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    width: 90%;
-}
-
-.blogContent .blogBox.blog{
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px 3px rgb(234, 233, 238);
-    margin-top: 40px;
-    width: 450px;
-    height: auto;
-}
-
-.blogContent .blogBox .blog .title{
-    background-color: #f94c30;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 20px;
-    padding: 3px 15px;
-    width:max-content ;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 10px;
-
-}
-
-.blogContent .blogBox.blog  h4{
-    color: #0f0d33;
-    text-align: start;
-    padding: 10px 10px ;
-    font-size: 22px;
-}
-
-
-.blogContent .blogBox.blog  h3{
-    color: #f94c30;
-    padding: 10px 10px ;
-    font-size: 14px;
-    text-align: start;
-    margin-top: 40px;
-}
-
-.blogBox.blog .text2{
-    color: #505050;
-    font-size: 20px;
-    text-align: start;
-    padding: 10px 10px ;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-
-.blogBox .blog img{
-    height: 180px;
-}
-
-.archivesInfo{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    position: relative;
-}
-
-
-.archivesInfo .Tag{
-    margin-top: 100px;
-    box-shadow: 0 2px 10px 2px #f1f1f1;
-    width: 250px;
-}
-
-
-.archivesInfo .directorInfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 30px;
-}
-
-.archivesInfo .directorInfo img{
-    border-radius: 100%;
-    height: 150px;
-}
-
-.archivesInfo .directorInfo h4{
-    font-size: 28px;
-}
-
-
-.archivesInfo .directorInfo .text{
-    text-align: center;
-    font-size: 20px;
-    color: #868585;
-}
-
-
-
-.archivesInfo .directorInfo .Tag{
-    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
-    width: 250px;
-}
-
-.archivesInfo .directorInfo .networkLink i{
-    color:#fff ;
-    background-color: #f94c30;
-    border-radius: 100%;
-    padding: 8px;
-}
-
-
-.archivesInfo .postsInfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.archivesInfo .postsInfo .postContent{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.archivesInfo .postsInfo .Tag{
-    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
-}
-
-
-.archivesInfo .postsInfo .postContent img{
-    background-color: #fff;
-    border: solid 2px #fff;
-    overflow: hidden;
-    height: 100px;
-    width: 150px;
-    image-resolution: 1000px;
-    image-orientation: from-image;
-    border-radius: 30px;
-    background-size: cover;
-
-}
-
-.archivesInfo .postsInfo .postContent p:first-child{
-    font-size: 22px;
-    color: #0a0a0a;
-    font-weight: 600;
-    padding-bottom: 10px;
-}
-
-.archivesInfo .postsInfo .postContent p:last-child{
-    font-size: 18px;
-    color: #5e5c5c;
-    font-weight: 600;
-}
-
-.infoLinks{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-
-.infoLinks .Tag{
-    width: 200px;
-    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
-}
-
-
-.infoLinks .buttonLink{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    gap: 10px;
-    margin-top: 30px;
-    margin-bottom: 100px;
-}
-
-.infoLinks .buttonLink button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border-radius: 30px;
-    border: none;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    padding: px 20px;
-}
-
-.infoLinks .buttonLink button i {
-    color: #fff;
-}
-
-.infoLinks .buttonLink button:nth-child(5){
-    border-radius: 30px;
-    border: none;
-    font-size:20px;
-    font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    padding: 10px 20px;
-    margin-left: 12px;
-}
-
-.infoLinks .buttonLink button:nth-child(6){
-    border-radius: 30px;
-    border: none;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    padding: 10px 20px;
-    margin-right: 12px;
-}
-
-/*le style de la page career*/
-
-.introSection.career {
-    height: 480px ; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.career::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    zoom: 110%;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-position: 45% 0%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-
-.introSection.career h2{
-    color: #fff;
-    font-size: 50px;
-    margin-top: 200px;
-}
-
-.careerSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0% 0%;
-    gap: 20px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    margin-top:-150px;
-}
-
-.careerSection .Tag{
-    box-shadow: 0 2px 2px 2px #f0f0f0;
-    margin-top: 0;
-    width: 205px;
-    font-size: 14px;
-    height: 20px;
-}
-
-.careerSection h2 {
-    font-size: 30px;
-    color: #0f0d33;
-}
-
-.careerSection h2 span{
-    color: #f94c30;
-}
-
-.careerSection .text{
-    text-align: center;
-    width: 90%;
-    color: #918f8f;
-    font-weight: 500;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-
-.careerSection .careerContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-
-.careerSection .careerContent .careerBoxs{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    width:640px;
-}
-
-.careerSection .careerContent .careerBoxs div:nth-child(2){
-    width: 380px;
-    border-radius: 20px;
-    border: solid 1.5px #b8b6b6;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 20px;
-    padding: 20px;
-}
-
-.careerSection .careerContent .careerBoxs div:nth-child(3){
-    width: 380px;
-    border-radius: 20px;
-    border: solid 1.5px #cfcfcf;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 20px;
-    padding: 20px;
-}
-
-.careerSection .careerContent .careerBoxs .boxCareer{
-    width: 380px;
-    height: 270px;
-    border-radius: 20px;
-    box-shadow: 0 2px 2px 4px #eeeeee;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 20px;
-    padding: 20px;
-}
-
-.careerSection .careerContent .careerBoxs .boxCareer p{
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.careerSection .careerContent .careerBoxs .boxCareer p:nth-child(2){
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.careerSection .careerContent .careerBoxs .boxCareer p:nth-child(3){
-    font-size: 16px;
-    font-weight: 600;
-    color: #5e5c5c;
-}
-
-
-.careerSection .careerContent .careerBoxs .boxCareer button{
-    border-radius: 20px;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    padding: 12px 20px;
-}
-
-
-
-.careerFormulaire {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    height: 650px;
-    width: 380px;
-    padding: 40px;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 4px 4px 5px rgb(234, 233, 238);
-    position: relative;
-    z-index: 0;
-}
-
-.careerFormulaire h4{
-    background-color: #0e0c38;
-    width: 330px;
-    height: 80px;
-    text-align: center;
-    justify-self: center;
-    color: #fff;
-    padding-top: 20px;
-    margin-top: -40px;
-    margin-bottom: 20px;
-    border-radius: 40px;
-
-}
-
-.careerFormulaire form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 10px;
-    height: 600px;
-    padding: 30px;
-    position: relative;
-    z-index: 0;
-}
-
-.careerFormulaire form input{
-    border: none;
-    outline: none;
-    width: 330px;
-    height: 70px;
-    background-color: #f1efef;
-    border-radius: 40px;
-    padding: 20px;
-    margin-bottom: 10px;
-}
-
-.careerFormulaire form textarea{
-    border: none;
-    outline: none;
-    width: 330px;
-    height: 300px;
-    background-color: #f1efef;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-.careerFormulaire form button{
-    border-radius: 20px;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    margin-top: 20px;
-    padding: 13px 70px;
-}
-
-.banefitSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 0% 0% ;
-    background-color: #f2f7f5;
-}
-
-.banefitSection .benefitTop{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-
-.banefitSection .benefitTop .Left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    gap: 20px;
-}
-
-
-
-.banefitSection .benefitTop .Left .Tag{
-    box-shadow: 0 2px 2px 2px rgb(241, 241, 243);
-    margin-top: 0;
-    width: 180px;
-    height: 40px;
-}
-
-.banefitSection .benefitTop .Left h2 {
-    font-size: 30px;
-    color: #141149;
-    text-align: center;
-
-}
-
-.banefitSection .benefitTop .Left h2 span{
-    color: #f94c30;
-}
-
-.banefitSection .benefitTop .Right{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    width: 90%;
-    gap: 20px;
-}
-
-
-.banefitSection .benefitTop .Right p:first-child{
-    color: #b4b2b2;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.banefitSection .benefitTop .Right p:last-child{
-    color: #b4b2b2;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.aboutCards.career{
-    display: flex;
-    flex-direction: column;
-    width:100% ;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.aboutCards.career .card{
-    width: 380px;
-    background-color: #fff;
-    box-shadow: 0 2px 2px 1px #f1f1f1;
-    border-radius: 20px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.aboutCards.career .card h4{
-    font-weight: 700;
-}
-
-.aboutCards.career .card p{
-    font-weight: 500;
-    font-size: 16px;
-}
-
-
-/*style de la page careeerDetail*/
-.introSection.CD {
-    height: 500px ; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.CD::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    zoom: 110%;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-position: 45% 0%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-
-.introSection.CD h2{
-    color: #fff;
-    font-size: 50px;
-    margin-top: 100px;
-    width: 500px;
-    text-align: center;
-}
-
-.careerDetailSecton{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0% 20%;
-    gap: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.careerDetailSecton .detailLeft{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.careerDetailSecton .detailLeft .box1{
-    width: 380px;
-    background-color: #f0eded;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 40px;
-    border-radius: 20px;
-}
-
-.careerDetailSecton .detailLeft .box2{
-    width: 380px;
-    background-color: #f0eded;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px 40px;
-    border-radius: 20px;
-}
-
-.careerDetailSecton .detailLeft .box2 div{
-    width: 290px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: 2px 1px 2px 1px #c5c5c5;
-    gap: 20px;
-    padding: 20px; color: #0f0d33;
-}
-
-.careerDetailSecton .detailLeft .box3{
-    width: 380px;
-    background-color: #eeeded;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    border-radius: 20px;
-    gap: 20px;
-}
-
-.careerDetailSecton .detailLeft .box3 h5{
-    text-align: center;
-    font-weight: 600;
-    font-size: 22px;
-}
-
-.careerDetailSecton .detailLeft .box3 .or{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.careerDetailSecton .detailLeft .box3 .or span{
-    background-color: #868585;
-    width: 30px;
-    height: 2px;
-}
-
-.careerDetailSecton .detailLeft .box3 p{
-    text-align: center;
-    color: #5e5c5c;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.careerDetailSecton .detailLeft .box3 p span{
-    text-align: center;
-    color: #f94c30;
-    font-weight: 600;
-    font-size: 14px;
-}
-.careerDetailSecton .detailLeft .box3 button{
-    border-radius: 30px;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    padding: 20px 30px;
-}
-
-.careerDetailSecton .detailLeft .box3 img{
-    height: 110px;
-    width: 110px;
-}
-
-.careerDetailSecton .detailLeft .box1 p{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #5e5c5c;
-}
-
-.careerDetailSecton .detailLeft .box2 h5{
-    background-color:  #f94c30;
-    text-align: center;
-    padding: 20px;
-    border-radius: 40px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-}
-
-.careerDetailSecton .detailLeft .box1 h5{
-    background-color:  #f94c30;
-    text-align: center;
-    padding: 10px;
-    border-radius: 40px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-}
-
-.careerDetailSecton .detailRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 30px;
-    height: auto;
-
-}
-
-.careerDetailSecton .detailRight .rightTop{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 40px;
-    overflow: hidden;
-}
-
-.careerDetailSecton .detailRight .rightTop .topText{
-    background-color: #0e0c38;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    padding: 20px 20px;
-    width: 380px;
-}
-
-.careerDetailSecton .detailRight .rightTop .topText div{
-    border: none;
-    border-bottom: solid 1px #fff;
-    padding: 30px 0;
-    font-weight: 600;
-    width: 100%;
-}
-
-.careerDetailSecton .detailRight .rightTop .topText div p:last-child{
-    font-size: 20px;
-    text-align: center;
-}
-
-.careerDetailSecton .detailRight .rightTop .topText div p:first-child{
-    font-size: 20px;
-}
-
-.careerDetailSecton .detailRight .rightTop .topText div:last-child{
-    border-bottom: solid 2px #0e0c38;
-    padding-bottom: 40px;
-    margin-left: 50px;
-
-}
-
-.careerDetailSecton .detailRight .rightTop img{
-    height: 250px;
-    width: 380px;
-    z-index: 1;
-    margin-top: -50px;
-}
-
-.careerDetailSecton .detailRight .rightBottom{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    border: solid 2px #868585;
-    width: 380px;
-    padding: 20px;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-
-
-.careerDetailSecton .detailRight .rightBottom li:nth-child(2){
-    display: none;
-}
-.careerDetailSecton .detailRight .rightBottom li:nth-child(3){
-    display: none;
-}
-
-.careerDetailSecton .detailRight .rightBottom .theme{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid 1px;
-    width: 358px;
-    padding-bottom: 10px;
-    gap: 60px;
-    list-style: none;
-}
-
-.careerDetailSecton .detailRight .rightBottom .theme li{
-    font-size: 20px;
-    font-weight: 600;
-}
-
-
-.careerDetailSecton .detailRight .rightBottom .theme2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    color: #5e5c5c;
-    padding-left: 5px;
-}
-
-.careerDetailSecton .detailRight .rightBottom p{
-    color: #5e5c5c;
-}
-
-
-.involveSection{
-    height: 600px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    background-attachment: fixed;
-    position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
-    z-index: 1;
-}
-
-.involveSection::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: -100;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)), url('images/agency-img15.jpg');
-    background-position: center;
-    z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
-}
-
-.involveSection .Tag{
-    margin-top: 0;
-}
-
-.involveSection h2 {
-    text-align: center;
-    font-size: 35px;
-    color: #fff;
-    width: 100%;
-}
-
-
-.involveSection .text{
-    color: #fff;
-    width: 90%;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 500;
-}
-.involveSection h2 span{
-    color: #f94c30;
-}
-.involveSection button{
-    border-radius: 30px;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    padding: 20px 30px;
-
-}
-
-/*le style de la page commingSoon*/
-
-.introSection.coming {
-    height: 100vh; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.coming::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 900px; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-size: cover; /* L'image couvre tout l'espace sans déformation */
-    background-position: 50% 50%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-.comingSoonSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-}
-
-.comingSoonSection h2{
-    font-size: 50px;
-    text-align: cent            
-    color: #fff;
-    width: 400px;
-    font-weight: 700;
-}
-
-.comingSoonSection .text{
-    text-align: center;
-    margin-top: 50px;
-    width: 700px;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 600;
-}
-
-
-.comingSoonSection span{
-    width: 130px;
-    height: 7px;
-    background-color: #fff;
-}
-
-.comingSoonSection .timeline{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 0 20px;
-}
-
-.comingSoonSection .timeline .box{
-    background-color: #f94c30;
-    color: #fff;
-    padding: 15px 5px;
-    width: 90px;
-    border-radius: 35px;
-    text-align: center;
-}
-
-.comingSoonSection .timeline .box h4{
-    font-size: 35px;
-    font-weight: 900;
-}
-
-.comingSoonSection .timeline .box p{
-    font-size: 14px;
-    font-weight: 600;
-}
-
-
-.comingSoonSection button{
-    position: absolute;
-    right: 0;
-    margin-top: 200px;
-    border: none;
-    display: flex;
-    gap: 10px;
-    font-size: 12px;
-    font-weight: 600;
-    background-color: #f56953;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-.comingSoonSection button i{
-    color: #fff;
-}
-
-.comingSoonSection .contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
-    width: 100%;
-    gap: 40px;
-}
-
-.comingSoonSection .contact .address{
-    display: flex;
-    flex-flow: row wrap;
-    width: 380px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    color: #fff;
-}
-
-.comingSoonSection .contact .Links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-}
-
-.comingSoonSection .contact .Links i{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    border: solid 2px #fff;
-    border-radius: 100%;
-    padding: 5px;
-}
-
-.comingSoonSection .contact p{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.comingSoonSection .contact img{
-    height: 20px;
-}
+    padding-top: 200px;
+    padding-bottom: 500px;
+    }
+
+    .aboutImages img:first-child{
+        height: 300px;
+        width: 380px;
+        border-radius: 30px;
+    }
+
+    .aboutImages img:last-child{
+        position: absolute;
+        margin-bottom: -450px;
+        margin-left: 0px;
+        height: 250px;
+        width: 330px;
+        border-radius: 30px;
+        border: solid 8px #fff;
+    }
+
+
+    /*style de la page blog*/
+
+    .introSection.blog {
+        height: 400px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.blog::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-size: cover; /* L'image couvre tout l'espace sans déformation */
+        background-position: 20% 20%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+
+    .introSection.blog h2{
+        color: #fff;
+        font-size: 50px;
+        margin-top: 150px;
+    }
+
+    .archivesSection{
+        width: 100%;
+        padding: 0% 0%;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .blogContent{
+        display: flex;
+        flex-flow: row wrap ;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 90%;
+    }
+
+    .blogContent .blogBox.blog{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px 3px rgb(234, 233, 238);
+        margin-top: 40px;
+        width: 450px;
+        height: auto;
+    }
+
+    .blogContent .blogBox .blog .title{
+        background-color: #f94c30;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 20px;
+        padding: 3px 15px;
+        width:max-content ;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+
+    .blogContent .blogBox.blog  h4{
+        color: #0f0d33;
+        text-align: start;
+        padding: 10px 10px ;
+        font-size: 22px;
+    }
+
+
+    .blogContent .blogBox.blog  h3{
+        color: #f94c30;
+        padding: 10px 10px ;
+        font-size: 14px;
+        text-align: start;
+        margin-top: 40px;
+    }
+
+    .blogBox.blog .text2{
+        color: #505050;
+        font-size: 20px;
+        text-align: start;
+        padding: 10px 10px ;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+
+    .blogBox .blog img{
+        height: 180px;
+    }
+
+    .archivesInfo{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .archivesInfo .Tag{
+        margin-top: 100px;
+        box-shadow: 0 2px 10px 2px #f1f1f1;
+        width: 250px;
+    }
+
+
+    .archivesInfo .directorInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .archivesInfo .directorInfo img{
+        border-radius: 100%;
+        height: 150px;
+    }
+
+    .archivesInfo .directorInfo h4{
+        font-size: 28px;
+    }
+
+
+    .archivesInfo .directorInfo .text{
+        text-align: center;
+        font-size: 20px;
+        color: #868585;
+    }
+
+
+
+    .archivesInfo .directorInfo .Tag{
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+        width: 250px;
+    }
+
+    .archivesInfo .directorInfo .networkLink i{
+        color:#fff ;
+        background-color: #f94c30;
+        border-radius: 100%;
+        padding: 8px;
+    }
+
+
+    .archivesInfo .postsInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .archivesInfo .postsInfo .postContent{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .archivesInfo .postsInfo .Tag{
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    }
+
+
+    .archivesInfo .postsInfo .postContent img{
+        background-color: #fff;
+        border: solid 2px #fff;
+        overflow: hidden;
+        height: 100px;
+        width: 150px;
+        image-resolution: 1000px;
+        image-orientation: from-image;
+        border-radius: 30px;
+        background-size: cover;
+
+    }
+
+    .archivesInfo .postsInfo .postContent p:first-child{
+        font-size: 22px;
+        color: #0a0a0a;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+
+    .archivesInfo .postsInfo .postContent p:last-child{
+        font-size: 18px;
+        color: #5e5c5c;
+        font-weight: 600;
+    }
+
+    .infoLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .infoLinks .Tag{
+        width: 200px;
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    }
+
+
+    .infoLinks .buttonLink{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+
+    .infoLinks .buttonLink button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        padding: px 20px;
+    }
+
+    .infoLinks .buttonLink button i {
+        color: #fff;
+    }
+
+    .infoLinks .buttonLink button:nth-child(5){
+        border-radius: 30px;
+        border: none;
+        font-size:20px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        padding: 10px 20px;
+        margin-left: 12px;
+    }
+
+    .infoLinks .buttonLink button:nth-child(6){
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        padding: 10px 20px;
+        margin-right: 12px;
+    }
+
+    /*le style de la page career*/
+
+    .introSection.career {
+        height: 480px ; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.career::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        zoom: 110%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 45% 0%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+
+    .introSection.career h2{
+        color: #fff;
+        font-size: 50px;
+        margin-top: 200px;
+    }
+
+    .careerSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 0%;
+        gap: 20px;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        margin-top:-150px;
+    }
+
+    .careerSection .Tag{
+        box-shadow: 0 2px 2px 2px #f0f0f0;
+        margin-top: 0;
+        width: 205px;
+        font-size: 14px;
+        height: 20px;
+    }
+
+    .careerSection h2 {
+        font-size: 30px;
+        color: #0f0d33;
+    }
+
+    .careerSection h2 span{
+        color: #f94c30;
+    }
+
+    .careerSection .text{
+        text-align: center;
+        width: 90%;
+        color: #918f8f;
+        font-weight: 500;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .careerSection .careerContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .careerSection .careerContent .careerBoxs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        width:640px;
+    }
+
+    .careerSection .careerContent .careerBoxs div:nth-child(2){
+        width: 380px;
+        border-radius: 20px;
+        border: solid 1.5px #b8b6b6;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .careerSection .careerContent .careerBoxs div:nth-child(3){
+        width: 380px;
+        border-radius: 20px;
+        border: solid 1.5px #cfcfcf;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .careerSection .careerContent .careerBoxs .boxCareer{
+        width: 380px;
+        height: 270px;
+        border-radius: 20px;
+        box-shadow: 0 2px 2px 4px #eeeeee;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .careerSection .careerContent .careerBoxs .boxCareer p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .careerSection .careerContent .careerBoxs .boxCareer p:nth-child(2){
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .careerSection .careerContent .careerBoxs .boxCareer p:nth-child(3){
+        font-size: 16px;
+        font-weight: 600;
+        color: #5e5c5c;
+    }
+
+
+    .careerSection .careerContent .careerBoxs .boxCareer button{
+        border-radius: 20px;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        padding: 12px 20px;
+    }
+
+
+
+    .careerFormulaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        height: 650px;
+        width: 380px;
+        padding: 40px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 4px 4px 5px rgb(234, 233, 238);
+        position: relative;
+        z-index: 0;
+    }
+
+    .careerFormulaire h4{
+        background-color: #0e0c38;
+        width: 330px;
+        height: 80px;
+        text-align: center;
+        justify-self: center;
+        color: #fff;
+        padding-top: 20px;
+        margin-top: -40px;
+        margin-bottom: 20px;
+        border-radius: 40px;
+
+    }
+
+    .careerFormulaire form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 10px;
+        height: 600px;
+        padding: 30px;
+        position: relative;
+        z-index: 0;
+    }
+
+    .careerFormulaire form input{
+        border: none;
+        outline: none;
+        width: 330px;
+        height: 70px;
+        background-color: #f1efef;
+        border-radius: 40px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .careerFormulaire form textarea{
+        border: none;
+        outline: none;
+        width: 330px;
+        height: 300px;
+        background-color: #f1efef;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .careerFormulaire form button{
+        border-radius: 20px;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        margin-top: 20px;
+        padding: 13px 70px;
+    }
+
+    .banefitSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0% 0% ;
+        background-color: #f2f7f5;
+    }
+
+    .banefitSection .benefitTop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .banefitSection .benefitTop .Left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        gap: 20px;
+    }
+
+
+
+    .banefitSection .benefitTop .Left .Tag{
+        box-shadow: 0 2px 2px 2px rgb(241, 241, 243);
+        margin-top: 0;
+        width: 180px;
+        height: 40px;
+    }
+
+    .banefitSection .benefitTop .Left h2 {
+        font-size: 30px;
+        color: #141149;
+        text-align: center;
+
+    }
+
+    .banefitSection .benefitTop .Left h2 span{
+        color: #f94c30;
+    }
+
+    .banefitSection .benefitTop .Right{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        gap: 20px;
+    }
+
+
+    .banefitSection .benefitTop .Right p:first-child{
+        color: #b4b2b2;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .banefitSection .benefitTop .Right p:last-child{
+        color: #b4b2b2;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .aboutCards.career{
+        display: flex;
+        flex-direction: column;
+        width:100% ;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .aboutCards.career .card{
+        width: 380px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px 1px #f1f1f1;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .aboutCards.career .card h4{
+        font-weight: 700;
+    }
+
+    .aboutCards.career .card p{
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+
+    /*style de la page careeerDetail*/
+    .introSection.CD {
+        height: 500px ; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.CD::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        zoom: 110%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 45% 0%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+
+    .introSection.CD h2{
+        color: #fff;
+        font-size: 50px;
+        margin-top: 100px;
+        width: 500px;
+        text-align: center;
+    }
+
+    .careerDetailSecton{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 20%;
+        gap: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .careerDetailSecton .detailLeft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .careerDetailSecton .detailLeft .box1{
+        width: 380px;
+        background-color: #f0eded;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    .careerDetailSecton .detailLeft .box2{
+        width: 380px;
+        background-color: #f0eded;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 40px;
+        border-radius: 20px;
+    }
+
+    .careerDetailSecton .detailLeft .box2 div{
+        width: 290px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 2px 1px 2px 1px #c5c5c5;
+        gap: 20px;
+        padding: 20px; color: #0f0d33;
+    }
+
+    .careerDetailSecton .detailLeft .box3{
+        width: 380px;
+        background-color: #eeeded;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+        border-radius: 20px;
+        gap: 20px;
+    }
+
+    .careerDetailSecton .detailLeft .box3 h5{
+        text-align: center;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .careerDetailSecton .detailLeft .box3 .or{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .careerDetailSecton .detailLeft .box3 .or span{
+        background-color: #868585;
+        width: 30px;
+        height: 2px;
+    }
+
+    .careerDetailSecton .detailLeft .box3 p{
+        text-align: center;
+        color: #5e5c5c;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .careerDetailSecton .detailLeft .box3 p span{
+        text-align: center;
+        color: #f94c30;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .careerDetailSecton .detailLeft .box3 button{
+        border-radius: 30px;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        padding: 20px 30px;
+    }
+
+    .careerDetailSecton .detailLeft .box3 img{
+        height: 110px;
+        width: 110px;
+    }
+
+    .careerDetailSecton .detailLeft .box1 p{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #5e5c5c;
+    }
+
+    .careerDetailSecton .detailLeft .box2 h5{
+        background-color:  #f94c30;
+        text-align: center;
+        padding: 20px;
+        border-radius: 40px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .careerDetailSecton .detailLeft .box1 h5{
+        background-color:  #f94c30;
+        text-align: center;
+        padding: 10px;
+        border-radius: 40px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .careerDetailSecton .detailRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30px;
+        height: auto;
+
+    }
+
+    .careerDetailSecton .detailRight .rightTop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .careerDetailSecton .detailRight .rightTop .topText{
+        background-color: #0e0c38;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 20px 20px;
+        width: 380px;
+    }
+
+    .careerDetailSecton .detailRight .rightTop .topText div{
+        border: none;
+        border-bottom: solid 1px #fff;
+        padding: 30px 0;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .careerDetailSecton .detailRight .rightTop .topText div p:last-child{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .careerDetailSecton .detailRight .rightTop .topText div p:first-child{
+        font-size: 20px;
+    }
+
+    .careerDetailSecton .detailRight .rightTop .topText div:last-child{
+        border-bottom: solid 2px #0e0c38;
+        padding-bottom: 40px;
+        margin-left: 50px;
+
+    }
+
+    .careerDetailSecton .detailRight .rightTop img{
+        height: 250px;
+        width: 380px;
+        z-index: 1;
+        margin-top: -50px;
+    }
+
+    .careerDetailSecton .detailRight .rightBottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        border: solid 2px #868585;
+        width: 380px;
+        padding: 20px;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+
+
+    .careerDetailSecton .detailRight .rightBottom li:nth-child(2){
+        display: none;
+    }
+    .careerDetailSecton .detailRight .rightBottom li:nth-child(3){
+        display: none;
+    }
+
+    .careerDetailSecton .detailRight .rightBottom .theme{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+        width: 358px;
+        padding-bottom: 10px;
+        gap: 60px;
+        list-style: none;
+    }
+
+    .careerDetailSecton .detailRight .rightBottom .theme li{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    .careerDetailSecton .detailRight .rightBottom .theme2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        color: #5e5c5c;
+        padding-left: 5px;
+    }
+
+    .careerDetailSecton .detailRight .rightBottom p{
+        color: #5e5c5c;
+    }
+
+
+    .involveSection{
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        background-attachment: fixed;
+        position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
+        z-index: 1;
+    }
+
+    .involveSection::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: -100;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)), url('images/agency-img15.jpg');
+        background-position: center;
+        z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
+    }
+
+    .involveSection .Tag{
+        margin-top: 0;
+    }
+
+    .involveSection h2 {
+        text-align: center;
+        font-size: 35px;
+        color: #fff;
+        width: 100%;
+    }
+
+
+    .involveSection .text{
+        color: #fff;
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .involveSection h2 span{
+        color: #f94c30;
+    }
+    .involveSection button{
+        border-radius: 30px;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        padding: 20px 30px;
+
+    }
+
+    /*le style de la page commingSoon*/
+
+    .introSection.coming {
+        height: 100vh; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.coming::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: 900px; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-size: cover; /* L'image couvre tout l'espace sans déformation */
+        background-position: 50% 50%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+    .comingSoonSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .comingSoonSection h2{
+        font-size: 50px;
+        text-align: center;            
+        color: #fff;
+        width: 400px;
+        font-weight: 700;
+    }
+
+    .comingSoonSection .text{
+        text-align: center;
+        margin-top: 50px;
+        width: 700px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+
+    .comingSoonSection span{
+        width: 130px;
+        height: 7px;
+        background-color: #fff;
+    }
+
+    .comingSoonSection .timeline{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .comingSoonSection .timeline .box{
+        background-color: #f94c30;
+        color: #fff;
+        padding: 15px 5px;
+        width: 90px;
+        border-radius: 35px;
+        text-align: center;
+    }
+
+    .comingSoonSection .timeline .box h4{
+        font-size: 35px;
+        font-weight: 900;
+    }
+
+    .comingSoonSection .timeline .box p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+
+    .comingSoonSection button{
+        position: absolute;
+        right: 0;
+        margin-top: 200px;
+        border: none;
+        display: flex;
+        gap: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #f56953;
+        color: #fff;
+        padding: 10px 20px;
+    }
+
+    .comingSoonSection button i{
+        color: #fff;
+    }
+
+    .comingSoonSection .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .comingSoonSection .contact .address{
+        display: flex;
+        flex-flow: row wrap;
+        width: 380px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        color: #fff;
+    }
+
+    .comingSoonSection .contact .Links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        color: #fff;
+    }
+
+    .comingSoonSection .contact .Links i{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        color: #fff;
+        border: solid 2px #fff;
+        border-radius: 100%;
+        padding: 5px;
+    }
+
+    .comingSoonSection .contact p{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .comingSoonSection .contact img{
+        height: 20px;
+    }
+
+
+    /*style de la page contact*/
+
+    .introSection.contact {
+        height:450px; /* Ajustement de la hauteur de la section */
+        width: 414px;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.contact::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 45% 20%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+
+    .introSection.contact h2{
+        color: #fff;
+        font-size: 50px;
+    }
+
+
+    .careerSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f7f7f7;
+        gap: 40px;
+    }
+
+    .careerSection .text{
+        width: 90%;
+    }
+
+
+    .careerSection .boxContacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .careerSection .boxContacts .boxContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 20px;
+        width: 360px;
+        height: 200px;
+        box-shadow:0 4px 6px 0 #d6d5d5;
+    }
+
+    .careerSection .boxContacts .boxContact .boxTop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+        gap: 10px;
+    }
+
+    .careerSection .boxContacts .boxContact .boxTop h5{
+        font-size: 11px;
+    }
+
+    .careerSection .boxContacts .boxContact .boxTop h6{
+        font-size: 18px;
+        font-weight: 600;
+        color: #f94c30;
+    }
+
+    .careerSection .boxContacts .boxContact p{
+        color: #868585;
+        font-size: 13px;
+    }
+
+    .careerSection .boxContacts .boxContact img{
+        height: 30px;
+    }
+
+    .contactUsSection{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 15% ;
+    }
+
+    .contactUsSection .contactLeft{
+        display: flex;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -200px;
+        padding-bottom: 200px;
+        
+    }
+
+    .contactUsSection .contactLeft .liveChat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 360px;
+        padding: 30px 10px;
+        gap: 25px;
+        background-color: #f94c30;
+        border-radius: 20px;
+        overflow: hidden;
+        color: #fff;
+        z-index: -1;
+    }
+
+    .contactUsSection .contactLeft .liveChat button{
+        border-radius: 30px;
+        border: none;
+        font-size: 12px;
+        font-weight: 700;
+        background-color: #fff;
+        color: #333333;
+        padding: 15px 30px;
+    }
+
+    .contactUsSection .contactLeft .liveChat h4{
+        font-size: 20px;
+    }
+
+    .contactUsSection .contactLeft .liveChat p{
+        font-size: 17px;
+        font-weight: 400;
+        width: 280px;
+    }
+
+    .contactUsSection .contactLeft .liveChat img{
+        width: 120px;
+    }
+
+    .contactLeft .image{
+        height: 100%;
+        width: 350px;
+        margin-top: 180px;
+        position: relative;
+        margin-left: -0px;
+    }
+
+    .contactUsSection .contactRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: 150%;
+        padding: 50px;
+        margin-top: -200px;
+    }
+
+    .contactUsSection .contactRight h2 {
+        font-size: 30px;
+        color: #0f0d33;
+    }
+
+    .contactUsSection .contactRight h2 span{
+        color: #f94c30;
+    }
+
+    .contactUsSection .contactRight .Tag{
+        box-shadow:0 6px 10px 0 #d6d5d5;
+        width: 180px;
+
+    }
+
+    .contactUsSection .contactRight form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        width: 400px;
+        margin: 30px;
+        gap: 25px;
+        margin-left: 30px;
+    }
+
+
+    .contactUsSection .contactRight form div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .contactUsSection .contactRight form input{
+        width: 360px;
+        height: 50px;
+        border-radius: 40px;
+        padding: 20px;
+        border: none;
+        background: #f0efef;
+    }
+
+    .contactUsSection .contactRight form textarea{
+        width: 360px;
+        height: 160px;
+        border-radius: 30px;
+        padding: 20px;
+        border: none;
+        background: #f0efef;
+    }
+
+    .contactUsSection .contactRight form button{
+        border-radius: 30px;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        width: 360px;
+        padding: 15px 30px;
+    }
+
+    .locattion{
+        width: 100%;
+        display: none;
+    }
+
+    .locattion img{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
 
 
 }
