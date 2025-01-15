@@ -8726,6 +8726,521 @@ border-right: solid 1px #f94c30;
         background-size: cover;
     }
 
+    
+
+/*style de la page FAQ*/
+
+.introSection.faq {
+    height: 450px; /* Ajustement de la hauteur de la section */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligne le contenu à gauche */
+    justify-content: center; /* Aligne le contenu en haut */
+    align-items: center;
+    position: relative; /* Permet au pseudo-élément de se positionner correctement */
+    z-index: 1;
+}
+
+/* Pseudo-élément pour l'image de fond */
+.introSection.faq::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 120%;
+    height: 100%; /* L'image couvre toute la hauteur de la section */
+    background:
+        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+        url('images/agency-img13-800x533.jpg'); /* Image de fond */
+    background-position: 52% 40%; /* Garde le haut de l'image visible */
+    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+
+.introSection.faq h2{
+    color: #fff;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.faqSection{
+    display: flex;
+    padding: 0% 0%;
+
+}
+
+.faqSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqSection .faqLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+    padding: 0 4%;
+}
+
+.faqSection .faqLeft h2 {
+    font-size: 35px;
+    color: #0f0d33;
+}
+
+.faqSection .faqLeft h2 span{
+    color: #f94c30;
+}
+
+.faqSection .faqLeft .text{
+    color: #868585;
+    font-weight: 700px;
+    font-size: 18px;
+}
+
+.faqSection .faqLeft .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    margin-top: 0;
+    width: 235px;
+}
+
+.faqSection .faqLeft .faqBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-left: -40px;
+    text-align: start;
+    gap: 30px;
+    padding: 40px;
+}
+
+
+.faqSection .faqLeft .faqBox div{
+    width: 370px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 1px 7px 2px #e0e0e0;
+    gap: 20px;
+    padding: 10px; color: #0f0d33;
+    border-radius: 2px;
+}
+
+.faqSection .faqLeft .faqBox div p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.faqSection .faqLeft .faqBox div  span{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.faqRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.faqRight form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 700px;
+    width: 370px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 2px 1px 7px 2px #e0e0e0;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.faqRight form h4{
+    background-color: #f94c30;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    width: 330px;
+    border-radius: 40px;
+    padding: 16px;
+}
+
+.faqRight form input{
+    border: none;
+    outline: none;
+    width: 330px;
+    height: 60px;
+    background-color: #f0eeee;
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.faqRight form textarea{
+    border: none;
+    outline: none;
+    width: 325px;
+    height: 180px;
+    background-color: #f0eeee;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.faqRight form button{
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #f94c30;
+    color: #fff;
+    padding: 13px 50px;
+    align-self: flex-start;
+}
+
+.missionSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20% 0%;
+}
+
+.missionSection .missionLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.missionSection .missionLeft img{
+    height: 250px;
+    border-radius: 30px;
+
+}
+
+.missionSection .missionLeft div{
+    background-color: #f94c30;
+    color: #fff;
+    padding:10px;
+    border-radius: 30px;
+    margin-top: -50px;
+    width:350px;
+    padding: 20px;
+    gap: 10px;
+    padding-right: 80px;
+    align-self: flex-start;
+}
+
+.missionSection .missionLeft div img{
+   height: 70px;
+}
+
+.missionSection .missionLeft div h4{
+   font-size: 18px;
+   padding-left:10px;
+}
+
+
+
+.missionSection .missionLeft div .text{
+    font-size: 12px;
+    padding-left:10px;
+    font-weight:400 ;
+}
+
+
+.missionRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+    padding: 0% 4%;
+}
+
+.missionRight h2 {
+    font-size: 35px;
+    color: #0f0d33;
+}
+
+.missionRight h2 span{
+    color: #f94c30;
+}
+
+.missionRight .text{
+    color: #868585;
+    font-weight: 700px;
+    font-size: 18px;
+}
+
+.missionRight .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    margin-top: 0;
+    width: 170px;
+}
+
+
+.missionBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-left: -40px;
+    text-align: start;
+    gap: 30px;
+    padding: 40px;
+}
+
+
+.missionBox div{
+    width: 370px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 1px 7px 2px #e0e0e0;
+    gap: 20px;
+    padding: 10px; color: #0f0d33;
+    border-radius: 2px;
+}
+
+.missionBox div p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.missionBox div  span{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/*style de la page portfolio*/
+
+.introSection.port {
+    height: 400px; /* Ajustement de la hauteur de la section */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligne le contenu à gauche */
+    justify-content: center; /* Aligne le contenu en haut */
+    align-items: center;
+    position: relative; /* Permet au pseudo-élément de se positionner correctement */
+    z-index: 1;
+}
+
+/* Pseudo-élément pour l'image de fond */
+.introSection.port::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 414px;
+    height: 100%; /* L'image couvre toute la hauteur de la section */
+    background:
+        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+        url('images/agency-img13-800x533.jpg'); /* Image de fond */
+    background-position: 40% 60%; /* Garde le haut de l'image visible */
+    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+
+.introSection.port h2{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+    width: 400px;
+}
+
+.portfolioSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    padding-bottom: 15%;
+    gap: 10px;
+}
+
+.porfolioImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 380px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.porfolioImage h4{
+   width:250px;
+   color: #fff;
+   font-size: 20px;
+   z-index: 0;
+   margin-top: -300px;
+   position: relative;
+}
+
+.porfolioImage p{
+   width:250px;
+   color: #fff;
+   margin-top: 20px;
+   z-index: 0;
+}
+
+.porfolioImage img{
+    height: 400px;
+    width: 370px;
+    image-orientation: cover;
+    z-index: 2;
+    border-radius: 20px;
+
+}
+
+.porfolioImage:hover img{
+    height: 400px;
+    width: 370px;
+    z-index: 1;
+    border-radius: 20px;
+    cursor: pointer;
+    filter: brightness(0.5); /* Augmente la luminosité de l'image */
+    transition: ease-in-out 0.5s;
+}
+
+.porfolioImage:hover h4{
+    width:250px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2;
+    margin-top: -300px;
+    position: relative;
+    transition: ease-in-out 0.5s;
+
+ }
+
+ .porfolioImage:hover p{
+    width:250px;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    width: 300px;
+    z-index: 2;
+    transition: ease-in-out 0.5s;
+
+}
+
+
+.suscribSection .port{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0% 4% ;
+    background-color: #f2f5f3;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.suscribSection.port .suscribeLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.suscribSection .port .suscribeLeft h2 {
+    font-size: 30px;
+    color: #0f0d33;
+    
+}
+
+.suscribSection .port  .suscribeLeft h2 span{
+    color: #f94c30;
+}
+
+.suscribSection .port .suscribeLeft .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    width: 120px;
+    margin-top: 0;
+}
+
+
+.portSuscribeRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.portSuscribeRight p{
+    margin-top: 0;
+    color: #bbbbbb;
+    font-size: 14px;
+    font-weight: 500;
+    width: 95%;
+}
+
+.portSuscribeRight form{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.portSuscribeRight form input{
+    border: none;
+    border: solid 1px #d1d0d0 ;
+    border-radius: 40px;
+    width: 360px;
+    height: 50px;
+    padding: 15px;
+    align-self: center;
+}
+
+.portSuscribeRight form button{
+    border-radius: 40px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    width: 360px;
+    background-color: #f94c30;
+    color: #fff;
+    padding: 16px 20px;
+}
+
+
+
+
+
 
 
 }
