@@ -4208,7 +4208,7 @@ footer  #copyright p{
 }
 
 
-/*style de la page productList*/
+/*style de la page service*/
 
 .introSection.service{
     height: 400px; /* Ajustement de la hauteur de la section */
@@ -9893,7 +9893,1078 @@ border-right: solid 1px #f94c30;
 
 
 
+/*style de la page search*/
 
+.introSection.search{
+    height: 550px; /* Ajustement de la hauteur de la section */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligne le contenu à gauche */
+    justify-content: center; /* Aligne le contenu en haut */
+    align-items: center;
+    position: relative; /* Permet au pseudo-élément de se positionner correctement */
+    z-index: 1;
+}
+
+/* Pseudo-élément pour l'image de fond */
+.introSection.search::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 80px;
+    left: 0;
+    zoom: 1.2;
+    width: 100%;
+    height: 100%; /* L'image couvre toute la hauteur de la section */
+    background:
+        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+        url('images/agency-img13-800x533.jpg'); /* Image de fond */
+    background-position: 50% 20%; /* Garde le haut de l'image visible */
+    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+.searchContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 0%;
+}
+
+.searchContent .contenair{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.searchContent .contenair .detail{
+    width: 360px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+
+.searchContent .contenair .detail h6{
+    color: #f94c30;
+    font-size: 12px;
+}
+
+
+
+.searchContent .contenair .detail .date{
+    color: #868585;
+    font-size: 12px;
+}
+
+.searchContent .contenair .detail p{
+    color: #868585;
+    font-size: 16px;
+}
+
+
+
+.searchContent .contenair .detail h4{
+    font-size: 20px;
+}
+
+.changePage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #868585;
+}
+
+
+.changePage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+}
+
+.changePage p{
+    color: #722317;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.changePage .deux{
+    color: #868585;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.changePage button{
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #868585;
+}
+
+.searchAgain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #f0efef;
+    gap: 20px;
+}
+
+.searchAgain h2 {
+    font-size: 30px;
+    color: #0f0d33;
+    padding: 20px;
+}
+
+.searchAgain h2 span{
+    color: #f94c30;
+}
+
+.searchAgain .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    padding: 2px;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.searchAgain .text{
+    color: #918f8f;
+    width: 350px;
+    text-align: center;
+}
+
+.searchAgain .search form input{
+    width: 350px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #b4b2b2;
+    background-color: #f1f3f3;
+
+}
+
+.searchAgain .search form{
+    width: 340px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    overflow: hidden;
+    border: none;
+    position: absolute;
+    margin-top: 30px;
+}
+
+
+
+/*style de la page service*/
+
+.introSection.service{
+    height: 600px; /* Ajustement de la hauteur de la section */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligne le contenu à gauche */
+    justify-content: center; /* Aligne le contenu en haut */
+    align-items: center;
+    position: relative; /* Permet au pseudo-élément de se positionner correctement */
+    z-index: 1;
+}
+
+/* Pseudo-élément pour l'image de fond */
+.introSection.service::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 100px;
+    left: 0;
+    zoom: 1.3;
+    width: 100%;
+    height: 100%; /* L'image couvre toute la hauteur de la section */
+    background:
+        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+        url('images/agency-img13-800x533.jpg'); /* Image de fond */
+    background-position: 50% 20%; /* Garde le haut de l'image visible */
+    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+
+.serviceSection.service {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
+    z-index: 1;
+}
+
+.serviceSection.service::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    background: linear-gradient(180deg, rgba(41, 41, 41, 0.5), rgba(37, 37, 37, 0.8)), url('images/agency-img3.png');
+    background-position: center;
+    padding-bottom: 300px;
+    background-color: rgb(70, 70, 70);
+    filter: grayscale(100%); /* Applique le gris uniquement à l'image de fond */
+    z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
+}
+
+.introSection.service h2{
+    color: #fff;
+    font-size: 50px;
+    margin-top: 200px;
+    
+}
+
+.serviceContent.service{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 0%;
+    margin-top: 0px;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.serviceContact.service{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 2700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+
+.processSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    gap: 20px;
+    padding-top: 250px;
+}
+
+.processSection h2 {
+    font-size: 30px;
+    color: #0f0d33;
+    padding: 20px;
+}
+
+.processSection .text{
+    color: #868585;
+    font-size: 14px;
+    width: 400px;
+    text-align: center;
+}
+
+.processSection h2 span{
+    color: #f94c30;
+}
+
+.processSection .Tag{
+    box-shadow: 0 2px 2px 1px rgb(208, 207, 216);
+    padding: 2px;
+    width: 180px;
+}
+
+.processContent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 100px;
+    width: 100%;
+    padding: 0 20%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background: url(images/agency-img41.png);
+    z-index: 1;
+}
+
+
+.processContent .circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -40px;
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 2px #e0e0e0;
+    z-index: 3;
+}
+
+
+.processContent .circledeux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    height: 350px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 2px 2px #e0e0e0;
+    z-index: 3;
+}
+
+
+
+
+.processContent .circle .circleProcess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    padding: 10px;
+    border: solid 5px #cacaca;
+}
+
+
+.processContent .circle .circleProcess:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    padding: 10px;
+    border: solid 5px #f94c30;
+}
+
+.processContent .circledeux .circleProcess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    border: solid 5px #cacaca;
+}
+
+
+.processContent .circledeux .circleProcess:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    border: solid 5px #f94c30;
+}
+
+.circleProcess span{
+    position: absolute;
+    background-color: #f94c30;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 10px 13px;
+    border-radius: 100%;
+    margin-top: -200px;
+    margin-left: 230px;
+}
+
+
+
+.circleProcess p{
+    color: #918f8f;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*le style de la page singleBlog*/
+
+.introSection.sblog {
+    height: 660px; /* Ajustement de la hauteur de la section */
+    width: 100%;
+    padding: 0% 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligne le contenu à gauche */
+    justify-content: center; /* Aligne le contenu en haut */
+    align-items: center;
+    gap: 30px;
+    position: relative; /* Permet au pseudo-élément de se positionner correctement */
+    z-index: 1;
+}
+
+/* Pseudo-élément pour l'image de fond */
+.introSection.sblog::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 90px;
+    left: 0;
+    zoom: 1.5;
+    width: 100%;
+    height: 100%; /* L'image couvre toute la hauteur de la section */
+    background:
+        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+        url('images/agency-img13-800x533.jpg'); /* Image de fond */
+    background-position: 50% 20%; /* Garde le haut de l'image visible */
+    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+.introSection.sblog h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 0;
+    width: 380px;
+    margin-top: 100px;
+}
+
+.introSection.sblog .signature{
+    display: flex;
+    justify-content: center;align-items: center;
+    color: #fff;
+    gap: 40px;
+    padding: 15px 20px;
+    border-bottom: solid 1px #fff;
+    border-top: solid 1px #fff;
+}
+
+.introSection.sblog .signature p{
+    font-size: 12px;
+}
+
+.introSection.sblog .signature p:first-child{
+    border-right: solid 1px #fff;
+    padding-right: 30px;
+}
+
+
+.sblogSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 0%;
+    gap: 50px;
+}
+
+.singleContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 380px;
+}
+
+.singleContent img{
+    height: 250px;
+    border-radius: 20px;
+}
+
+.singleContent .text{
+    color: #636363;
+    font-size: 15px;
+}
+
+.singleContent .singleLink {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.singleLink button{
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 30px;
+    width: 180px;
+}
+
+.singleLink button:nth-child(1){
+    background-color: #3b5998;
+    color: #fff;
+    padding: 12px 20px;
+}
+.singleLink button:nth-child(2){
+    background-color: #25d366;
+    color: #fff;
+    padding: 12px 20px;
+}
+.singleLink button:nth-child(3){
+    background-color: #1da1f2;
+    color: #fff;
+    padding: 12px 20px;
+}
+.singleLink button:nth-child(4){
+    background-color: #0077b5;
+    color: #fff;
+    padding: 12px 20px;
+}
+.singleLink button:nth-child(5){
+    background-color: #bd081c;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+.postAutor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+}
+
+.postTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+}
+
+.postTop h4{
+    font-size: 30px;
+}
+
+.postTop p{
+    color: #918f8f;
+    font-size: 14px;
+}
+
+.postAutor img{
+    height: 80px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 100%;
+}
+
+.postAutor .viewAll a{
+    color: #f94c30;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: -20px;
+}
+
+.pageChange{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 390px;
+    margin-top: 100px;
+}
+
+.pageChange button{
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: 700;
+    border: none;
+    color: #0f0d33;
+    background: none;
+}
+
+.pageChange .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageChange .text .change{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:300px ;
+    color: #0f0d33;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.sblogSection .archivesInfo{
+    width: 400px;
+}
+
+
+/*le style de la page singleProduct*/
+
+.introSection.sprod {
+    height: 550px; /* Ajustement de la hauteur de la section */
+    width: 100%;
+    padding: 0% 0%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligne le contenu à gauche */
+    justify-content: center; /* Aligne le contenu en haut */
+    align-items: center;
+    gap: 30px;
+    position: relative; /* Permet au pseudo-élément de se positionner correctement */
+    z-index: 1;
+}
+
+/* Pseudo-élément pour l'image de fond */
+.introSection.sprod::before {
+    content: ''; /* Nécessaire pour générer un élément pseudo */
+    position: absolute;
+    top: 100px;
+    left: 0;
+    zoom: 1.2;
+    width: 100%;
+    height: 100%; /* L'image couvre toute la hauteur de la section */
+    background:
+        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+        url('images/agency-img13-800x533.jpg'); /* Image de fond */
+    background-position: 50% 20%; /* Garde le haut de l'image visible */
+    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+.introSection.sprod h2{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 200px;
+}
+
+.singleProductSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 2% 0%;
+}
+
+.singleProductSection .leftContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.singleProductSection .leftContent .product img{
+    height: 380px;
+    border-radius: 20px;
+    background-color: #3a3a3a;
+}
+
+.singleProductSection .leftContent .product i{
+    background-color: #fff;
+    color: #0a0a0a;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.singleProductSection .leftContent .productsRayon{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.singleProductSection .leftContent .productsRayon img{
+    height: 80px;
+    border-radius: 30px;
+}
+
+.productsRayon div{
+    height: 100px;
+    border-radius: 20px;
+    filter: opacity(60%);
+}
+
+.productsRayon div:nth-child(1){
+    height: 100px;
+    border-radius: 20px;
+    filter: opacity(100%);
+}
+
+.rightContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    width: 380px;
+}
+
+.rightContent .productTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.rightContent .productTitle p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #949494;
+}
+
+.rightContent h4{
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.rightContent .prix{
+    font-size: 35px;
+    font-weight: 800;
+    color: #f94c30;
+}
+
+.rightContent .buyBox{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 20px;
+}
+
+.rightContent .buyBox p{
+    box-shadow: 1px 1px 3px #a8a8a8;
+    border-radius: 100px;
+    padding: 10px 20px;
+}
+
+.rightContent button{
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #f94c30;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.rightContent .tag-Categorie{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rightContent .tag-Categorie .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 5px;
+    border-top: solid 2px #d6d6d6;
+    border-bottom: solid 2px #d6d6d6;
+}
+
+.rightContent .tag-Categorie .top .rubrique p{
+    font-weight: 600;
+}
+
+.rightContent .tag-Categorie .top .content p{
+    font-weight: 600;
+    color: #a1a1a1;
+}
+
+
+.rightContent .tag-Categorie .text{
+    color: #6e6e6e;
+}
+
+
+.descriptionSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.descriptionSection .descriptionLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.descriptionSection .descriptionLeft h5{
+   font-size: 20px;
+   font-weight: 600;
+   border: solid 2px #bbbbbb;
+   border-bottom: solid 2px #fff;
+   padding: 10px 10px;
+   border-radius: 10px 10px 0 0;
+   margin-top: 5px;
+   z-index: 2;
+}
+
+.desciptionText{
+    margin-top: -42px;
+    border: solid 2px #bbbbbb;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    border-left: solid 2px #fff;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.desciptionText p:first-child{
+    font-weight: 600;
+    margin-left: -10px;
+}
+
+.desciptionText p:last-child{
+    font-size: 14px;
+    margin-left: -10px;
+    color: #8a8989;
+}
+
+
+.relatedProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.relatedProduct h4{
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+
+.relatedProduct .shopContent{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.relatedProduct .shopContent .product{
+    width: 380px;
+    height: auto;
+}
+
+
+.relatedProduct .shopContent .product img{
+    width: 360px;
+    height: 280px;
+}
+
+.relatedProduct .shopContent .product .sale{
+    margin-left: 270px;
+    margin-top: 20px;
+}
+
+.descriptionRight .shopRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
+}
+
+
+.descriptionRight .shopRight .search form input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    font-size: 14px;
+    background-color: #f1f3f3;
+}
+
+.descriptionRight .shopRight .search form{
+    width: 300px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    position: absolute;
+}
+
+
+.descriptionRight .shopRight .productCategories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -40px;
+}
+
+.descriptionRight .shopRight .productCategories .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+}
+
+.descriptionRight .shopRight .productCategories .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.descriptionRight.shopRight .productCategories .content .categorie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.descriptionRight .shopRight .productCategories .content .categorie img{
+    height: 100px;
+    border-radius: 20px;
+}
+
+
+.descriptionRight .shopRight .productCategories .content .categorie p{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.recentProducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: -20px;
+    gap: 10px;
+}
+
+.recentProducts .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+}
+
+.descriptionRight .recentProducts .recent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-left: -100px;
+}
+
+.recentProducts .recent img{
+    height: 80px;
+    border-radius: 20px;
+}
+
+.descriptionRight .recentProducts .recent div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.recentProducts .recent h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.recentProducts .recent p{
+    color: #868585;
+    font-size: 12px;
+}
+
+
+.descriptionRight .productGallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: -30px;
+    width: 500px;
+}
+
+.descriptionRight .Gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -20px;
+    gap: 10px;
+    width: 380px;
+}
+
+
+.productGallery .Tag{
+    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+}
+
+.descriptionRight.productGallery img{
+    height: 100px;
+    border-radius: 20px;
+}
 
 
 
