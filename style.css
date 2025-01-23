@@ -43,6 +43,207 @@
 
 }
 
+#menuList .subMenu{
+    position: absolute;
+    display: block;
+    top: -250px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    list-style: none;
+    padding: 0;
+    background-color: #46454583;
+    width: 150px;
+    height: 0px;
+    text-align:start;
+    padding: 20px 20px;
+    transition: ease-in-out 2s;
+
+}
+
+#menuList .subMenu li{
+    font-size: 14px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #cccccc;
+}
+
+#pages:hover .subMenu{
+    top: 80px;
+    height: auto;
+    transition: ease-in-out 3s;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#menuList .blogMenu{
+    position: absolute;
+    display: block;
+    top: -250px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    list-style: none;
+    padding: 0;
+    background-color: #46454583;
+    width: 150px;
+    height: auto;
+    text-align:start;
+    padding: 20px 20px;
+    transition: ease-in-out 2s;
+
+}
+
+#menuList .blogMenu li{
+    font-size: 10px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #cccccc;
+    color: red;
+}
+
+#blog:hover .blogMenu{
+    top: 80px;
+    transition: ease-in-out 3s;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#menuList .careerMenu{
+    position: relative;
+    display: none;
+    top: none;
+    opacity: none;
+    transition: none;
+    list-style: none;
+    padding: 0;
+    background-color: #46454583;
+    width: 100%;
+    height: auto;
+    text-align:start;
+    padding: 20px 10px;
+    transition: ease-in-out 2s;
+
+}
+
+#menuList .careerMenu li{
+    font-size: 12px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #cccccc;
+}
+
+#career:hover .careerMenu{
+    transition: none;
+    opacity: none;
+    display: block;
+    align-items: start;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#menuList .porfolioMenu{
+    position: relative;
+    display: none;
+    top: none;
+    opacity: none;
+    transition: none;
+    list-style: none;
+    padding: 0;
+    background-color: #46454583;
+    width: 100%;
+    height: auto;
+    text-align:start;
+    padding: 20px 10px;
+    transition: ease-in-out 2s;
+
+}
+
+#menuList .porfolioMenu li{
+    font-size: 12px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #cccccc;
+}
+
+#porfolio:hover .porfolioMenu{
+    transition: none;
+    opacity: none;
+    display: block;
+    align-items: start;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#menuList .productMenu{
+    position: relative;
+    display: none;
+    top: none;
+    opacity: none;
+    transition: none;
+    list-style: none;
+    padding: 0;
+    background-color: #46454583;
+    width: 100%;
+    height: auto;
+    text-align:start;
+    padding: 20px 10px;
+    transition: ease-in-out 2s;
+
+}
+
+#menuList .productMenu li{
+    font-size: 12px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #cccccc;
+}
+
+#product:hover .productMenu{
+    transition: none;
+    opacity: none;
+    display: block;
+    align-items: start;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#menuList .teamMenu{
+    position: relative;
+    display: none;
+    top: none;
+    opacity: none;
+    transition: none;
+    list-style: none;
+    padding: 0;
+    background-color: #46454583;
+    width: 100%;
+    height: auto;
+    text-align:start;
+    padding: 20px 10px;
+    transition: ease-in-out 2s;
+}
+
+#menuList .teamMenu li{
+    font-size: 12px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #cccccc;
+}
+
+#team:hover .teamMenu{
+    transition: none;
+    opacity: none;
+    display: block;
+    align-items: start;
+    transition: git 1s ease-in-out;
+}
+
 .networkLink{
     display: flex;
     gap: 10px;
@@ -77,6 +278,11 @@
     background-attachment: fixed;
     position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
     z-index: 1;
+}
+
+.introSection.blurry{
+    filter: blur(5px);
+
 }
 
 .introSection::before {
@@ -8728,2244 +8934,2715 @@ border-right: solid 1px #f94c30;
 
     
 
-/*style de la page FAQ*/
+    /*style de la page FAQ*/
 
-.introSection.faq {
-    height: 450px; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
+    .introSection.faq {
+        height: 450px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
 
-/* Pseudo-élément pour l'image de fond */
-.introSection.faq::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 120%;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-position: 52% 40%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.faq::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 120%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 52% 40%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
 
 
-.introSection.faq h2{
-    color: #fff;
-    font-size: 50px;
-    margin-top: 100px;
-}
+    .introSection.faq h2{
+        color: #fff;
+        font-size: 50px;
+        margin-top: 100px;
+    }
 
-.faqSection{
-    display: flex;
-    padding: 0% 0%;
+    .faqSection{
+        display: flex;
+        padding: 0% 0%;
 
-}
+    }
 
-.faqSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+    .faqSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.faqSection .faqLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 20px;
-    width: 100%;
-    padding: 0 4%;
-}
+    .faqSection .faqLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+        width: 100%;
+        padding: 0 4%;
+    }
 
-.faqSection .faqLeft h2 {
-    font-size: 35px;
-    color: #0f0d33;
-}
+    .faqSection .faqLeft h2 {
+        font-size: 35px;
+        color: #0f0d33;
+    }
 
-.faqSection .faqLeft h2 span{
-    color: #f94c30;
-}
+    .faqSection .faqLeft h2 span{
+        color: #f94c30;
+    }
 
-.faqSection .faqLeft .text{
-    color: #868585;
-    font-weight: 700px;
+    .faqSection .faqLeft .text{
+        color: #868585;
+        font-weight: 700px;
+        font-size: 18px;
+    }
+
+    .faqSection .faqLeft .Tag{
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+        margin-top: 0;
+        width: 235px;
+    }
+
+    .faqSection .faqLeft .faqBox{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        margin-left: -40px;
+        text-align: start;
+        gap: 30px;
+        padding: 40px;
+    }
+
+
+    .faqSection .faqLeft .faqBox div{
+        width: 370px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 2px 1px 7px 2px #e0e0e0;
+        gap: 20px;
+        padding: 10px; color: #0f0d33;
+        border-radius: 2px;
+    }
+
+    .faqSection .faqLeft .faqBox div p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .faqSection .faqLeft .faqBox div  span{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .faqRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .faqRight form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        height: 700px;
+        width: 370px;
+        padding: 30px;
+        position: relative;
+        box-shadow: 2px 1px 7px 2px #e0e0e0;
+        border-radius: 20px;
+        z-index: 0;
+    }
+
+    .faqRight form h4{
+        background-color: #f94c30;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        width: 330px;
+        border-radius: 40px;
+        padding: 16px;
+    }
+
+    .faqRight form input{
+        border: none;
+        outline: none;
+        width: 330px;
+        height: 60px;
+        background-color: #f0eeee;
+        border-radius: 40px;
+        padding: 15px;
+    }
+
+    .faqRight form textarea{
+        border: none;
+        outline: none;
+        width: 325px;
+        height: 180px;
+        background-color: #f0eeee;
+        border-radius: 30px;
+        padding: 15px;
+    }
+
+    .faqRight form button{
+        border-radius: 20px;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        padding: 13px 50px;
+        align-self: flex-start;
+    }
+
+    .missionSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding: 20% 0%;
+    }
+
+    .missionSection .missionLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .missionSection .missionLeft img{
+        height: 250px;
+        border-radius: 30px;
+
+    }
+
+    .missionSection .missionLeft div{
+        background-color: #f94c30;
+        color: #fff;
+        padding:10px;
+        border-radius: 30px;
+        margin-top: -50px;
+        width:350px;
+        padding: 20px;
+        gap: 10px;
+        padding-right: 80px;
+        align-self: flex-start;
+    }
+
+    .missionSection .missionLeft div img{
+    height: 70px;
+    }
+
+    .missionSection .missionLeft div h4{
     font-size: 18px;
-}
-
-.faqSection .faqLeft .Tag{
-    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
-    margin-top: 0;
-    width: 235px;
-}
-
-.faqSection .faqLeft .faqBox{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    margin-left: -40px;
-    text-align: start;
-    gap: 30px;
-    padding: 40px;
-}
-
-
-.faqSection .faqLeft .faqBox div{
-    width: 370px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 2px 1px 7px 2px #e0e0e0;
-    gap: 20px;
-    padding: 10px; color: #0f0d33;
-    border-radius: 2px;
-}
-
-.faqSection .faqLeft .faqBox div p{
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.faqSection .faqLeft .faqBox div  span{
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.faqRight{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.faqRight form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    height: 700px;
-    width: 370px;
-    padding: 30px;
-    position: relative;
-    box-shadow: 2px 1px 7px 2px #e0e0e0;
-    border-radius: 20px;
-    z-index: 0;
-}
-
-.faqRight form h4{
-    background-color: #f94c30;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-    width: 330px;
-    border-radius: 40px;
-    padding: 16px;
-}
-
-.faqRight form input{
-    border: none;
-    outline: none;
-    width: 330px;
-    height: 60px;
-    background-color: #f0eeee;
-    border-radius: 40px;
-    padding: 15px;
-}
-
-.faqRight form textarea{
-    border: none;
-    outline: none;
-    width: 325px;
-    height: 180px;
-    background-color: #f0eeee;
-    border-radius: 30px;
-    padding: 15px;
-}
-
-.faqRight form button{
-    border-radius: 20px;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    padding: 13px 50px;
-    align-self: flex-start;
-}
-
-.missionSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    padding: 20% 0%;
-}
-
-.missionSection .missionLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.missionSection .missionLeft img{
-    height: 250px;
-    border-radius: 30px;
-
-}
-
-.missionSection .missionLeft div{
-    background-color: #f94c30;
-    color: #fff;
-    padding:10px;
-    border-radius: 30px;
-    margin-top: -50px;
-    width:350px;
-    padding: 20px;
-    gap: 10px;
-    padding-right: 80px;
-    align-self: flex-start;
-}
-
-.missionSection .missionLeft div img{
-   height: 70px;
-}
-
-.missionSection .missionLeft div h4{
-   font-size: 18px;
-   padding-left:10px;
-}
-
-
-
-.missionSection .missionLeft div .text{
-    font-size: 12px;
     padding-left:10px;
-    font-weight:400 ;
-}
+    }
 
 
-.missionRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 10px;
-    width: 100%;
-    padding: 0% 4%;
-}
 
-.missionRight h2 {
-    font-size: 35px;
-    color: #0f0d33;
-}
-
-.missionRight h2 span{
-    color: #f94c30;
-}
-
-.missionRight .text{
-    color: #868585;
-    font-weight: 700px;
-    font-size: 18px;
-}
-
-.missionRight .Tag{
-    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
-    margin-top: 0;
-    width: 170px;
-}
+    .missionSection .missionLeft div .text{
+        font-size: 12px;
+        padding-left:10px;
+        font-weight:400 ;
+    }
 
 
-.missionBox{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    margin-left: -40px;
-    text-align: start;
-    gap: 30px;
-    padding: 40px;
-}
+    .missionRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 10px;
+        width: 100%;
+        padding: 0% 4%;
+    }
+
+    .missionRight h2 {
+        font-size: 35px;
+        color: #0f0d33;
+    }
+
+    .missionRight h2 span{
+        color: #f94c30;
+    }
+
+    .missionRight .text{
+        color: #868585;
+        font-weight: 700px;
+        font-size: 18px;
+    }
+
+    .missionRight .Tag{
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+        margin-top: 0;
+        width: 170px;
+    }
 
 
-.missionBox div{
-    width: 370px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 2px 1px 7px 2px #e0e0e0;
-    gap: 20px;
-    padding: 10px; color: #0f0d33;
-    border-radius: 2px;
-}
-
-.missionBox div p{
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.missionBox div  span{
-    font-size: 28px;
-    font-weight: 600;
-}
-
-/*style de la page portfolio*/
-
-.introSection.port {
-    height: 400px; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.port::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 120px;
-    left: 0;
-    width: 414px;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-position: 40% 60%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
+    .missionBox{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        margin-left: -40px;
+        text-align: start;
+        gap: 30px;
+        padding: 40px;
+    }
 
 
-.introSection.port h2{
-    color: #fff;
-    font-size: 40px;
-    margin-top: 150px;
-    text-align: center;
-    width: 400px;
-}
+    .missionBox div{
+        width: 370px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 2px 1px 7px 2px #e0e0e0;
+        gap: 20px;
+        padding: 10px; color: #0f0d33;
+        border-radius: 2px;
+    }
 
-.portfolioSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 2%;
-    padding-bottom: 15%;
-    gap: 10px;
-}
+    .missionBox div p{
+        font-size: 16px;
+        font-weight: 600;
+    }
 
-.porfolioImage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    height: 380px;
-    overflow: hidden;
-    color: #fff;
-}
+    .missionBox div  span{
+        font-size: 28px;
+        font-weight: 600;
+    }
 
-.porfolioImage h4{
-   width:250px;
-   color: #fff;
-   font-size: 20px;
-   z-index: 0;
-   margin-top: -300px;
-   position: relative;
-}
+    /*style de la page portfolio*/
 
-.porfolioImage p{
-   width:250px;
-   color: #fff;
-   margin-top: 20px;
-   z-index: 0;
-}
+    .introSection.port {
+        height: 400px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
 
-.porfolioImage img{
-    height: 400px;
-    width: 370px;
-    image-orientation: cover;
-    z-index: 2;
-    border-radius: 20px;
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.port::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 414px;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 40% 60%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
 
-}
 
-.porfolioImage:hover img{
-    height: 400px;
-    width: 370px;
-    z-index: 1;
-    border-radius: 20px;
-    cursor: pointer;
-    filter: brightness(0.5); /* Augmente la luminosité de l'image */
-    transition: ease-in-out 0.5s;
-}
+    .introSection.port h2{
+        color: #fff;
+        font-size: 40px;
+        margin-top: 150px;
+        text-align: center;
+        width: 400px;
+    }
 
-.porfolioImage:hover h4{
+    .portfolioSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 2%;
+        padding-bottom: 15%;
+        gap: 10px;
+    }
+
+    .porfolioImage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        height: 380px;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    .porfolioImage h4{
     width:250px;
     color: #fff;
     font-size: 20px;
-    text-align: center;
-    z-index: 2;
+    z-index: 0;
     margin-top: -300px;
     position: relative;
-    transition: ease-in-out 0.5s;
+    }
 
- }
-
- .porfolioImage:hover p{
+    .porfolioImage p{
     width:250px;
     color: #fff;
     margin-top: 20px;
-    text-align: center;
-    width: 300px;
-    z-index: 2;
-    transition: ease-in-out 0.5s;
+    z-index: 0;
+    }
 
-}
+    .porfolioImage img{
+        height: 400px;
+        width: 370px;
+        image-orientation: cover;
+        z-index: 2;
+        border-radius: 20px;
+
+    }
+
+    .porfolioImage:hover img{
+        height: 400px;
+        width: 370px;
+        z-index: 1;
+        border-radius: 20px;
+        cursor: pointer;
+        filter: brightness(0.5); /* Augmente la luminosité de l'image */
+        transition: ease-in-out 0.5s;
+    }
+
+    .porfolioImage:hover h4{
+        width:250px;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        z-index: 2;
+        margin-top: -300px;
+        position: relative;
+        transition: ease-in-out 0.5s;
+
+    }
+
+    .porfolioImage:hover p{
+        width:250px;
+        color: #fff;
+        margin-top: 20px;
+        text-align: center;
+        width: 300px;
+        z-index: 2;
+        transition: ease-in-out 0.5s;
+
+    }
 
 
-.suscribSection .port{
+    .suscribSection .port{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0% 4% ;
+        background-color: #f2f5f3;
+        gap: 20px;
+        margin-top: 100px;
+    }
+
+    .suscribSection.port .suscribeLeft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .suscribSection .port .suscribeLeft h2 {
+        font-size: 30px;
+        color: #0f0d33;
+        
+    }
+
+    .suscribSection .port  .suscribeLeft h2 span{
+        color: #f94c30;
+    }
+
+    .suscribSection .port .suscribeLeft .Tag{
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+        width: 120px;
+        margin-top: 0;
+    }
+
+
+    .portSuscribeRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+    .portSuscribeRight p{
+        margin-top: 0;
+        color: #bbbbbb;
+        font-size: 14px;
+        font-weight: 500;
+        width: 95%;
+    }
+
+    .portSuscribeRight form{
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .portSuscribeRight form input{
+        border: none;
+        border: solid 1px #d1d0d0 ;
+        border-radius: 40px;
+        width: 360px;
+        height: 50px;
+        padding: 15px;
+        align-self: center;
+    }
+
+    .portSuscribeRight form button{
+        border-radius: 40px;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        width: 360px;
+        background-color: #f94c30;
+        color: #fff;
+        padding: 16px 20px;
+    }
+
+
+
+
+
+    /*style de la page portfolioDetail*/
+
+    .introSection.portDet{
+        height: 480px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.portDet::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        zoom: 1.2;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position:48% 30%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+
+    .introSection.portDet h2{
+        color: #fff;
+        font-size: 40px;
+        width: 300px;
+        margin-top: 200px;
+    }
+
+    .detailSection{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5% 0%;
+        gap: 20px;
+        row-gap: 50px;
+    }
+
+    .detailSection .stategySection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        width: 414px;
+    }
+
+
+    .detailSection .stategySection .strategyLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 414px;
+        gap: 20px;
+    }
+
+    .detailSection .stategySection .strategyLeft h4{
+        font-size: 28px;
+    }
+
+    .detailSection .stategySection .strategyLeft img{
+        height: 240px;
+        border-radius: 30px;
+    }
+
+    .detailSection .stategySection .strategyLeft p{
+        font-size: 16px;
+        color: #868585;
+        width: 360px;
+    }
+
+
+    .detailSection .stategySection .strategyRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        padding: 15px;
+        border-radius:20px ;
+        box-shadow: 1px 2px 4px 2px #d8d8d8;
+    }
+
+    .detailSection .stategySection .strategyRight .box{
+        display:flex ;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: solid 1px #dadada;
+    }
+
+    .detailSection .stategySection .strategyRight div:last-child{
+        border-bottom: solid 1px #fff;
+    }
+
+    .detailSection .stategySection .strategyRight .box img{
+        height: 100px;
+    }
+
+    .detailSection .stategySection .strategyRight .box p{
+        width: 200px;
+        color: #0a0a0ac9;
+    }
+
+
+    .detailSection .stategySection .strategyRight .box h4{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .detailSection .projectSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 1%;
+        gap: 40px;
+    }
+
+    .detailSection .projectSection .projectLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        width: 380px;
+        gap: 30px;
+    }
+
+    .detailSection .projectSection .projectLeft h4{
+        font-size: 30px;
+    }
+
+    .detailSection .projectSection .projectLeft p{
+        font-size: 16px;
+        color: #868585;
+    }
+
+    .detailSection .projectSection .projectLeft .text{
+        background-color: #eeeded;
+        border-radius: 20px;
+        text-align: center;
+        padding: 50px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #0a0a0a;
+    }
+
+    .detailSection .projectSection .projectLeft .List{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 5px;
+    }
+
+
+    .detailSection .projectSection .projectLeft .List p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .detailSection  .projectLeft .images{
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+
+    .detailSection .projectLeft .images {
+        width: 385px;
+        overflow: hidden; /* Masque le débordement */
+        position: relative;
+    }
+
+    .detailSection .projectLeft .images .imageSlide {
+        display: flex; /* Les images s'alignent horizontalement */
+        gap: 20px; /* Espacement entre les images */
+        transition: transform 0.3s ease-in-out; /* Animation pour un effet fluide */
+    }
+
+    .detailSection .projectLeft .images img {
+        width: 380px;
+        height: 240px;
+        border-radius: 20px;
+        object-fit: cover; /* Les images gardent leurs proportions */
+    }
+
+    .detailSection .projectLeft .images {
+        scroll-snap-type: x mandatory; /* Défilement horizontal obligatoire */
+        overflow-x: auto; /* Active le défilement horizontal */
+        display: flex;
+    }
+
+    .detailSection .projectLeft .images .imageSlide {
+        scroll-snap-align: center; /* Les images s'alignent au centre */
+    }
+
+    .detailSection .projectLeft .images {
+        scrollbar-width: none; /* Pour Firefox */
+        -ms-overflow-style: none; /* Pour Internet Explorer */
+    }
+
+    .detailSection .projectLeft .images::-webkit-scrollbar {
+        display: none; /* Pour Chrome, Safari */
+    }
+
+
+    .projectRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .projectRight .download{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+        gap: 20px;
+        border-radius: 20px;
+        box-shadow: 1px 2px 4px 2px #d8d8d8;
+        width: 370px;
+    }
+
+    .projectRight .download h4{
+        text-align: center;
+        background-color: #f94c30;
+        border-radius: 20px;
+        color: #fff;
+        width:250px ;
+        padding: 10px;
+    }
+
+
+    .projectRight .download p{
+        text-align: center;
+        color: #868585;
+
+    }
+
+    .projectRight .download button{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        padding: 10px 20px;
+    }
+
+    .projectRight .other{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+        gap: 20px;
+        background-color: #f94c30;
+        border-radius: 20px;
+        color: #fff;
+    }
+
+    .projectRight .other div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .projectRight .other i{
+        color: #f94c30;
+        padding: 5px;
+        border-radius: 100%;
+        background-color: #fff;
+        font-size: 14px;
+
+    }
+
+
+    .projectRight .other h4{
+        color: #0a0a0a;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 40px;
+        width: 300px;
+        padding: 10px;
+    }
+
+    .projectRight .other p{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: solid 1px #fff;
+        padding-bottom: 10px;
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .projectRight .other p:last-child{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px #fff;
+        padding-bottom: 0;
+        width: 300px;
+        font-size: 14px;
+    }
+
+
+
+
+    /*style de la page productList*/
+
+    .introSection.product{
+        height: 550px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.product::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        zoom: 1.2;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 48% 20%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+
+    .introSection.product h2{
+        color: #fff;
+        font-size: 40px;
+        margin-top: 180px;
+    }
+
+    .shopSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 0px;
+    }
+
+    .shopSection .shopLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .shopSection .shopLeft .topBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 100px;
+    }
+
+    .shopSection .shopLeft .topBar p{
+        color: #868585;
+    }
+
+    .shopContent{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 50px;
+        width: 380px;
+    }
+
+    .shopContent .product{
+        width: 180px;
+        height: 380px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 10px 20px 10px ;
+        border-radius: 20px;
+        box-shadow: 1px 2px 4px 2px #d8d8d8;
+    }
+
+    .shopContent .product img{
+        width: 160px;
+        height: 160px;
+        border-radius: 20px;
+    }
+
+    .shopContent div .sale{
+        background-color: #f94c30;
+        color: #fff;
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 20px;
+        position: absolute;
+        margin-left: 80px;
+        margin-top: 10px;
+        width: 70px;
+        text-align: center;
+    }
+
+    .shopContent .product h4{
+        font-size: 20px;font-weight: 700;
+    }
+
+    .shopContent .product .prix{
+        color:#f94c30 ;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .shopContent .product .prix span{
+        color:#868585 ;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: line-through;
+    }
+
+    .shopContent .product button{
+        border-radius: 20px;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        padding: 10px 20px;
+    }
+
+
+
+    .shopSection .shopLeft .slideBlock{
+        display: flex ;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3px;
+        color: #0a0a0a;
+        position: relative;
+        top: 50px;
+    }
+
+
+    .shopSection .shopLeft .slideBlock span:first-child{
+        background-color: #722317;
+        padding: 5px 10px;
+        color: #fff;
+    }
+
+    .shopSection .shopLeft .slideBlock span{
+        background-color: #afaeae;
+        padding: 5px 10px;
+    }
+
+
+
+    .shopRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 250px;
+        
+    }
+
+
+    .shopRight .search form input{
+        width: 360px;
+        padding: 10px;
+        border-radius: 20px 0 0 20px;
+        border: none;
+        background-color: #f1f3f3;
+    }
+
+    .shopRight .search form{
+        width: 360px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 30px;
+        overflow: hidden;
+        border: none;
+        position: absolute;
+        margin-top: 30px;
+    }
+
+
+    .shopRight .productCategories{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .shopRight .productCategories .Tag{
+        box-shadow: 0 2px 2px 1px rgb(208, 207, 216);
+        width: 250px;
+        padding: 5px;
+        margin-top: 50px;
+    }
+
+    .shopRight .productCategories .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .shopRight .productCategories .content .categorie{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .shopRight .productCategories .content .categorie img{
+        height: 110px;
+        border-radius: 30px;
+    }
+
+
+    .shopRight .productCategories .content .categorie p{
+        font-weight: 600;
+    }
+
+    .recentProducts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+        gap: 40px;
+    }
+
+    .recentProducts .Tag{
+        box-shadow: 0 2px 2px 1px rgb(208, 207, 216);
+        margin-top: 100px;
+        padding: 5px;
+    }
+
+    .recentProducts .recent{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 30px;
+        margin-left: -80px;
+    }
+
+    .recentProducts .recent img{
+        height: 100px;
+        border-radius: 20px;
+    }
+
+    .recentProducts .recent div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 10px;;
+    }
+
+    .recentProducts .recent h4{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .recentProducts .recent p{
+        color: #868585;
+        font-size: 12px;
+    }
+
+
+    .productGallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 40px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 500px;
+    }
+
+    .Gallery{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 10px;
+        margin-left: -20px;
+        width: 390px;
+    }
+
+
+    .productGallery .Tag{
+        box-shadow: 0 2px 2px 1px rgb(208, 207, 216);
+        margin-top: 100px;
+        padding: 5px;
+    }
+
+    .productGallery img{
+        height: 120px;
+        border-radius: 30px;
+    }
+
+
+
+    /*style de la page search*/
+
+    .introSection.search{
+        height: 550px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.search::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        zoom: 1.2;
+        width: 100%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 50% 20%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+    .searchContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 0%;
+    }
+
+    .searchContent .contenair{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .searchContent .contenair .detail{
+        width: 360px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+
+
+    .searchContent .contenair .detail h6{
+        color: #f94c30;
+        font-size: 12px;
+    }
+
+
+
+    .searchContent .contenair .detail .date{
+        color: #868585;
+        font-size: 12px;
+    }
+
+    .searchContent .contenair .detail p{
+        color: #868585;
+        font-size: 16px;
+    }
+
+
+
+    .searchContent .contenair .detail h4{
+        font-size: 20px;
+    }
+
+    .changePage{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        color: #868585;
+    }
+
+
+    .changePage{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 50px;
+    }
+
+    .changePage p{
+        color: #722317;
+        gap: 10px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .changePage .deux{
+        color: #868585;
+        gap: 10px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+
+    .changePage button{
+        cursor: pointer;
+        background-color: #fff;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #868585;
+    }
+
+    .searchAgain{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-color: #f0efef;
+        gap: 20px;
+    }
+
+    .searchAgain h2 {
+        font-size: 30px;
+        color: #0f0d33;
+        padding: 20px;
+    }
+
+    .searchAgain h2 span{
+        color: #f94c30;
+    }
+
+    .searchAgain .Tag{
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+        padding: 2px;
+        width: 200px;
+        margin-top: 50px;
+    }
+
+    .searchAgain .text{
+        color: #918f8f;
+        width: 350px;
+        text-align: center;
+    }
+
+    .searchAgain .search form input{
+        width: 350px;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 20px 0 0 20px;
+        border: 1px solid #b4b2b2;
+        background-color: #f1f3f3;
+
+    }
+
+    .searchAgain .search form{
+        width: 340px;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 30px;
+        overflow: hidden;
+        border: none;
+        position: absolute;
+        margin-top: 30px;
+    }
+
+
+
+    /*style de la page service*/
+
+    .introSection.service{
+        height: 600px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.service::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        zoom: 1.3;
+        width: 100%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 50% 20%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+
+    .serviceSection.service {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-attachment: fixed;
+        color: #fff;
+        position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
+        z-index: 1;
+    }
+
+    .serviceSection.service::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        background: linear-gradient(180deg, rgba(41, 41, 41, 0.5), rgba(37, 37, 37, 0.8)), url('images/agency-img3.png');
+        background-position: center;
+        padding-bottom: 300px;
+        background-color: rgb(70, 70, 70);
+        filter: grayscale(100%); /* Applique le gris uniquement à l'image de fond */
+        z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
+    }
+
+    .introSection.service h2{
+        color: #fff;
+        font-size: 50px;
+        margin-top: 200px;
+        
+    }
+
+    .serviceContent.service{
+        display: flex;
+        flex-direction: column;
+        padding: 0% 0%;
+        margin-top: 0px;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .serviceContact.service{
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 2700px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+    }
+
+
+    .processSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f5f5f5;
+        gap: 20px;
+        padding-top: 250px;
+    }
+
+    .processSection h2 {
+        font-size: 30px;
+        color: #0f0d33;
+        padding: 20px;
+    }
+
+    .processSection .text{
+        color: #868585;
+        font-size: 14px;
+        width: 400px;
+        text-align: center;
+    }
+
+    .processSection h2 span{
+        color: #f94c30;
+    }
+
+    .processSection .Tag{
+        box-shadow: 0 2px 2px 1px rgb(208, 207, 216);
+        padding: 2px;
+        width: 180px;
+    }
+
+    .processContent{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        height: auto;
+        margin-bottom: 100px;
+        width: 100%;
+        padding: 0 20%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        background: url(images/agency-img41.png);
+        z-index: 1;
+    }
+
+
+    .processContent .circle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: -40px;
+        height: 350px;
+        width: 350px;
+        border-radius: 100%;
+        background-color: #fff;
+        box-shadow: 0 1px 2px 2px #e0e0e0;
+        z-index: 3;
+    }
+
+
+    .processContent .circledeux{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 80px;
+        height: 350px;
+        width: 350px;
+        background-color: #fff;
+        border-radius: 100%;
+        box-shadow: 0 1px 2px 2px #e0e0e0;
+        z-index: 3;
+    }
+
+
+
+
+    .processContent .circle .circleProcess{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        padding: 10px;
+        border: solid 5px #cacaca;
+    }
+
+
+    .processContent .circle .circleProcess:hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        padding: 10px;
+        border: solid 5px #f94c30;
+    }
+
+    .processContent .circledeux .circleProcess{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        border: solid 5px #cacaca;
+    }
+
+
+    .processContent .circledeux .circleProcess:hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        border: solid 5px #f94c30;
+    }
+
+    .circleProcess span{
+        position: absolute;
+        background-color: #f94c30;
+        color: #fff;
+        font-weight: 700;
+        font-size: 24px;
+        padding: 10px 13px;
+        border-radius: 100%;
+        margin-top: -200px;
+        margin-left: 230px;
+    }
+
+
+
+    .circleProcess p{
+        color: #918f8f;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    /*le style de la page singleBlog*/
+
+    .introSection.sblog {
+        height: 660px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        padding: 0% 15%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        gap: 30px;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.sblog::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 90px;
+        left: 0;
+        zoom: 1.5;
+        width: 100%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 50% 20%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+    .introSection.sblog h2{
+        color: #fff;
+        font-size: 40px;
+        padding: 0;
+        width: 380px;
+        margin-top: 100px;
+    }
+
+    .introSection.sblog .signature{
+        display: flex;
+        justify-content: center;align-items: center;
+        color: #fff;
+        gap: 40px;
+        padding: 15px 20px;
+        border-bottom: solid 1px #fff;
+        border-top: solid 1px #fff;
+    }
+
+    .introSection.sblog .signature p{
+        font-size: 12px;
+    }
+
+    .introSection.sblog .signature p:first-child{
+        border-right: solid 1px #fff;
+        padding-right: 30px;
+    }
+
+
+    .sblogSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 0%;
+        gap: 50px;
+    }
+
+    .singleContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        width: 380px;
+    }
+
+    .singleContent img{
+        height: 250px;
+        border-radius: 20px;
+    }
+
+    .singleContent .text{
+        color: #636363;
+        font-size: 15px;
+    }
+
+    .singleContent .singleLink {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 380px;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .singleLink button{
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        gap: 10px;
+        border-radius: 30px;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        padding: 12px 30px;
+        width: 180px;
+    }
+
+    .singleLink button:nth-child(1){
+        background-color: #3b5998;
+        color: #fff;
+        padding: 12px 20px;
+    }
+    .singleLink button:nth-child(2){
+        background-color: #25d366;
+        color: #fff;
+        padding: 12px 20px;
+    }
+    .singleLink button:nth-child(3){
+        background-color: #1da1f2;
+        color: #fff;
+        padding: 12px 20px;
+    }
+    .singleLink button:nth-child(4){
+        background-color: #0077b5;
+        color: #fff;
+        padding: 12px 20px;
+    }
+    .singleLink button:nth-child(5){
+        background-color: #bd081c;
+        color: #fff;
+        padding: 12px 20px;
+    }
+
+    .postAutor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #eeeeee;
+        border-radius: 20px;
+    }
+
+    .postTop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        background-color: #eeeeee;
+        border-radius: 20px;
+    }
+
+    .postTop h4{
+        font-size: 30px;
+    }
+
+    .postTop p{
+        color: #918f8f;
+        font-size: 14px;
+    }
+
+    .postAutor img{
+        height: 80px;
+        align-self: center;
+        justify-self: center;
+        border-radius: 100%;
+    }
+
+    .postAutor .viewAll a{
+        color: #f94c30;
+        font-weight: 600;
+        font-size: 14px;
+        margin-left: -20px;
+    }
+
+    .pageChange{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        width: 390px;
+        margin-top: 100px;
+    }
+
+    .pageChange button{
+        cursor: pointer;
+        font-size: 35px;
+        font-weight: 700;
+        border: none;
+        color: #0f0d33;
+        background: none;
+    }
+
+    .pageChange .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pageChange .text .change{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width:300px ;
+        color: #0f0d33;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .sblogSection .archivesInfo{
+        width: 400px;
+    }
+
+
+    /*le style de la page singleProduct*/
+
+    .introSection.sprod {
+        height: 550px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        padding: 0% 0%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        gap: 30px;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.sprod::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        zoom: 1.2;
+        width: 100%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 50% 20%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+    .introSection.sprod h2{
+        color: #fff;
+        font-size: 40px;
+        margin-top: 200px;
+    }
+
+    .singleProductSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding: 2% 0%;
+    }
+
+    .singleProductSection .leftContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .singleProductSection .leftContent .product img{
+        height: 380px;
+        border-radius: 20px;
+        background-color: #3a3a3a;
+    }
+
+    .singleProductSection .leftContent .product i{
+        background-color: #fff;
+        color: #0a0a0a;
+        position: absolute;
+        margin-left: 350px;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 100%;
+    }
+
+    .singleProductSection .leftContent .productsRayon{
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .singleProductSection .leftContent .productsRayon img{
+        height: 80px;
+        border-radius: 30px;
+    }
+
+    .productsRayon div{
+        height: 100px;
+        border-radius: 20px;
+        filter: opacity(60%);
+    }
+
+    .productsRayon div:nth-child(1){
+        height: 100px;
+        border-radius: 20px;
+        filter: opacity(100%);
+    }
+
+    .rightContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+        width: 380px;
+    }
+
+    .rightContent .productTitle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+
+    .rightContent .productTitle p{
+        font-size: 14px;
+        font-weight: 600;
+        color: #949494;
+    }
+
+    .rightContent h4{
+        font-size: 45px;
+        font-weight: 800;
+    }
+
+    .rightContent .prix{
+        font-size: 35px;
+        font-weight: 800;
+        color: #f94c30;
+    }
+
+    .rightContent .buyBox{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 0% 4% ;
-    background-color: #f2f5f3;
+    align-content: center;
     gap: 20px;
-    margin-top: 100px;
-}
+    }
 
-.suscribSection.port .suscribeLeft{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
+    .rightContent .buyBox p{
+        box-shadow: 1px 1px 3px #a8a8a8;
+        border-radius: 100px;
+        padding: 10px 20px;
+    }
 
-.suscribSection .port .suscribeLeft h2 {
-    font-size: 30px;
-    color: #0f0d33;
-    
-}
+    .rightContent button{
+        border-radius: 20px;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #f94c30;
+        color: #fff;
+        padding: 10px 20px;
+    }
 
-.suscribSection .port  .suscribeLeft h2 span{
-    color: #f94c30;
-}
+    .rightContent .tag-Categorie{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
-.suscribSection .port .suscribeLeft .Tag{
-    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
-    width: 120px;
-    margin-top: 0;
-}
+    .rightContent .tag-Categorie .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding: 20px 5px;
+        border-top: solid 2px #d6d6d6;
+        border-bottom: solid 2px #d6d6d6;
+    }
 
+    .rightContent .tag-Categorie .top .rubrique p{
+        font-weight: 600;
+    }
 
-.portSuscribeRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 30px;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-}
-
-
-.portSuscribeRight p{
-    margin-top: 0;
-    color: #bbbbbb;
-    font-size: 14px;
-    font-weight: 500;
-    width: 95%;
-}
-
-.portSuscribeRight form{
-    width:90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-
-.portSuscribeRight form input{
-    border: none;
-    border: solid 1px #d1d0d0 ;
-    border-radius: 40px;
-    width: 360px;
-    height: 50px;
-    padding: 15px;
-    align-self: center;
-}
-
-.portSuscribeRight form button{
-    border-radius: 40px;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    width: 360px;
-    background-color: #f94c30;
-    color: #fff;
-    padding: 16px 20px;
-}
+    .rightContent .tag-Categorie .top .content p{
+        font-weight: 600;
+        color: #a1a1a1;
+    }
 
 
+    .rightContent .tag-Categorie .text{
+        color: #6e6e6e;
+    }
 
 
+    .descriptionSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 5%;
+        margin-top: 100px;
+        gap: 50px;
+    }
 
-/*style de la page portfolioDetail*/
-
-.introSection.portDet{
-    height: 480px; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.portDet::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 120px;
-    left: 0;
-    width: 100%;
-    zoom: 1.2;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-position:48% 30%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
+    .descriptionSection .descriptionLeft{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 40px;
+    }
 
 
-.introSection.portDet h2{
-    color: #fff;
-    font-size: 40px;
-    width: 300px;
-    margin-top: 200px;
-}
-
-.detailSection{
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5% 0%;
-    gap: 20px;
-    row-gap: 50px;
-}
-
-.detailSection .stategySection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    width: 414px;
-}
-
-
-.detailSection .stategySection .strategyLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 414px;
-    gap: 20px;
-}
-
-.detailSection .stategySection .strategyLeft h4{
-    font-size: 28px;
-}
-
-.detailSection .stategySection .strategyLeft img{
-    height: 240px;
-    border-radius: 30px;
-}
-
-.detailSection .stategySection .strategyLeft p{
-    font-size: 16px;
-    color: #868585;
-    width: 360px;
-}
-
-
-.detailSection .stategySection .strategyRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 20px;
-    padding: 15px;
-    border-radius:20px ;
-    box-shadow: 1px 2px 4px 2px #d8d8d8;
-}
-
-.detailSection .stategySection .strategyRight .box{
-    display:flex ;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: solid 1px #dadada;
-}
-
-.detailSection .stategySection .strategyRight div:last-child{
-    border-bottom: solid 1px #fff;
-}
-
-.detailSection .stategySection .strategyRight .box img{
-    height: 100px;
-}
-
-.detailSection .stategySection .strategyRight .box p{
-    width: 200px;
-    color: #0a0a0ac9;
-}
-
-
-.detailSection .stategySection .strategyRight .box h4{
+    .descriptionSection .descriptionLeft h5{
     font-size: 20px;
-    font-weight: 500;
-}
-
-.detailSection .projectSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0% 1%;
-    gap: 40px;
-}
-
-.detailSection .projectSection .projectLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    width: 380px;
-    gap: 30px;
-}
-
-.detailSection .projectSection .projectLeft h4{
-    font-size: 30px;
-}
-
-.detailSection .projectSection .projectLeft p{
-    font-size: 16px;
-    color: #868585;
-}
-
-.detailSection .projectSection .projectLeft .text{
-    background-color: #eeeded;
-    border-radius: 20px;
-    text-align: center;
-    padding: 50px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #0a0a0a;
-}
-
-.detailSection .projectSection .projectLeft .List{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 5px;
-}
-
-
-.detailSection .projectSection .projectLeft .List p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.detailSection  .projectLeft .images{
-    width: 380px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    overflow: hidden;
-}
-
-
-.detailSection .projectLeft .images {
-    width: 385px;
-    overflow: hidden; /* Masque le débordement */
-    position: relative;
-}
-
-.detailSection .projectLeft .images .imageSlide {
-    display: flex; /* Les images s'alignent horizontalement */
-    gap: 20px; /* Espacement entre les images */
-    transition: transform 0.3s ease-in-out; /* Animation pour un effet fluide */
-}
-
-.detailSection .projectLeft .images img {
-    width: 380px;
-    height: 240px;
-    border-radius: 20px;
-    object-fit: cover; /* Les images gardent leurs proportions */
-}
-
-.detailSection .projectLeft .images {
-    scroll-snap-type: x mandatory; /* Défilement horizontal obligatoire */
-    overflow-x: auto; /* Active le défilement horizontal */
-    display: flex;
-}
-
-.detailSection .projectLeft .images .imageSlide {
-    scroll-snap-align: center; /* Les images s'alignent au centre */
-}
-
-.detailSection .projectLeft .images {
-    scrollbar-width: none; /* Pour Firefox */
-    -ms-overflow-style: none; /* Pour Internet Explorer */
-}
-
-.detailSection .projectLeft .images::-webkit-scrollbar {
-    display: none; /* Pour Chrome, Safari */
-}
-
-
-.projectRight{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.projectRight .download{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    gap: 20px;
-    border-radius: 20px;
-    box-shadow: 1px 2px 4px 2px #d8d8d8;
-    width: 370px;
-}
-
-.projectRight .download h4{
-    text-align: center;
-    background-color: #f94c30;
-    border-radius: 20px;
-    color: #fff;
-    width:250px ;
-    padding: 10px;
-}
-
-
-.projectRight .download p{
-    text-align: center;
-    color: #868585;
-
-}
-
-.projectRight .download button{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 20px;
-    border: none;
-    font-size: 12px;
     font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-.projectRight .other{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    gap: 20px;
-    background-color: #f94c30;
-    border-radius: 20px;
-    color: #fff;
-}
-
-.projectRight .other div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 10px;
-}
-
-.projectRight .other i{
-    color: #f94c30;
-    padding: 5px;
-    border-radius: 100%;
-    background-color: #fff;
-    font-size: 14px;
-
-}
-
-
-.projectRight .other h4{
-    color: #0a0a0a;
-    background-color: #fff;
-    text-align: center;
-    border-radius: 40px;
-    width: 300px;
-    padding: 10px;
-}
-
-.projectRight .other p{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-bottom: solid 1px #fff;
-    padding-bottom: 10px;
-    width: 300px;
-    font-size: 14px;
-}
-
-.projectRight .other p:last-child{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-bottom: 1px #fff;
-    padding-bottom: 0;
-    width: 300px;
-    font-size: 14px;
-}
-
-
-
-
-/*style de la page productList*/
-
-.introSection.product{
-    height: 550px; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.product::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    zoom: 1.2;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-position: 48% 20%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-
-.introSection.product h2{
-    color: #fff;
-    font-size: 40px;
-    margin-top: 180px;
-}
-
-.shopSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 0px;
-}
-
-.shopSection .shopLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.shopSection .shopLeft .topBar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 100px;
-}
-
-.shopSection .shopLeft .topBar p{
-    color: #868585;
-}
-
-.shopContent{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 50px;
-    width: 380px;
-}
-
-.shopContent .product{
-    width: 180px;
-    height: 380px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 10px 20px 10px ;
-    border-radius: 20px;
-    box-shadow: 1px 2px 4px 2px #d8d8d8;
-}
-
-.shopContent .product img{
-    width: 160px;
-    height: 160px;
-    border-radius: 20px;
-}
-
- .shopContent div .sale{
-    background-color: #f94c30;
-    color: #fff;
-    padding: 5px;
-    font-size: 16px;
-    border-radius: 20px;
-    position: absolute;
-    margin-left: 80px;
-    margin-top: 10px;
-    width: 70px;
-    text-align: center;
-}
-
-.shopContent .product h4{
-    font-size: 20px;font-weight: 700;
-}
-
-.shopContent .product .prix{
-    color:#f94c30 ;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.shopContent .product .prix span{
-    color:#868585 ;
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: line-through;
-}
-
-.shopContent .product button{
-    border-radius: 20px;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-
-
-.shopSection .shopLeft .slideBlock{
-    display: flex ;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3px;
-    color: #0a0a0a;
-    position: relative;
-    top: 50px;
-}
-
-
-.shopSection .shopLeft .slideBlock span:first-child{
-    background-color: #722317;
-    padding: 5px 10px;
-    color: #fff;
-}
-
-.shopSection .shopLeft .slideBlock span{
-    background-color: #afaeae;
-    padding: 5px 10px;
-}
-
-
-
-.shopRight{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 250px;
-    
-}
-
-
-.shopRight .search form input{
-    width: 360px;
-    padding: 10px;
-    border-radius: 20px 0 0 20px;
-    border: none;
-    background-color: #f1f3f3;
-}
-
-.shopRight .search form{
-    width: 360px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 30px;
-    overflow: hidden;
-    border: none;
-    position: absolute;
-    margin-top: 30px;
-}
-
-
-.shopRight .productCategories{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.shopRight .productCategories .Tag{
-    box-shadow: 0 2px 2px 1px rgb(208, 207, 216);
-    width: 250px;
-    padding: 5px;
-    margin-top: 50px;
-}
-
-.shopRight .productCategories .content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.shopRight .productCategories .content .categorie{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-
-.shopRight .productCategories .content .categorie img{
-    height: 110px;
-    border-radius: 30px;
-}
-
-
-.shopRight .productCategories .content .categorie p{
-    font-weight: 600;
-}
-
-.recentProducts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    gap: 40px;
-}
-
-.recentProducts .Tag{
-    box-shadow: 0 2px 2px 1px rgb(208, 207, 216);
-    margin-top: 100px;
-    padding: 5px;
-}
-
-.recentProducts .recent{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    gap: 30px;
-    margin-left: -80px;
-}
-
-.recentProducts .recent img{
-    height: 100px;
-    border-radius: 20px;
-}
-
-.recentProducts .recent div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 10px;;
-}
-
-.recentProducts .recent h4{
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.recentProducts .recent p{
-    color: #868585;
-    font-size: 12px;
-}
-
-
-.productGallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 40px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 500px;
-}
-
-.Gallery{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    row-gap: 10px;
-    margin-left: -20px;
-    width: 390px;
-}
-
-
-.productGallery .Tag{
-    box-shadow: 0 2px 2px 1px rgb(208, 207, 216);
-    margin-top: 100px;
-    padding: 5px;
-}
-
-.productGallery img{
-    height: 120px;
-    border-radius: 30px;
-}
-
-
-
-/*style de la page search*/
-
-.introSection.search{
-    height: 550px; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.search::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 80px;
-    left: 0;
-    zoom: 1.2;
-    width: 100%;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-position: 50% 20%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-.searchContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 0%;
-}
-
-.searchContent .contenair{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-
-.searchContent .contenair .detail{
-    width: 360px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 10px;
-}
-
-
-.searchContent .contenair .detail h6{
-    color: #f94c30;
-    font-size: 12px;
-}
-
-
-
-.searchContent .contenair .detail .date{
-    color: #868585;
-    font-size: 12px;
-}
-
-.searchContent .contenair .detail p{
-    color: #868585;
-    font-size: 16px;
-}
-
-
-
-.searchContent .contenair .detail h4{
-    font-size: 20px;
-}
-
-.changePage{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    color: #868585;
-}
-
-
-.changePage{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 50px;
-}
-
-.changePage p{
-    color: #722317;
-    gap: 10px;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.changePage .deux{
-    color: #868585;
-    gap: 10px;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-
-.changePage button{
-    cursor: pointer;
-    background-color: #fff;
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #868585;
-}
-
-.searchAgain{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    background-color: #f0efef;
-    gap: 20px;
-}
-
-.searchAgain h2 {
-    font-size: 30px;
-    color: #0f0d33;
-    padding: 20px;
-}
-
-.searchAgain h2 span{
-    color: #f94c30;
-}
-
-.searchAgain .Tag{
-    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
-    padding: 2px;
-    width: 200px;
-    margin-top: 50px;
-}
-
-.searchAgain .text{
-    color: #918f8f;
-    width: 350px;
-    text-align: center;
-}
-
-.searchAgain .search form input{
-    width: 350px;
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 20px 0 0 20px;
-    border: 1px solid #b4b2b2;
-    background-color: #f1f3f3;
-
-}
-
-.searchAgain .search form{
-    width: 340px;
-    height: 45px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 30px;
-    overflow: hidden;
-    border: none;
-    position: absolute;
-    margin-top: 30px;
-}
-
-
-
-/*style de la page service*/
-
-.introSection.service{
-    height: 600px; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.service::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 100px;
-    left: 0;
-    zoom: 1.3;
-    width: 100%;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-position: 50% 20%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-
-.serviceSection.service {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed;
-    color: #fff;
-    position: relative; /* Ajouté pour que l'élément pseudo soit positionné correctement */
-    z-index: 1;
-}
-
-.serviceSection.service::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin-top: 0px;
-    background: linear-gradient(180deg, rgba(41, 41, 41, 0.5), rgba(37, 37, 37, 0.8)), url('images/agency-img3.png');
-    background-position: center;
-    padding-bottom: 300px;
-    background-color: rgb(70, 70, 70);
-    filter: grayscale(100%); /* Applique le gris uniquement à l'image de fond */
-    z-index: -1; /* S'assure que l'image de fond est derrière le contenu */
-}
-
-.introSection.service h2{
-    color: #fff;
-    font-size: 50px;
-    margin-top: 200px;
-    
-}
-
-.serviceContent.service{
-    display: flex;
-    flex-direction: column;
-    padding: 0% 0%;
-    margin-top: 0px;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 50px;
-}
-
-.serviceContact.service{
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 2700px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-}
-
-
-.processSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f5f5f5;
-    gap: 20px;
-    padding-top: 250px;
-}
-
-.processSection h2 {
-    font-size: 30px;
-    color: #0f0d33;
-    padding: 20px;
-}
-
-.processSection .text{
-    color: #868585;
-    font-size: 14px;
-    width: 400px;
-    text-align: center;
-}
-
-.processSection h2 span{
-    color: #f94c30;
-}
-
-.processSection .Tag{
-    box-shadow: 0 2px 2px 1px rgb(208, 207, 216);
-    padding: 2px;
-    width: 180px;
-}
-
-.processContent{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    height: auto;
-    margin-bottom: 100px;
-    width: 100%;
-    padding: 0 20%;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    background: url(images/agency-img41.png);
-    z-index: 1;
-}
-
-
-.processContent .circle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-top: -40px;
-    height: 350px;
-    width: 350px;
-    border-radius: 100%;
-    background-color: #fff;
-    box-shadow: 0 1px 2px 2px #e0e0e0;
-    z-index: 3;
-}
-
-
-.processContent .circledeux{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    height: 350px;
-    width: 350px;
-    background-color: #fff;
-    border-radius: 100%;
-    box-shadow: 0 1px 2px 2px #e0e0e0;
-    z-index: 3;
-}
-
-
-
-
-.processContent .circle .circleProcess{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
-    padding: 10px;
-    border: solid 5px #cacaca;
-}
-
-
-.processContent .circle .circleProcess:hover{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
-    padding: 10px;
-    border: solid 5px #f94c30;
-}
-
-.processContent .circledeux .circleProcess{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
-    border: solid 5px #cacaca;
-}
-
-
-.processContent .circledeux .circleProcess:hover{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
-    border: solid 5px #f94c30;
-}
-
-.circleProcess span{
-    position: absolute;
-    background-color: #f94c30;
-    color: #fff;
-    font-weight: 700;
-    font-size: 24px;
-    padding: 10px 13px;
-    border-radius: 100%;
-    margin-top: -200px;
-    margin-left: 230px;
-}
-
-
-
-.circleProcess p{
-    color: #918f8f;
-    font-size: 14px;
-    text-align: center;
-}
-
-
-/*le style de la page singleBlog*/
-
-.introSection.sblog {
-    height: 660px; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    padding: 0% 15%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    gap: 30px;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.sblog::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 90px;
-    left: 0;
-    zoom: 1.5;
-    width: 100%;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-position: 50% 20%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-.introSection.sblog h2{
-    color: #fff;
-    font-size: 40px;
-    padding: 0;
-    width: 380px;
-    margin-top: 100px;
-}
-
-.introSection.sblog .signature{
-    display: flex;
-    justify-content: center;align-items: center;
-    color: #fff;
-    gap: 40px;
-    padding: 15px 20px;
-    border-bottom: solid 1px #fff;
-    border-top: solid 1px #fff;
-}
-
-.introSection.sblog .signature p{
-    font-size: 12px;
-}
-
-.introSection.sblog .signature p:first-child{
-    border-right: solid 1px #fff;
-    padding-right: 30px;
-}
-
-
-.sblogSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0% 0%;
-    gap: 50px;
-}
-
-.singleContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    width: 380px;
-}
-
-.singleContent img{
-    height: 250px;
-    border-radius: 20px;
-}
-
-.singleContent .text{
-    color: #636363;
-    font-size: 15px;
-}
-
-.singleContent .singleLink {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 380px;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.singleLink button{
-    display: flex;
-    align-items: start;
-    justify-content: flex-start;
-    gap: 10px;
-    border-radius: 30px;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    padding: 12px 30px;
-    width: 180px;
-}
-
-.singleLink button:nth-child(1){
-    background-color: #3b5998;
-    color: #fff;
-    padding: 12px 20px;
-}
-.singleLink button:nth-child(2){
-    background-color: #25d366;
-    color: #fff;
-    padding: 12px 20px;
-}
-.singleLink button:nth-child(3){
-    background-color: #1da1f2;
-    color: #fff;
-    padding: 12px 20px;
-}
-.singleLink button:nth-child(4){
-    background-color: #0077b5;
-    color: #fff;
-    padding: 12px 20px;
-}
-.singleLink button:nth-child(5){
-    background-color: #bd081c;
-    color: #fff;
-    padding: 12px 20px;
-}
-
-.postAutor{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: #eeeeee;
-    border-radius: 20px;
-}
-
-.postTop{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
-    background-color: #eeeeee;
-    border-radius: 20px;
-}
-
-.postTop h4{
-    font-size: 30px;
-}
-
-.postTop p{
-    color: #918f8f;
-    font-size: 14px;
-}
-
-.postAutor img{
-    height: 80px;
-    align-self: center;
-    justify-self: center;
-    border-radius: 100%;
-}
-
-.postAutor .viewAll a{
-    color: #f94c30;
-    font-weight: 600;
-    font-size: 14px;
-    margin-left: -20px;
-}
-
-.pageChange{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    width: 390px;
-    margin-top: 100px;
-}
-
-.pageChange button{
-    cursor: pointer;
-    font-size: 35px;
-    font-weight: 700;
-    border: none;
-    color: #0f0d33;
-    background: none;
-}
-
-.pageChange .text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pageChange .text .change{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width:300px ;
-    color: #0f0d33;
-    font-weight: 600;
-    font-size: 12px;
-}
-
-.sblogSection .archivesInfo{
-    width: 400px;
-}
-
-
-/*le style de la page singleProduct*/
-
-.introSection.sprod {
-    height: 550px; /* Ajustement de la hauteur de la section */
-    width: 100%;
-    padding: 0% 0%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligne le contenu à gauche */
-    justify-content: center; /* Aligne le contenu en haut */
-    align-items: center;
-    gap: 30px;
-    position: relative; /* Permet au pseudo-élément de se positionner correctement */
-    z-index: 1;
-}
-
-/* Pseudo-élément pour l'image de fond */
-.introSection.sprod::before {
-    content: ''; /* Nécessaire pour générer un élément pseudo */
-    position: absolute;
-    top: 100px;
-    left: 0;
-    zoom: 1.2;
-    width: 100%;
-    height: 100%; /* L'image couvre toute la hauteur de la section */
-    background:
-        linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
-        url('images/agency-img13-800x533.jpg'); /* Image de fond */
-    background-position: 50% 20%; /* Garde le haut de l'image visible */
-    filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
-    z-index: -1; /* Place l'image derrière le contenu */
-}
-
-.introSection.sprod h2{
-    color: #fff;
-    font-size: 40px;
-    margin-top: 200px;
-}
-
-.singleProductSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    padding: 2% 0%;
-}
-
-.singleProductSection .leftContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.singleProductSection .leftContent .product img{
-    height: 380px;
-    border-radius: 20px;
-    background-color: #3a3a3a;
-}
-
-.singleProductSection .leftContent .product i{
-    background-color: #fff;
-    color: #0a0a0a;
-    position: absolute;
-    margin-left: 350px;
-    margin-top: 20px;
-    padding: 5px;
-    border-radius: 100%;
-}
-
-.singleProductSection .leftContent .productsRayon{
-    width: 380px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-
-.singleProductSection .leftContent .productsRayon img{
-    height: 80px;
-    border-radius: 30px;
-}
-
-.productsRayon div{
-    height: 100px;
-    border-radius: 20px;
-    filter: opacity(60%);
-}
-
-.productsRayon div:nth-child(1){
-    height: 100px;
-    border-radius: 20px;
-    filter: opacity(100%);
-}
-
-.rightContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 20px;
-    width: 380px;
-}
-
-.rightContent .productTitle{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-}
-
-
-.rightContent .productTitle p{
-    font-size: 14px;
-    font-weight: 600;
-    color: #949494;
-}
-
-.rightContent h4{
-    font-size: 45px;
-    font-weight: 800;
-}
-
-.rightContent .prix{
-    font-size: 35px;
-    font-weight: 800;
-    color: #f94c30;
-}
-
-.rightContent .buyBox{
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  gap: 20px;
-}
-
-.rightContent .buyBox p{
-    box-shadow: 1px 1px 3px #a8a8a8;
-    border-radius: 100px;
-    padding: 10px 20px;
-}
-
-.rightContent button{
-    border-radius: 20px;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    background-color: #f94c30;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-.rightContent .tag-Categorie{
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.rightContent .tag-Categorie .top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    padding: 20px 5px;
-    border-top: solid 2px #d6d6d6;
-    border-bottom: solid 2px #d6d6d6;
-}
-
-.rightContent .tag-Categorie .top .rubrique p{
-    font-weight: 600;
-}
-
-.rightContent .tag-Categorie .top .content p{
-    font-weight: 600;
-    color: #a1a1a1;
-}
-
-
-.rightContent .tag-Categorie .text{
-    color: #6e6e6e;
-}
-
-
-.descriptionSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0% 5%;
-    margin-top: 100px;
-    gap: 50px;
-}
-
-.descriptionSection .descriptionLeft{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-
-.descriptionSection .descriptionLeft h5{
-   font-size: 20px;
-   font-weight: 600;
-   border: solid 2px #bbbbbb;
-   border-bottom: solid 2px #fff;
-   padding: 10px 10px;
-   border-radius: 10px 10px 0 0;
-   margin-top: 5px;
-   z-index: 2;
-}
-
-.desciptionText{
-    margin-top: -42px;
     border: solid 2px #bbbbbb;
     border-bottom: solid 2px #fff;
-    border-right: solid 2px #fff;
-    border-left: solid 2px #fff;
-    z-index: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+    padding: 10px 10px;
+    border-radius: 10px 10px 0 0;
+    margin-top: 5px;
+    z-index: 2;
+    }
 
-.desciptionText p:first-child{
-    font-weight: 600;
-    margin-left: -10px;
-}
+    .desciptionText{
+        margin-top: -42px;
+        border: solid 2px #bbbbbb;
+        border-bottom: solid 2px #fff;
+        border-right: solid 2px #fff;
+        border-left: solid 2px #fff;
+        z-index: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
-.desciptionText p:last-child{
-    font-size: 14px;
-    margin-left: -10px;
-    color: #8a8989;
-}
+    .desciptionText p:first-child{
+        font-weight: 600;
+        margin-left: -10px;
+    }
 
-
-.relatedProduct{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-
-.relatedProduct h4{
-    font-size: 35px;
-    margin-left: 10px;
-}
+    .desciptionText p:last-child{
+        font-size: 14px;
+        margin-left: -10px;
+        color: #8a8989;
+    }
 
 
-.relatedProduct .shopContent{
-    display: flex;
-    flex-direction: column;
-}
+    .relatedProduct{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 40px;
+    }
 
 
-.relatedProduct .shopContent .product{
-    width: 380px;
-    height: auto;
-}
+    .relatedProduct h4{
+        font-size: 35px;
+        margin-left: 10px;
+    }
 
 
-.relatedProduct .shopContent .product img{
-    width: 360px;
-    height: 280px;
-}
-
-.relatedProduct .shopContent .product .sale{
-    margin-left: 270px;
-    margin-top: 20px;
-}
-
-.descriptionRight .shopRight{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: -70px;
-}
+    .relatedProduct .shopContent{
+        display: flex;
+        flex-direction: column;
+    }
 
 
-.descriptionRight .shopRight .search form input{
-    width: 300px;
-    padding: 10px;
-    border-radius: 20px 0 0 20px;
-    border: none;
-    font-size: 14px;
-    background-color: #f1f3f3;
-}
-
-.descriptionRight .shopRight .search form{
-    width: 300px;
-    height: 45px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-    overflow: hidden;
-    border: none;
-    position: absolute;
-}
+    .relatedProduct .shopContent .product{
+        width: 380px;
+        height: auto;
+    }
 
 
-.descriptionRight .shopRight .productCategories{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: -40px;
-}
+    .relatedProduct .shopContent .product img{
+        width: 360px;
+        height: 280px;
+    }
 
-.descriptionRight .shopRight .productCategories .Tag{
-    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
-}
+    .relatedProduct .shopContent .product .sale{
+        margin-left: 270px;
+        margin-top: 20px;
+    }
 
-.descriptionRight .shopRight .productCategories .content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -20px;
-}
-
-.descriptionRight.shopRight .productCategories .content .categorie{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+    .descriptionRight .shopRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -70px;
+    }
 
 
-.descriptionRight .shopRight .productCategories .content .categorie img{
-    height: 100px;
-    border-radius: 20px;
-}
+    .descriptionRight .shopRight .search form input{
+        width: 300px;
+        padding: 10px;
+        border-radius: 20px 0 0 20px;
+        border: none;
+        font-size: 14px;
+        background-color: #f1f3f3;
+    }
+
+    .descriptionRight .shopRight .search form{
+        width: 300px;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        overflow: hidden;
+        border: none;
+        position: absolute;
+    }
 
 
-.descriptionRight .shopRight .productCategories .content .categorie p{
-    font-weight: 600;
-    font-size: 14px;
-}
+    .descriptionRight .shopRight .productCategories{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -40px;
+    }
 
-.recentProducts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    margin-top: -20px;
-    gap: 10px;
-}
+    .descriptionRight .shopRight .productCategories .Tag{
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    }
 
-.recentProducts .Tag{
-    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
-}
+    .descriptionRight .shopRight .productCategories .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -20px;
+    }
 
-.descriptionRight .recentProducts .recent{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    margin-left: -100px;
-}
-
-.recentProducts .recent img{
-    height: 80px;
-    border-radius: 20px;
-}
-
-.descriptionRight .recentProducts .recent div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-}
-
-.recentProducts .recent h4{
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.recentProducts .recent p{
-    color: #868585;
-    font-size: 12px;
-}
+    .descriptionRight.shopRight .productCategories .content .categorie{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 
-.descriptionRight .productGallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 20px;
-    margin-top: -30px;
-    width: 500px;
-}
-
-.descriptionRight .Gallery{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: -20px;
-    gap: 10px;
-    width: 380px;
-}
+    .descriptionRight .shopRight .productCategories .content .categorie img{
+        height: 100px;
+        border-radius: 20px;
+    }
 
 
-.productGallery .Tag{
-    box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
-}
+    .descriptionRight .shopRight .productCategories .content .categorie p{
+        font-weight: 600;
+        font-size: 14px;
+    }
 
-.descriptionRight.productGallery img{
-    height: 100px;
-    border-radius: 20px;
-}
+    .recentProducts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-top: -20px;
+        gap: 10px;
+    }
 
+    .recentProducts .Tag{
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    }
+
+    .descriptionRight .recentProducts .recent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-left: -100px;
+    }
+
+    .recentProducts .recent img{
+        height: 80px;
+        border-radius: 20px;
+    }
+
+    .descriptionRight .recentProducts .recent div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .recentProducts .recent h4{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .recentProducts .recent p{
+        color: #868585;
+        font-size: 12px;
+    }
+
+
+    .descriptionRight .productGallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: -30px;
+        width: 500px;
+    }
+
+    .descriptionRight .Gallery{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: -20px;
+        gap: 10px;
+        width: 380px;
+    }
+
+
+    .productGallery .Tag{
+        box-shadow: 0 2px 2px 2px rgb(208, 207, 216);
+    }
+
+    .descriptionRight.productGallery img{
+        height: 100px;
+        border-radius: 20px;
+    }
+
+
+
+    /*le style de la page teamDetail*/
+
+    .introSection.teamd {
+        height: 580px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        padding: 0% 15%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        gap: 30px;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.teamd::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        zoom: 1.3;
+        width: 100%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 51% 20%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+    .introSection.teamd h2{
+        color: #fff;
+        font-size: 40px;
+        margin-top: 200px;
+    }
+
+    .teamDetail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 0%;
+    }
+
+    .teamDetailTop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+    }
+
+
+    .teamDetailLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 380px;
+    }
+
+    .teamDetailLeft img{
+        height: 380px;
+        border-radius: 30px;
+
+    }
+
+    .teamDetailLeft div{
+        background-color: #f94c30;
+        color: #fff;
+        padding:10px;
+        border-radius: 30px;
+        margin-top: -50px;
+        width:350px;
+        padding: 20px 10px;
+        gap: 10px;
+        padding-right: 50px;
+    }
+
+    .teamDetailLeft div img{
+    height: 70px;
+    }
+
+    .teamDetailLeft div h4{
+    font-size: 20px;
+    padding-left:10px;
+    }
+
+
+
+    .teamDetailLeft div .text{
+        font-size: 12px;
+        padding-left:10px;
+        font-weight:500 ;
+    }
+
+    .teamDetailRight{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 15px;
+        width: 380px;
+    }
+
+    .teamDetailRight .Tag{
+        box-shadow: 0 2px 2px 1px rgb(208, 207, 216);
+        margin-top: 50px;
+        padding: 4px 5px;
+        width: 180px;
+    }
+
+    .teamDetailRight h4{
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .teamDetailRight h3{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .teamDetailRight h5{
+        font-size: 18px;
+        font-weight: 600;
+        color: #161616;
+    }
+
+    .teamDetailRight h6{
+        color: #868585;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .teamDetailBottom{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        width: 380px;
+        gap: 20px;
+        padding-top: 40px;
+    }
+
+    .experienceDetail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 380px;
+        gap: 40px;
+        padding-bottom: 70px;
+    }
+
+    .teamDetailBottom h4{
+        font-size: 30px;
+    }
+
+    .teamDetailBottom p{
+        font-size: 14px;
+        color: #6e6e6e;
+    }
+
+    .experienceDetail p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #6e6e6e;
+        gap: 5px;
+    }
+
+    .experienceProcess{
+        background-color: #f5f4f4;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .processBar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .processBar p{
+        font-size: 12px;
+        color: #15124e;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .bar{
+        width: 350px;
+        height: 12px;
+        border-radius: 20px;
+        background-color: #d8d8d8;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .bar p{
+        font-size: 10px;
+        color: #fff;
+        font-weight: 600;
+        margin-left: 250px;
+    }
+
+    .progres{
+        width: 80%;
+        height: 12px;
+        background-color: #0f0d33;
+        z-index: 2;
+    }
+
+    .progres2{
+        width: 95%;
+        height: 12px;
+        background-color: #0f0d33;
+        z-index: 2;
+    }
+
+    .progres3{
+        width: 85%;
+        height: 12px;
+        background-color: #0f0d33;
+        z-index: 2;
+    }
+
+
+    /*le style de la page team*/
+
+    .introSection.team {
+        height: 580px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.team::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        zoom: 1.3;
+        width: 100%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 51% 20%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+    .introSection.team h2{
+        color: #fff;
+        font-size: 40px;
+        width: 270px;
+        margin-top: 200px;
+    }
+
+    .teamSection.team{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: -150px;
+        padding-top: 100px;
+    }
+
+
+    /*le style de la page testimonial*/
+
+    .introSection.test {
+        height: 580px; /* Ajustement de la hauteur de la section */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start; /* Aligne le contenu à gauche */
+        justify-content: center; /* Aligne le contenu en haut */
+        align-items: center;
+        position: relative; /* Permet au pseudo-élément de se positionner correctement */
+        z-index: 1;
+    }
+
+    /* Pseudo-élément pour l'image de fond */
+    .introSection.test::before {
+        content: ''; /* Nécessaire pour générer un élément pseudo */
+        position: absolute;
+        top: 90px;
+        left: 0;
+        zoom: 1.3;
+        width: 100%;
+        height: 100%; /* L'image couvre toute la hauteur de la section */
+        background:
+            linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
+            url('images/agency-img13-800x533.jpg'); /* Image de fond */
+        background-position: 51% 20%; /* Garde le haut de l'image visible */
+        filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
+        z-index: -1; /* Place l'image derrière le contenu */
+    }
+
+    .introSection.test h2{
+        color: #fff;
+        font-size: 70px;
+    }
+
+    .testimonialSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 0%;
+        margin-bottom: 200px;
+        background-color: #f9f9f9;
+        margin-top: -150px;
+        padding-top: 50px;
+    }
+
+
+    .testimonialSection .reviewBottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        padding: 40px;
+    }
+
+    .testimonialSection .reviewBottom .client{
+        background-color: #fff;
+        box-shadow: 1px 1px  2px #d1d1d1;
+        width: 380px;
+        height: 250px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;justify-content: space-between;
+        padding: 20px 30px 30px 20px;
+        border-radius: 20px;
+    }
+
+    .testimonialSection .reviewBottom .client img{
+        height: 100px;
+        border-radius: 100%;
+        position: relative;
+        margin-top: -60px;
+        margin-left: 120px;
+        border: solid 6px #f9f9f9;
+    }
+
+    .testimonialSection .reviewBottom .client .text{
+        font-size: 14px;
+        color: #8a8989;
+        border-bottom: solid 2px #d1d1d1;
+        padding-bottom: 20px;
+    }
+
+    .clientNote{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-left: 120px;
+        gap: 50px;
+    }
+
+    .testimonialSection .reviewBottom .client p:first-child{
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        padding: top 20px;
+
+    }
+
+
+    .testimonialSection .reviewBottom .client p:last-child{
+        font-size: 12px;
+        text-align: center;
+        color: #f94c30;
+        font-weight: 700;
+    }
+
+    .testimonialSection .reviewBottom .client i{
+        color: #f94c30;
+        width: 15px;
+    }
+
+    .realisationSection .contactBottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f94c30;
+        margin-top: -200px;
+        width: 100%;
+        height: auto;
+        padding: 10px 60px;
+        border-radius: 0px;
+        align-self: center;
+        position: relative;
+    }
+
+
+    .realisationSection .contactBottom .realisations{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        padding: 0 50px;
+        margin-bottom: 0px;
+    }
+
+
+    .realisationSection .realisations div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: solid 1px #cab1b1;
+        padding-bottom: 40px;
+        width: 350px;
+        height: 100%;
+    }
+
+    .realisationSection.contactBottom .realisations div:last-child{
+    border-bottom: solid 1px #f94c30;
+
+    }
+
+
+
+    .realisationSection .contactBottom  div .realisationCard img{
+        height: 90px;
+        margin-left: 80px;
+        
+    }
+
+
+    .realisationSection .contactBottom  div .realisationCard h4{
+        font-size: 40px;
+        font-weight: 800;
+        color: #fff;
+        margin-left: 80px;
+    }
+
+    .realisationSection .contactBottom  div .realisationCard p{
+        color: #fff;
+        font-size: 14px;
+        margin-left: 80px;
+    }
 
 
 }
