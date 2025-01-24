@@ -5643,20 +5643,325 @@ border-right: solid 1px #f94c30;
     }
 
     #menuList{
-    display: none;
+    position: absolute;
+    display: flex;
+    width: 370px;
+    height: auto;
+    border-radius: 10px;
+    left: 20px;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
     list-style: none;
-    color: #fff;
-    font-size: 10px;
+    background-color: #fff;
+    color: grey;
     font-weight: 600;
-
+    padding: 20px;
+    top: -500px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out; /* Animation fluide */
     }
 
-    .networkLink{
+    #menuList.open{
+    position: absolute;
     display: flex;
-    gap: 10px;
+    width: 370px;
+    height: auto;
+    border-radius: 10px;
+    left: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    background-color: #fff;
+    color: grey;
+    font-weight: 600;
+    padding: 20px;
+    top: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out; /* Animation fluide */
     }
+
+
+
+    
+#menuList .subMenu{
+    position: absolute;
+    display: none;
+    margin-top: 40px;
+    left: 10px;
+    transition: opacity 1s ease-in-out;
+    list-style: none;
+    background-color: #fff;
+    width: 350px;
+    height: auto;
+    text-align:center;
+    padding: 20px 20px;
+    transition: ease-in-out 2s;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+
+
+
+#menuList .subMenu li{
+    font-size: 14px;
+    border-bottom: solid 1px grey;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: grey;
+}
+
+#pages:focus #menuList{
+    height: auto;
+}
+
+
+#menuList .subMenu li {
+    padding: 5px 10px;
+    color: grey;
+    font-size: 14px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#menuList .subMenu li:last-child {
+    border-bottom: none; /* Supprime la bordure pour le dernier élément */
+}
+
+
+#pages:hover .subMenu{
+    top: 80px;
+    height: auto;
+    display: block;
+    transition: ease-in-out 3s;
+    opacity: 1;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+}
+
+#menuList .blogMenu{
+    position: absolute;
+    display: none;
+    margin-top: 40px;
+    left: 10px;
+    transition: opacity 1s ease-in-out;
+    list-style: none;
+    background-color: #fff;
+    width: 350px;
+    height: auto;
+    text-align:center;
+    padding: 20px 20px;
+    transition: ease-in-out 2s;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    font-size: 12px;
+}
+
+
+#menuList .blogMenu li{
+    font-size: 10px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: grey;
+    color: red;
+}
+
+#blog:hover .blogMenu{
+    top: 80px;
+    height: auto;
+    display: block;
+    transition: ease-in-out 3s;
+    opacity: 1;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#menuList .careerMenu{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    left: 10px;
+    transition: opacity 1s ease-in-out;
+    list-style: none;
+    background-color: #fff;
+    width: 330px;
+    height: auto;
+    text-align:center;
+    padding: 20px 20px;
+    transition: ease-in-out 2s;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+
+}
+
+#menuList .careerMenu li{
+    font-size: 12px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #cccccc;
+}
+
+#career:hover .careerMenu{
+    transition: none;
+    opacity: none;
+    display: block;
+    align-items: start;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#menuList .porfolioMenu{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    left: 10px;
+    transition: opacity 1s ease-in-out;
+    list-style: none;
+    background-color: #fff;
+    width: 330px;
+    height: auto;
+    text-align:center;
+    padding: 20px 20px;
+    transition: ease-in-out 2s;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+#menuList .porfolioMenu li{
+    font-size: 12px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #cccccc;
+}
+
+#porfolio:hover .porfolioMenu{
+    transition: none;
+    opacity: none;
+    display: block;
+    align-items: start;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#menuList .productMenu{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    left: 10px;
+    transition: opacity 1s ease-in-out;
+    list-style: none;
+    background-color: #fff;
+    width: 330px;
+    height: auto;
+    text-align:center;
+    padding: 20px 20px;
+    transition: ease-in-out 2s;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+#menuList .productMenu li{
+    font-size: 12px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #cccccc;
+}
+
+#product:hover .productMenu{
+    transition: none;
+    opacity: none;
+    display: block;
+    align-items: start;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#menuList .teamMenu{
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+    left: 10px;
+    transition: opacity 1s ease-in-out;
+    list-style: none;
+    background-color: #fff;
+    width: 330px;
+    height: auto;
+    text-align:center;
+    padding: 20px 20px;
+    transition: ease-in-out 2s;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+#menuList .teamMenu li{
+    font-size: 12px;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #cccccc;
+}
+
+#team:hover .teamMenu{
+    transition: none;
+    opacity: none;
+    display: block;
+    align-items: start;
+    transition: git 1s ease-in-out;
+}
+
+.networkLink{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 360px;
+    padding-bottom: 15px;
+}
+
+
+#item{
+    font-size: 50px;
+    color: #fff;
+}
+
+#menuList a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.networkLink i{
+    color: #fff;
+}
+
+.networkLink i:hover{
+    color: #f94c30;
+}
+
+#menuIcon i{
+    font-size: 30px;
+}
 
 
     #item{
@@ -5666,7 +5971,7 @@ border-right: solid 1px #f94c30;
 
     #menuList a{
     text-decoration: none;
-    color: #fff;
+    color: grey;
     }
 
     .networkLink i{
@@ -5677,7 +5982,7 @@ border-right: solid 1px #f94c30;
     color: #f94c30;
     }
 
-    .introSection {
+.introSection {
     height: 1000px;
     padding: 100px;
     display: flex;
@@ -6049,7 +6354,7 @@ border-right: solid 1px #f94c30;
     }
 
     .aboutSection{
-    padding-top: 800px;
+    padding-top: 1300px;
     display: flex;
     flex-direction: column;
     background-color: #fff;

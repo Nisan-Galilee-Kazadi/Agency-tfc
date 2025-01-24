@@ -1,22 +1,23 @@
 
 
-const liPages = document.querySelector('pages')
+const buttonMenu = document.getElementById('menuIcon')
 
-const heroSection = document.querySelector('.introsection')
+const menuList = document.getElementById('menuList')
 
-function blurry() {
-    if(heroSection.classList.contains('blurry')){
-        heroSection.classList.remove('blurry')
+function openMenu () {
+    if(menuList.classList.contains('open')){
+        menuList.classList.remove('open')
     }
     else{
-        heroSection.classList.add('blurry')
+        menuList.classList.add('open')
     }
 }
 
-blurry()
 
-liPages.addEventListener("mouseover",blurry)
+buttonMenu.addEventListener('click', openMenu)
+menuList.addEventListener('click', openMenu)
 
+openMenu()
 
 
 
