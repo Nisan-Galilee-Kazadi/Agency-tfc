@@ -7743,7 +7743,7 @@ border-right: solid 1px #f94c30;
         position: absolute;
         top: 80px;
         left: 0;
-        width: 414px;
+        width: 100%;
         zoom: 1.3;
         height: 100%; /* L'image couvre toute la hauteur de la section */
         background:
