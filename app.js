@@ -14,7 +14,10 @@ function openMenu () {
 }
 
 
-buttonMenu.addEventListener('click', openMenu)
+buttonMenu.addEventListener('click', function(){
+    openMenu();
+    changeButton();
+})
 
 openMenu()
 
@@ -25,8 +28,8 @@ const menuClose = document.getElementById('close-icon')
 
 const contenair = document.querySelector('.menu')
 
-contenair.addEventListener('click', function (){
 
+function changeButton() {
     if(menuOpen.style.display !== 'none'){
         menuOpen.style.display = 'none';
         menuClose.style.display = 'block';
@@ -34,6 +37,6 @@ contenair.addEventListener('click', function (){
         menuOpen.style.display = 'block';
         menuClose.style.display = 'none';
     }
-});
+}
 
 

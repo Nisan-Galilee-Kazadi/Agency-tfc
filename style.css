@@ -5939,7 +5939,7 @@ border-right: solid 1px #f94c30;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: auto;
+    width: 360px;
     gap: 200px;
 }
 
