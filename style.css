@@ -246,7 +246,7 @@
 
 .networkLink{
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 
@@ -266,6 +266,10 @@
 
 .networkLink i:hover{
     color: #f94c30;
+}
+
+#menuIcon{
+    display: block;
 }
 
 .introSection {
@@ -5928,7 +5932,15 @@ border-right: solid 1px #f94c30;
     opacity: none;
     display: block;
     align-items: start;
-    transition: git 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.importIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    gap: 200px;
 }
 
 .networkLink{
@@ -5936,7 +5948,7 @@ border-right: solid 1px #f94c30;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    width: 360px;
+    width: auto;
     padding-bottom: 15px;
 }
 
@@ -5953,6 +5965,7 @@ border-right: solid 1px #f94c30;
 
 .networkLink i{
     color: #fff;
+
 }
 
 .networkLink i:hover{
@@ -5960,6 +5973,7 @@ border-right: solid 1px #f94c30;
 }
 
 #menuIcon i{
+    display: block;
     font-size: 30px;
 }
 
@@ -5985,6 +5999,7 @@ border-right: solid 1px #f94c30;
 .introSection {
     height: 1000px;
     padding: 100px;
+    width: 414px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6047,9 +6062,9 @@ border-right: solid 1px #f94c30;
 
     h1{
     margin-top: -70px;
-    padding: 100px;
+    padding: 50px 10px;
     text-align: center;
-    width: 600px;
+    width: 414px;
     font-size: 50px;
     color: #fff;
     }
@@ -6060,8 +6075,8 @@ border-right: solid 1px #f94c30;
 
     .introSection .text{
     color: #fff;
-    padding: 0 205px;
-    width: 800px;
+    padding: 20px;
+    width: 414px;
     font-size: 14px;
     text-align: center;
     margin-top: -50px;
@@ -6105,7 +6120,7 @@ border-right: solid 1px #f94c30;
 
 .serviceSection {
     height: auto;
-    width: 100%;
+    width: 414px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6140,7 +6155,7 @@ border-right: solid 1px #f94c30;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: -200px;
-    width: 100%;
+    width: 414px;
     padding: 5%;
 
 }
@@ -6159,7 +6174,7 @@ border-right: solid 1px #f94c30;
 
     .serviceSection .top .leftSection h2 {
     font-size: 35px;
-    width: 120%;
+    width: 100%;
     }
 
     .serviceSection .top .leftSection h2 span{
@@ -6168,13 +6183,13 @@ border-right: solid 1px #f94c30;
 
     .serviceSection .top .leftSection .text{
     font-size: 18px;
-    width: 120%;
+    width: 100%;
     text-align: start;
     }
 
     .dot{
     font-size: 18px;
-    width: 120%;
+    width: 100%;
 
     }
 
@@ -6239,7 +6254,7 @@ border-right: solid 1px #f94c30;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-bottom: 240px;
+    margin-bottom: 400px;
 
     }
 
@@ -6296,11 +6311,11 @@ border-right: solid 1px #f94c30;
     position: absolute;
     background-color: #f94c30;
     border-radius: 30px;
-    width: 90%;
+    width: 390px;
     height: 550px;
     margin: 10%;
-    padding: 40px 40px;
-    margin-top:350px ;
+    padding: 10px 10px;
+    margin-top:0px ;
     }
 
     .serviceContact .image img{
@@ -6325,7 +6340,7 @@ border-right: solid 1px #f94c30;
 
     .serviceContact .consultation p:first-child{
     font-size: 16px;
-    width: 150%;
+    width: 100%;
     text-align: center;
     font-weight: 600;
 
@@ -6509,13 +6524,13 @@ border-right: solid 1px #f94c30;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    gap: 60px;
+    width: 360px;
+    gap: 40px;
     }
 
     
     .aboutBottom .aboutPartner{
-    width: 100%;
+    width: 414px;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -6573,7 +6588,7 @@ border-right: solid 1px #f94c30;
 
     .goalSection {
     height: auto;
-    width: 100%;
+    width: 414px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6660,7 +6675,7 @@ border-right: solid 1px #f94c30;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 414px;
     }
 
     .goalSection .goalRight img{
@@ -6703,12 +6718,12 @@ border-right: solid 1px #f94c30;
     text-align: center;
     margin-top: 0px;
     padding-bottom: 100px;
-    width: 97%;
+    width: 414px;
     }
 
     .porfolioSection h2 {
     margin-top: 0px;
-    font-size: 35px;
+    font-size: 33px;
     color: #0f0d33;
     width: 410px;
     }
@@ -6739,7 +6754,7 @@ border-right: solid 1px #f94c30;
     text-align: center;
     padding: 20px 100px;
     gap: 20px;
-    width: 100%;
+    width: 414px;
     }
 
     .teamSection .Tag{
@@ -6834,7 +6849,7 @@ border-right: solid 1px #f94c30;
 
 
     .reviewSection {
-    width: 100%;
+    width: 414px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6938,6 +6953,7 @@ border-right: solid 1px #f94c30;
     gap: 100px;
     padding: 40px;
     margin-bottom: 100px;
+    width: 414px;
     }
 
     .reviewBottom .client{
@@ -7018,10 +7034,9 @@ border-right: solid 1px #f94c30;
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 414px;
     background-color: #f2f7f4;
     margin-bottom: 100px;
-
-
     }
 
     .contactSection .contactTop{
@@ -7037,14 +7052,14 @@ border-right: solid 1px #f94c30;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 414px;
     gap: 40px;
     }
 
     .contactSection h2 {
     font-size: 33px;
     color: #0f0d33;
-    width: 150%;
+    width: 100%;
     }
 
     .contactSection h2 span{
@@ -7070,6 +7085,7 @@ border-right: solid 1px #f94c30;
     position: relative;
     margin-top: 140px;
     z-index: 20;
+    width: 414px;
     }
 
     .contactSection .contactTop img{
@@ -7252,9 +7268,11 @@ border-right: solid 1px #f94c30;
 
     .blogSection{
     display: flex;
+    width: 414px;
     flex-direction: column;
     justify-content: center;align-items: center;
     padding-bottom: 20px;
+    margin-top: -200px;
     }
 
     .blogSection h2 {
@@ -7337,7 +7355,7 @@ border-right: solid 1px #f94c30;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 414px;
     height: auto;
     padding: 20px;
     background-color: #f2f5f3;
@@ -7417,7 +7435,7 @@ border-right: solid 1px #f94c30;
 
 
     footer {
-    width: 100%;
+    width: 414px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7601,7 +7619,7 @@ border-right: solid 1px #f94c30;
 
     .introSection.error {
         height: 400px; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -7616,7 +7634,7 @@ border-right: solid 1px #f94c30;
         position: absolute;
         top: 70px;
         left: 0;
-        width: 100%;
+        width: 414px;
         height: 400px; /* L'image couvre toute la hauteur de la section */
         background:
             linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
@@ -7633,7 +7651,7 @@ border-right: solid 1px #f94c30;
         justify-content: center;
         align-items: center;
         gap: 40px;
-        width: 100%;
+        width: 414px;
         height: 600px;
     }
 
@@ -7657,6 +7675,7 @@ border-right: solid 1px #f94c30;
     .errorSection .text{
         font-size: 20px;
         text-align: center;
+        width: 320px;
     }
 
     .search{
@@ -7670,6 +7689,7 @@ border-right: solid 1px #f94c30;
 
     .search p{
         font-weight: 600;
+        width: 380px;
     }
 
     .search form{
@@ -7706,8 +7726,8 @@ border-right: solid 1px #f94c30;
     /*style de la page about*/
 
     .introSection.about {
-        height: 50%; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        height:520px; /* Ajustement de la hauteur de la section */
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -7723,13 +7743,14 @@ border-right: solid 1px #f94c30;
         position: absolute;
         top: 80px;
         left: 0;
-        width: 150%;
+        width: 414px;
+        zoom: 1.3;
         height: 100%; /* L'image couvre toute la hauteur de la section */
         background:
             linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
             url('images/agency-img13-800x533.jpg'); /* Image de fond */
         background-size: cover; /* L'image couvre tout l'espace sans déformation */
-        background-position: 50% 50%; /* Garde le haut de l'image visible */
+        background-position: 100% 50%; /* Garde le haut de l'image visible */
         filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
         z-index: -1; /* Place l'image derrière le contenu */
     }
@@ -7744,6 +7765,7 @@ border-right: solid 1px #f94c30;
     .aboutSection{
         display: flex;
         flex-direction: column;
+        width: 414px;
     }
 
     .aboutSection .aboutTop{
@@ -7751,10 +7773,10 @@ border-right: solid 1px #f94c30;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 90%;
+        width: 414px;
         gap: 20px;
         font-size: 20px;
-        margin-top:-600px;
+        margin-top: -1100px;
     }
 
     .aboutSection .aboutTop .aboutTopLeft{
@@ -7764,7 +7786,7 @@ border-right: solid 1px #f94c30;
         align-items: center;
         text-align: center;
         gap: 20px;
-        width: 100%;
+        width: 414px;
     }
 
     .aboutSection .aboutTop .aboutTopLeft h2 {
@@ -7788,6 +7810,7 @@ border-right: solid 1px #f94c30;
         justify-content: space-between;
         align-items: center;
         text-align: center;
+        width: 390px;
         margin-top: 0px;
         gap: 20px;
         color: #a1a1a1;
@@ -7825,7 +7848,7 @@ border-right: solid 1px #f94c30;
     }
 
     .aboutImages{
-    width: 100%;
+    width: 414px;
     padding:15% ;
     display: flex;
     justify-content:center;
@@ -7855,8 +7878,8 @@ border-right: solid 1px #f94c30;
     /*style de la page blog*/
 
     .introSection.blog {
-        height: 400px; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        height: 550px; /* Ajustement de la hauteur de la section */
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -7873,12 +7896,12 @@ border-right: solid 1px #f94c30;
         top: 90px;
         left: 0;
         width: 100%;
-        height: 100%; /* L'image couvre toute la hauteur de la section */
+        height: 500px; /* L'image couvre toute la hauteur de la section */
+        zoom: 1.2;
         background:
             linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
             url('images/agency-img13-800x533.jpg'); /* Image de fond */
-        background-size: cover; /* L'image couvre tout l'espace sans déformation */
-        background-position: 20% 20%; /* Garde le haut de l'image visible */
+        background-position: 60% 20%; /* Garde le haut de l'image visible */
         filter: grayscale(100%); /* Applique un filtre en niveaux de gris sur l'image */
         z-index: -1; /* Place l'image derrière le contenu */
     }
@@ -7891,7 +7914,7 @@ border-right: solid 1px #f94c30;
     }
 
     .archivesSection{
-        width: 100%;
+        width: 414px;
         padding: 0% 0%;
         display: flex;
         flex-direction:column;
@@ -8083,7 +8106,7 @@ border-right: solid 1px #f94c30;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        width: 300px;
+        width: 340px;
         gap: 10px;
         margin-top: 30px;
         margin-bottom: 100px;
@@ -8133,7 +8156,7 @@ border-right: solid 1px #f94c30;
 
     .introSection.career {
         height: 480px ; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -8177,6 +8200,7 @@ border-right: solid 1px #f94c30;
         padding-bottom: 100px;
         padding-top: 100px;
         margin-top:-150px;
+        width: 414px;
     }
 
     .careerSection .Tag{
@@ -8369,7 +8393,7 @@ border-right: solid 1px #f94c30;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 414px;
         height: auto;
         padding: 0% 0% ;
         background-color: #f2f7f5;
@@ -8471,7 +8495,7 @@ border-right: solid 1px #f94c30;
     /*style de la page careeerDetail*/
     .introSection.CD {
         height: 500px ; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -8503,7 +8527,7 @@ border-right: solid 1px #f94c30;
         color: #fff;
         font-size: 50px;
         margin-top: 100px;
-        width: 500px;
+        width: 414px;
         text-align: center;
     }
 
@@ -8512,7 +8536,8 @@ border-right: solid 1px #f94c30;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
-        padding: 0% 20%;
+        padding: 0% 0%;
+        width: 414px;
         gap: 50px;
         margin-top: 100px;
         margin-bottom: 100px;
@@ -8764,7 +8789,7 @@ border-right: solid 1px #f94c30;
 
     .involveSection{
         height: 600px;
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -8824,7 +8849,7 @@ border-right: solid 1px #f94c30;
 
     .introSection.coming {
         height: 100vh; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -8871,7 +8896,7 @@ border-right: solid 1px #f94c30;
     .comingSoonSection .text{
         text-align: center;
         margin-top: 50px;
-        width: 700px;
+        width:414px;
         font-size: 18px;
         color: #fff;
         font-weight: 600;
@@ -8889,7 +8914,7 @@ border-right: solid 1px #f94c30;
         justify-content: space-between;
         align-items: center;
         gap: 10px;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     .comingSoonSection .timeline .box{
@@ -9087,7 +9112,8 @@ border-right: solid 1px #f94c30;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
-        padding: 0% 15% ;
+        padding: 0% 10% ;
+        width: 414px;
     }
 
     .contactUsSection .contactLeft{
@@ -9156,7 +9182,7 @@ border-right: solid 1px #f94c30;
         text-align: center;
         justify-content: space-between;
         gap: 20px;
-        width: 150%;
+        width: 100%;
         padding: 50px;
         margin-top: -200px;
     }
@@ -9243,7 +9269,7 @@ border-right: solid 1px #f94c30;
 
     .introSection.faq {
         height: 450px; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -9259,7 +9285,7 @@ border-right: solid 1px #f94c30;
         position: absolute;
         top: 100px;
         left: 0;
-        width: 120%;
+        width: 100%;
         height: 100%; /* L'image couvre toute la hauteur de la section */
         background:
             linear-gradient(180deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.8)),
@@ -9279,7 +9305,7 @@ border-right: solid 1px #f94c30;
     .faqSection{
         display: flex;
         padding: 0% 0%;
-
+        width: 414px;
     }
 
     .faqSection{
@@ -9295,7 +9321,7 @@ border-right: solid 1px #f94c30;
         justify-content: space-between;
         align-items: start;
         gap: 20px;
-        width: 100%;
+        width: 414px;
         padding: 0 4%;
     }
 
@@ -9427,6 +9453,7 @@ border-right: solid 1px #f94c30;
         align-items: center;
         gap: 50px;
         padding: 20% 0%;
+        width: 414px;
     }
 
     .missionSection .missionLeft{
@@ -9434,10 +9461,13 @@ border-right: solid 1px #f94c30;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 414px;
+        left: 20px;
     }
 
-    .missionSection .missionLeft img{
-        height: 250px;
+    .missionSection .missionLeft .img{
+        height: 230px;
+        width: 360px;
         border-radius: 30px;
 
     }
@@ -9448,11 +9478,11 @@ border-right: solid 1px #f94c30;
         padding:10px;
         border-radius: 30px;
         margin-top: -50px;
-        width:350px;
+        margin-left: -20px;
+        width:340px;
         padding: 20px;
         gap: 10px;
         padding-right: 80px;
-        align-self: flex-start;
     }
 
     .missionSection .missionLeft div img{
@@ -9479,8 +9509,8 @@ border-right: solid 1px #f94c30;
         justify-content: space-between;
         align-items: start;
         gap: 10px;
-        width: 100%;
-        padding: 0% 4%;
+        width: 414px;
+        padding: 0% 5%;
     }
 
     .missionRight h2 {
@@ -9506,7 +9536,7 @@ border-right: solid 1px #f94c30;
 
 
     .missionBox{
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -9586,6 +9616,7 @@ border-right: solid 1px #f94c30;
         justify-content: space-between;
         align-items: center;
         padding: 1% 2%;
+        width: 414px;
         padding-bottom: 15%;
         gap: 10px;
     }
@@ -9756,7 +9787,7 @@ border-right: solid 1px #f94c30;
 
     .introSection.portDet{
         height: 480px; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -9799,6 +9830,7 @@ border-right: solid 1px #f94c30;
         padding: 5% 0%;
         gap: 20px;
         row-gap: 50px;
+        width: 414px;
     }
 
     .detailSection .stategySection{
@@ -9832,7 +9864,7 @@ border-right: solid 1px #f94c30;
     .detailSection .stategySection .strategyLeft p{
         font-size: 16px;
         color: #868585;
-        width: 360px;
+        width: 380px;
     }
 
 
@@ -9888,7 +9920,7 @@ border-right: solid 1px #f94c30;
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
-        width: 380px;
+        width: 360px;
         gap: 30px;
     }
 
@@ -9938,7 +9970,7 @@ border-right: solid 1px #f94c30;
 
 
     .detailSection .projectLeft .images {
-        width: 385px;
+        width: 365px;
         overflow: hidden; /* Masque le débordement */
         position: relative;
     }
@@ -9950,7 +9982,7 @@ border-right: solid 1px #f94c30;
     }
 
     .detailSection .projectLeft .images img {
-        width: 380px;
+        width: 355px;
         height: 240px;
         border-radius: 20px;
         object-fit: cover; /* Les images gardent leurs proportions */
@@ -10091,7 +10123,7 @@ border-right: solid 1px #f94c30;
 
     .introSection.product{
         height: 550px; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -10132,6 +10164,7 @@ border-right: solid 1px #f94c30;
         align-items: center;
         gap: 10px;
         margin-top: 0px;
+        width: 414px;
     }
 
     .shopSection .shopLeft{
@@ -10377,7 +10410,7 @@ border-right: solid 1px #f94c30;
         gap: 40px;
         margin-left: 20px;
         margin-bottom: 20px;
-        width: 500px;
+        width: 414px;
     }
 
     .Gallery{
@@ -10408,7 +10441,7 @@ border-right: solid 1px #f94c30;
 
     .introSection.search{
         height: 550px; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -10441,6 +10474,7 @@ border-right: solid 1px #f94c30;
         justify-content: space-between;
         align-items: center;
         padding: 1% 0%;
+        width: 414px;
     }
 
     .searchContent .contenair{
@@ -10538,6 +10572,7 @@ border-right: solid 1px #f94c30;
         text-align: center;
         background-color: #f0efef;
         gap: 20px;
+        width: 414px;
     }
 
     .searchAgain h2 {
@@ -10591,7 +10626,7 @@ border-right: solid 1px #f94c30;
 
     .introSection.service{
         height: 600px; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: start; /* Aligne le contenu à gauche */
@@ -10621,7 +10656,7 @@ border-right: solid 1px #f94c30;
 
     .serviceSection.service {
         height: auto;
-        width: 100%;
+        width: 414px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -10663,16 +10698,18 @@ border-right: solid 1px #f94c30;
         align-items: center;
         padding-top: 0px;
         padding-bottom: 50px;
+        width: 414px;
     }
 
     .serviceContact.service{
         position: absolute;
         margin-left: 40px;
-        margin-top: 2700px;
+        margin-top: 3000px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 85%;
+        width: 414px;
+        margin-bottom: 400px;
     }
 
 
@@ -10684,6 +10721,8 @@ border-right: solid 1px #f94c30;
         background-color: #f5f5f5;
         gap: 20px;
         padding-top: 250px;
+        width: 414px;
+        margin-top: 100px;
     }
 
     .processSection h2 {
@@ -10837,7 +10876,7 @@ border-right: solid 1px #f94c30;
 
     .introSection.sblog {
         height: 660px; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         padding: 0% 15%;
         text-align: center;
         display: flex;
@@ -10887,11 +10926,20 @@ border-right: solid 1px #f94c30;
 
     .introSection.sblog .signature p{
         font-size: 12px;
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1px;
     }
 
     .introSection.sblog .signature p:first-child{
         border-right: solid 1px #fff;
-        padding-right: 30px;
+        padding-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1px;
     }
 
 
@@ -10902,6 +10950,7 @@ border-right: solid 1px #f94c30;
         align-items: center;
         padding: 0% 0%;
         gap: 50px;
+        width: 414px;
     }
 
     .singleContent{
@@ -11059,7 +11108,7 @@ border-right: solid 1px #f94c30;
 
     .introSection.sprod {
         height: 550px; /* Ajustement de la hauteur de la section */
-        width: 100%;
+        width: 414px;
         padding: 0% 0%;
         text-align: center;
         display: flex;
@@ -11102,6 +11151,7 @@ border-right: solid 1px #f94c30;
         align-items: center;
         gap: 40px;
         padding: 2% 0%;
+        width: 414px;
     }
 
     .singleProductSection .leftContent{
@@ -11251,6 +11301,7 @@ border-right: solid 1px #f94c30;
         padding: 0% 5%;
         margin-top: 100px;
         gap: 50px;
+        width: 414px;
     }
 
     .descriptionSection .descriptionLeft{
@@ -11259,6 +11310,7 @@ border-right: solid 1px #f94c30;
         align-items: start;
         justify-content: space-between;
         gap: 40px;
+        width: 390px;
     }
 
 
@@ -11364,6 +11416,10 @@ border-right: solid 1px #f94c30;
         position: absolute;
     }
 
+    .descriptionRight{
+        width: 414px;
+    }
+
 
     .descriptionRight .shopRight .productCategories{
         display: flex;
@@ -11371,6 +11427,7 @@ border-right: solid 1px #f94c30;
         align-items: center;
         justify-content: space-between;
         margin-top: -40px;
+        width: 414px;
     }
 
     .descriptionRight .shopRight .productCategories .Tag{
@@ -11410,6 +11467,7 @@ border-right: solid 1px #f94c30;
         justify-content: start;
         margin-top: -20px;
         gap: 10px;
+        width: 414px;
     }
 
     .recentProducts .Tag{
@@ -11454,7 +11512,7 @@ border-right: solid 1px #f94c30;
         align-items: center;
         margin-left: 20px;
         margin-top: -30px;
-        width: 500px;
+        width: 390px;
     }
 
     .descriptionRight .Gallery{
@@ -11907,7 +11965,7 @@ border-right: solid 1px #f94c30;
         justify-content: space-between;
         align-items: center;
         gap: 100px;
-        padding: 0 50px;
+        padding: 0 10px;
         margin-bottom: 0px;
     }
 
