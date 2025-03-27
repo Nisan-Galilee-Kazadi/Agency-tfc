@@ -1,516 +1,676 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TFChtml</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="app.js" async ></script>
-</head>
-<body>
-    <header id="navBar" >
-        <div class="logo"><img src="images/white-logo.png" alt=""></div>
-        <nav class="menu">
-            <ul id="menuList">
-                <li class="item"><a href="index.html">HOME</a></li>
-                <li class="item"><a href="about.html">ABOUT US</a></li>
-                <li class="item page" id="pages">
-                    PAGES
-                    <ul class="subMenu">
-                        <li><a href="404.html">404</a></li>
-                        <li class="item" id="career">
-                            CAREER
-                            <ul class="careerMenu">
-                                <li><a href="career.html">Career</a></li>
-                                <li><a href="careerDetail.html">Career Details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="comingSoon.html">Comming Soon </a></li>
-                        <li><a href="FAQ.html">Faq</a></li>
-                        <li class="item" id="porfolio">
-                            PORFOLIO
-                            <ul class="porfolioMenu">
-                               <li><a href="portfolio.html">Porfolio List</a></li>
-                               <li><a href="portfolioDetail.html">Porfolio Details</a></li>  
-                            </ul>
-                        </li>
-                        <li class="item" id="product">
-                            PRODUCT
-                            <ul class="productMenu">
-                                <li><a href="productList.html">Product List</a></li>
-                                <li><a href="singleProduct.html">Single product</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="search.html">Search</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li class="item" id="team">
-                            TEAM
-                            <ul class="teamMenu">
-                                <li><a href="teamMember.html">Team Member</a></li>
-                                <li><a href="teamDetail.html">Team Details</a></li>
-                            </ul>
-                        </li>
-                       
-                        <li><a href="Testimonial.html">Testimonial</a></li>
-                        
-                    </ul>
-                </li>
-                <li class="item" id="blog">
-                    BLOG
-                    <ul class="blogMenu">
-                        <li><a href="blog.html">BLOG</a></li>
-                        <li><a href="singleBlog.html">SINGLE BLOG</a></li>
-                    </ul>
-                </li>
-                <li class="item"><a href="contact.html">CONTACT</a></li>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="app.js" async></script>
+  </head>
+  <body>
+    <header id="navBar">
+      <div class="logo"><img src="images/white-logo.png" alt="" /></div>
+      <nav class="menu">
+        <ul id="menuList">
+          <li class="item"><a href="index.html">HOME</a></li>
+          <li class="item"><a href="about.html">ABOUT US</a></li>
+          <li class="item page" id="pages">
+            PAGES
+            <ul class="subMenu">
+              <li><a href="404.html">404</a></li>
+              <li class="item" id="career">
+                CAREER
+                <ul class="careerMenu">
+                  <li><a href="career.html">Career</a></li>
+                  <li><a href="careerDetail.html">Career Details</a></li>
+                </ul>
+              </li>
+              <li><a href="comingSoon.html">Comming Soon </a></li>
+              <li><a href="FAQ.html">Faq</a></li>
+              <li class="item" id="porfolio">
+                PORFOLIO
+                <ul class="porfolioMenu">
+                  <li><a href="portfolio.html">Porfolio List</a></li>
+                  <li><a href="portfolioDetail.html">Porfolio Details</a></li>
+                </ul>
+              </li>
+              <li class="item" id="product">
+                PRODUCT
+                <ul class="productMenu">
+                  <li><a href="productList.html">Product List</a></li>
+                  <li><a href="singleProduct.html">Single product</a></li>
+                </ul>
+              </li>
+              <li><a href="search.html">Search</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li class="item" id="team">
+                TEAM
+                <ul class="teamMenu">
+                  <li><a href="teamMember.html">Team Member</a></li>
+                  <li><a href="teamDetail.html">Team Details</a></li>
+                </ul>
+              </li>
+
+              <li><a href="Testimonial.html">Testimonial</a></li>
             </ul>
-        </nav>
-        <div class="importIcon">
-            <div id="menuIcon" class="menu">
-                <i id="open-icon" class="fas fa-times buttonMenu"></i>
-                <i id="close-icon" class="fas fa-bars buttonMenu" style="display: none;"></i>
-            </div>
-            <div class="networkLink">
-                <div class="links">
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-youtube"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fas fa-search"></i></a>
-                </div>
-            </div>
-        </div> 
-            <button>BUY NOW</button>
+          </li>
+          <li class="item" id="blog">
+            BLOG
+            <ul class="blogMenu">
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="singleBlog.html">SINGLE BLOG</a></li>
+            </ul>
+          </li>
+          <li class="item"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="importIcon">
+        <div id="menuIcon" class="menu">
+          <i id="open-icon" class="fas fa-times buttonMenu"></i>
+          <i
+            id="close-icon"
+            class="fas fa-bars buttonMenu"
+            style="display: none"
+          ></i>
+        </div>
+        <div class="networkLink">
+          <div class="links">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+      </div>
+      <button>BUY NOW</button>
     </header>
     <main class="hero-section">
-        <section class="introSection">
-            <div class="Tag"><span></span><p>DIGITAL AGENCY</p><span></span></div>
-            <h1><span>Digital</span> Agency You Can Rely Upon !</h1>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolor libero laudantium aspernatur neque quod dolore? Officiis cupiditate, temporibus iste architecto numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <div class="introButton">
-                <button class="discoButton">DISCOVERY MORE</button>
-                <button class="hireButton">HIRE US NOW</button>
+      <section class="introSection">
+        <div class="Tag">
+          <span></span>
+          <p>DIGITAL AGENCY</p>
+          <span></span>
+        </div>
+        <h1><span>Digital</span> Agency You Can Rely Upon !</h1>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          dolor libero laudantium aspernatur neque quod dolore? Officiis
+          cupiditate, temporibus iste architecto numquam. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit.
+        </p>
+        <div class="introButton">
+          <button class="discoButton">DISCOVERY MORE</button>
+          <button class="hireButton">HIRE US NOW</button>
+        </div>
+      </section>
+      <section class="serviceSection">
+        <div class="top">
+          <div class="leftSection">
+            <div class="Tag">
+              <span></span>
+              <p>SERVICE LIST</p>
+              <span></span>
             </div>
-        </section>
-        <section class="serviceSection">
-            <div class="top">
-                <div class="leftSection">
-                    <div class="Tag"><span></span><p>SERVICE LIST</p><span></span></div>
-                    <h2><span>Services</span> We Can Help You With !</h2>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vero, hic eum consequuntur pariatur explicabo vel temporibus? Veritatis asperiores commodi ab. Amet voluptas aliquam illum architecto autem fugiat error rem.</p>
-                    <div class="dot">
-                        <p><span><i class="far fa-dot-circle"></i></span>Lorem ipsum dolor sit amet consectetur!</p>
-                        <p><span><i class="far fa-dot-circle"></i></span>Lorem ipsum dolor sit amet consectetur!</p>
-                    </div>
-                    <div class="serviceDirector">
-                        <img src="images/agency-img18.jpg" alt="image">
-                        <div class="directorIdentity">
-                            <p>Georges Smith</p>
-                            <p>CEO,Director</p>
-                        </div>
-                        <button>MORE SERVICES</button>
-                    </div>
-                </div>
-                <div class="rightSection">
-                    <div class="serviceBox">
-                        <span></span>
-                        <img src="images/set1.png" alt="img">
-                        <p>Website Developement</p>
-                    </div>
-                    <div class="serviceBox">
-                        <span></span>
-                        <img src="images/set2.png" alt="">
-                        <p>Graphic & Sketch Designing</p>
-                    </div>
-                    <div class="serviceBox">
-                        <span></span>
-                        <img src="images/set3.png" alt="">
-                        <p>SEO & Content Writing</p>
-                    </div>
-                    <div class="serviceBox">
-                        <span></span>
-                        <img src="images/set4.png" alt="">
-                        <p>Digital Market Planning</p>
-                    </div>
-                </div>
+            <h2><span>Services</span> We Can Help You With !</h2>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+              vero, hic eum consequuntur pariatur explicabo vel temporibus?
+              Veritatis asperiores commodi ab. Amet voluptas aliquam illum
+              architecto autem fugiat error rem.
+            </p>
+            <div class="dot">
+              <p>
+                <span><i class="far fa-dot-circle"></i></span>Lorem ipsum dolor
+                sit amet consectetur!
+              </p>
+              <p>
+                <span><i class="far fa-dot-circle"></i></span>Lorem ipsum dolor
+                sit amet consectetur!
+              </p>
             </div>
-            <div class="bottoms">
-                <div class="serviceContact">
-                    <div class="image">
-                        <span>
-                            <img src="images/appel-telephonique (1).png" alt="icon">
-                        </span>
-                    </div>
-                    <div class="consultation">
-                        <p>GET A FREE CONSULTATION</p>
-                        <p>987 233 0000</p>
-                    </div>
-                    <P class="text">luptate saepe explicabo deleniti odit voluptas? Error beatae maiores quis, repellendus praesentium cupiditate est perspiciatis labore, dolor, voluptate tempora nihil corporis amet!Vitae quaerat magnam asperiores fugit illum expedita nam natus eligendi beatae hic. Dolorum ratione nam unde provident ad suscipit porro fugiat pariatur.</P>
-                    <BUtton>MAKE APPOINTEMENT</BUtton>
-                </div>
+            <div class="serviceDirector">
+              <img src="images/agency-img18.jpg" alt="image" />
+              <div class="directorIdentity">
+                <p>Georges Smith</p>
+                <p>CEO,Director</p>
+              </div>
+              <button>MORE SERVICES</button>
             </div>
-        </section>
-        <section class="aboutSection">
-            <div class="aboutTop">
-                <div class="aboutImage">
-                    <div class="imageLeft">
-                        <img class="image" src="images/right.png" alt="images">
-                    </div>
-                    <div class="imageRight">
-                        <img class="image1" src="images/agency-img2.jpg" alt="images">
-                        <img class="image2" src="images/agency-img15.jpg" alt="images">
-                    </div>                    
-                </div>
-                <div class="aboutInfo">
-                    <div class="Tag"><span></span><p>ABOUT US</p><span></span></div>
-                    <h2><span>Introduction</span> To Best Digital Agency !</h2>
-                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Numquam esse recusandae pariatur beatae repllat ex.</p>
-                    <div class="aboutExperience">
-                        <div class="check">
-                            <p><span><img src="images/checkIcon.png" alt=""></span>iLorem ipsum consectetur elit. </p>
-                            <p><span><img src="images/checkIcon.png" alt=""></span>Lorem ipsum consectetur elit. </p>
-                            <p><span><img src="images/checkIcon.png" alt=""></span>Lorem ipsum consectetur elit. </p>
-                            <p><span><img src="images/checkIcon.png" alt=""></span>Lorem ipsum consectetur elit. </p>
-                            <p><span><img src="images/checkIcon.png" alt=""></span>Lorem ipsum consectetur elit. </p>
-                            <p><span><img src="images/checkIcon.png" alt=""></span>Lorem ipsum consectetur elit. </p>
-                        </div>
-                        <div class="experienceBox">
-                            <h3>24</h3>
-                            <p class="text1">YEARS</p>
-                            <p class="text2">OF EXPERIENCE</p>
-                        </div>
-                    </div>
-                    <button>MORE ABOUT US</button>
-                </div>
+          </div>
+          <div class="rightSection">
+            <div class="serviceBox">
+              <span></span>
+              <img src="images/set1.png" alt="img" />
+              <p>Website Developement</p>
             </div>
-            <div class="aboutBottom">
-                <div class="aboutPartner">
-                    <img src="images/agency-img4.png" alt="logo">
-                    <img src="images/agency-img5.png" alt="logo">
-                    <img src="images/agency-img6.png" alt="logo">
-                    <img src="images/agency-img7.png" alt="logo">
-                    <img src="images/agency-img8.png" alt="logo">
-                </div>
+            <div class="serviceBox">
+              <span></span>
+              <img src="images/set2.png" alt="" />
+              <p>Graphic & Sketch Designing</p>
             </div>
-        </section> 
-        <section class="goalSection">
-            <div class="goalLeft">
-                <div class="circle">
-                    <div class="Tag"><span></span><p>OUR GOAL</p><span></span></div>
-                    <h2><span>Mission</span> We Aim For You !</h2>
-                    <p class="text">Lorror magn, doloremque laborum ab asperiores minus voluptatem vel.</p>
-                </div>
+            <div class="serviceBox">
+              <span></span>
+              <img src="images/set3.png" alt="" />
+              <p>SEO & Content Writing</p>
             </div>
-            <div class="goalRight">
+            <div class="serviceBox">
+              <span></span>
+              <img src="images/set4.png" alt="" />
+              <p>Digital Market Planning</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottoms">
+          <div class="serviceContact">
+            <div class="image">
+              <span>
+                <img src="images/appel-telephonique (1).png" alt="icon" />
+              </span>
+            </div>
+            <div class="consultation">
+              <p>GET A FREE CONSULTATION</p>
+              <p>987 233 0000</p>
+            </div>
+            <p class="text">
+              luptate saepe explicabo deleniti odit voluptas? Error beatae
+              maiores quis, repellendus praesentium cupiditate est perspiciatis
+              labore, dolor, voluptate tempora nihil corporis amet!Vitae quaerat
+              magnam asperiores fugit illum expedita nam natus eligendi beatae
+              hic. Dolorum ratione nam unde provident ad suscipit porro fugiat
+              pariatur.
+            </p>
+            <button>MAKE APPOINTEMENT</button>
+          </div>
+        </div>
+      </section>
+      <section class="aboutSection">
+        <div class="aboutTop">
+          <div class="aboutImage">
+            <div class="imageLeft">
+              <img class="image" src="images/right.png" alt="images" />
+            </div>
+            <div class="imageRight">
+              <img class="image1" src="images/agency-img2.jpg" alt="images" />
+              <img class="image2" src="images/agency-img15.jpg" alt="images" />
+            </div>
+          </div>
+          <div class="aboutInfo">
+            <div class="Tag">
+              <span></span>
+              <p>ABOUT US</p>
+              <span></span>
+            </div>
+            <h2><span>Introduction</span> To Best Digital Agency !</h2>
+            <p class="text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.Numquam
+              esse recusandae pariatur beatae repllat ex.
+            </p>
+            <div class="aboutExperience">
+              <div class="check">
+                <p>
+                  <span><img src="images/checkIcon.png" alt="" /></span>iLorem
+                  ipsum consectetur elit.
+                </p>
+                <p>
+                  <span><img src="images/checkIcon.png" alt="" /></span>Lorem
+                  ipsum consectetur elit.
+                </p>
+                <p>
+                  <span><img src="images/checkIcon.png" alt="" /></span>Lorem
+                  ipsum consectetur elit.
+                </p>
+                <p>
+                  <span><img src="images/checkIcon.png" alt="" /></span>Lorem
+                  ipsum consectetur elit.
+                </p>
+                <p>
+                  <span><img src="images/checkIcon.png" alt="" /></span>Lorem
+                  ipsum consectetur elit.
+                </p>
+                <p>
+                  <span><img src="images/checkIcon.png" alt="" /></span>Lorem
+                  ipsum consectetur elit.
+                </p>
+              </div>
+              <div class="experienceBox">
+                <h3>24</h3>
+                <p class="text1">YEARS</p>
+                <p class="text2">OF EXPERIENCE</p>
+              </div>
+            </div>
+            <button>MORE ABOUT US</button>
+          </div>
+        </div>
+        <div class="aboutBottom">
+          <div class="aboutPartner">
+            <img src="images/agency-img4.png" alt="logo" />
+            <img src="images/agency-img5.png" alt="logo" />
+            <img src="images/agency-img6.png" alt="logo" />
+            <img src="images/agency-img7.png" alt="logo" />
+            <img src="images/agency-img8.png" alt="logo" />
+          </div>
+        </div>
+      </section>
+      <section class="goalSection">
+        <div class="goalLeft">
+          <div class="circle">
+            <div class="Tag">
+              <span></span>
+              <p>OUR GOAL</p>
+              <span></span>
+            </div>
+            <h2><span>Mission</span> We Aim For You !</h2>
+            <p class="text">
+              Lorror magn, doloremque laborum ab asperiores minus voluptatem
+              vel.
+            </p>
+          </div>
+        </div>
+        <div class="goalRight">
+          <div>
+            <div class="circ">
+              <img src="images/téléchargement.png" alt="" />
+              <p>95%</p>
+            </div>
+            <h4>Marketing</h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. .
+            </p>
+          </div>
+          <div>
+            <div class="circ">
+              <img src="images/téléchargement (90).png" alt="" />
+              <p>90%</p>
+            </div>
+            <h4>Solution</h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <div>
+            <div class="circ">
+              <img src="images/téléchargement (96).png" alt="" />
+              <p>96%</p>
+            </div>
+            <h4>Succes</h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="porfolioSection">
+        <div class="Tag">
+          <span></span>
+          <p>OUR PORFOLIO</p>
+          <span></span>
+        </div>
+        <h2><span>Activities</span> We Completed</h2>
+        <p class="text">
+          Quae doloremque rerum enim facere sit illum sequi ipsa, quia eveniet
+          quasi natus corporis perspiciatis, id, ad laboriosam.
+        </p>
+      </section>
+      <section class="teamSection">
+        <div class="Tag">
+          <span></span>
+          <p>OUR TEAM</p>
+          <span></span>
+        </div>
+        <h2><span>Team</span> Members</h2>
+        <p class="text">
+          Delectus saepe excepturi natus reprehenderit, perspiciatis laudantium
+          repellat, repellendus dignissimos quod minus.
+        </p>
+        <div class="teamMembers">
+          <div class="teamMember">
+            <img src="images/agency-img11.jpg" alt="" />
+            <div class="memberPost">
+              <h4>Sony Madison</h4>
+              <p>CEO Director</p>
+            </div>
+            <div class="memberNetwork">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="teamMember">
+            <img src="images/agency-img9.jpg" alt="image" />
+            <div class="memberPost">
+              <h4>Hary Warth</h4>
+              <p>Head Manager</p>
+            </div>
+            <div class="memberNetwork">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="teamMember">
+            <img src="images/agency-img12.jpg" alt="image" />
+            <div class="memberPost">
+              <h4>Jenny hobb</h4>
+              <p>branch Manager</p>
+            </div>
+            <div class="memberNetwork">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="teamMember">
+            <img src="images/agency-img10.jpg" alt="image" />
+            <div class="memberPost">
+              <h4>Jonhy Smith</h4>
+              <p>Supervisor</p>
+            </div>
+            <div class="memberNetwork">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviewSection">
+        <div class="reviewTop">
+          <div class="topTitle">
+            <div class="Tag">
+              <span></span>
+              <p>CLIENT REVIEWS</p>
+              <span></span>
+            </div>
+            <h2>Review's<span> Of Clients</span></h2>
+          </div>
+          <p class="text">
+            Esse, repellendus ullam! Velit quia error quibusdam? Ea neque,
+            laboriosam doloremque provident nostrum unde adipisci ducimus,
+            magnam dolorem fuga corporis.
+          </p>
+          <button>VIEW MORE</button>
+        </div>
+        <div class="reviewBottom">
+          <div class="client">
+            <img src="images/agency-img17.jpg" alt="imge" />
+            <p class="text">
+              debitis dolorem dolores expedita error? Mollitia eligendi vitae
+              tenetur dolore alias est adipisci at maiores voluptatibus itaque,
+              placeat perferendis.
+            </p>
+            <div class="clientNote">
+              <div>
+                <p>Jonhy Smith</p>
+                <p>Client</p>
+              </div>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="client">
+            <img src="images/agency-img19.jpg" alt="imge" />
+            <p class="text">
+              Mollitia eligendi vitae tenetur dolore alias est adipisci at
+              maiores voluptatibus itaque, placeat perferendis.
+            </p>
+            <div class="clientNote">
+              <div>
+                <p>Miley Cyrus</p>
+                <p>Supervisor</p>
+              </div>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star ralf-colored"></i>
+              </div>
+            </div>
+          </div>
+          <div class="client">
+            <img src="images/agency-img20.jpg" alt="imge" />
+            <p class="text">
+              ollitia eligendi vitae tenetur dolore alias est adipisci at
+              maiores voluptatibus itaque, placeat perferendis.
+            </p>
+            <div class="clientNote">
+              <div>
+                <p>Thomas Walter</p>
+                <p>Customers</p>
+              </div>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star half-colored"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contactSection">
+        <div class="contactTop">
+          <div class="contactInfo">
+            <div class="Tag">
+              <span></span>
+              <p>CONTACT US</p>
+              <span></span>
+            </div>
+            <h2><span>Contact</span> & Join Togetgher</h2>
+            <p class="text">
+              Assumenda vero eos, dolorem amet dignissimos vel ipsa inventore
+              iure distinctio saepe in non nemo, at neque.
+            </p>
+            <div>
+              <div class="contactElement">
+                <img src="images/broche-de-localisation.png" alt="image" />
                 <div>
-                   <diV class="circ">
-                        <img src="images/téléchargement.png" alt="">
-                        <p>  95% </p>
-                   </diV>
-                   <h4>Marketing</h4>
-                   <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</p>
+                  <p>Office Address :</p>
+                  <p>Level 6, 541 St Kilda Road Melbourne, VIC 3004</p>
                 </div>
+              </div>
+              <div class="contactElement">
+                <img src="images/appel-telephonique (1).png" alt="image" />
                 <div>
-                    <diV class="circ">
-                        <img src="images/téléchargement (90).png" alt="">
-                        <p>  90% </p>
-                   </diV> 
-                   <h4>Solution</h4>
-                   <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <p>Phone Number:</p>
+                  <p>Telephone:(+111)-1234-6985, Mobile :(-01) 235 692 555</p>
                 </div>
+              </div>
+              <div class="contactElement">
+                <img src="images/boite-de-reception.png" alt="image" />
                 <div>
-                    <diV class="circ">
-                        <img src="images/téléchargement (96).png" alt="">
-                        <p>  96% </p>
-                   </diV>
-                   <h4>Succes</h4>
-                   <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <p>Mail Address :</p>
+                  <p>info@domain.com ,company@domain.com</p>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="porfolioSection">
-            <div class="Tag"><span></span><p>OUR PORFOLIO</p><span></span></div>
-            <h2><span>Activities</span> We Completed</h2>
-            <p class="text"> Quae doloremque  rerum enim facere sit illum sequi ipsa, quia eveniet quasi natus corporis perspiciatis, id, ad laboriosam.</p>
-        </section>
-        <section class="teamSection">
-            <div class="Tag"><span></span><p>OUR TEAM</p><span></span></div>
-            <h2><span>Team</span> Members</h2>
-            <p class="text">Delectus saepe excepturi natus reprehenderit, perspiciatis laudantium repellat, repellendus dignissimos quod minus.</p>
-            <div class="teamMembers">
-                <div class="teamMember">
-                    <img src="images/agency-img11.jpg" alt="">
-                    <div class="memberPost">
-                        <h4>Sony Madison</h4>
-                        <p>CEO Director</p>
-                    </div>
-                    <div class="memberNetwork">
-                        <a href=""><i class="fab fa-facebook"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="teamMember">
-                    <img src="images/agency-img9.jpg" alt="image">
-                    <div class="memberPost">
-                        <h4>Hary Warth</h4>
-                        <p>Head Manager</p>
-                    </div>
-                    <div class="memberNetwork">
-                        <a href=""><i class="fab fa-facebook"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="teamMember">
-                    <img src="images/agency-img12.jpg" alt="image">
-                    <div class="memberPost">
-                        <h4>Jenny hobb</h4>
-                        <p>branch Manager</p>
-                    </div>
-                    <div class="memberNetwork">
-                        <a href=""><i class="fab fa-facebook"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="teamMember">
-                    <img src="images/agency-img10.jpg" alt="image">
-                    <div class="memberPost">
-                        <h4>Jonhy Smith</h4>
-                        <p>Supervisor</p>
-                    </div>
-                    <div class="memberNetwork">
-                        <a href=""><i class="fab fa-facebook"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+          </div>
+          <div class="contactImage">
+            <img src="images/agency-img28.png" alt="image" />
+          </div>
+          <div class="contactMessage">
+            <h4>Get in Touch !</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing
+              elit..contactSection
+            </p>
+            <form action="" class="message">
+              <input type="text" placeholder="Your Name*" />
+              <input type="email" placeholder="Your Mail*" />
+              <textarea placeholder="Enter Message"></textarea>
+              <button type="submit">SUBMIT MESSAGE</button>
+            </form>
+          </div>
+        </div>
+        <div class="contactBottom">
+          <div class="realisations">
+            <div class="realisationCard">
+              <img src="images/project.png" alt="icon" />
+              <h4>0k+</h4>
+              <p>Completted Projects</p>
             </div>
-        </section>
-        <section class="reviewSection">
-            <div class="reviewTop">
-                <div class="topTitle">
-                    <div class="Tag"><span></span><p>CLIENT REVIEWS</p><span></span></div>
-                    <h2>Review's<span> Of Clients</span></h2>
-                </div>
-                <p class="text"> Esse, repellendus ullam! Velit quia error quibusdam? Ea neque, laboriosam doloremque provident nostrum unde adipisci ducimus, magnam dolorem fuga corporis.</p>
-                <button>VIEW MORE</button>
+            <div class="realisationCard">
+              <img src="images/customer.png" alt="icon" />
+              <h4>0k+</h4>
+              <p>Happy Customer</p>
             </div>
-            <div class="reviewBottom">
-                <div class="client">
-                    <img src="images/agency-img17.jpg" alt="imge">
-                    <p class="text"> debitis dolorem dolores expedita error? Mollitia eligendi vitae tenetur dolore alias est adipisci at maiores voluptatibus itaque, placeat perferendis.</p>
-                    <div class="clientNote">
-                        <div>
-                            <p>Jonhy Smith</p>
-                            <p>Client</p>
-                        </div>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="client">
-                    <img src="images/agency-img19.jpg" alt="imge">
-                    <p class="text"> Mollitia eligendi vitae tenetur dolore alias est adipisci at maiores voluptatibus itaque, placeat perferendis.</p>
-                    <div class="clientNote">
-                        <div>
-                            <p>Miley Cyrus</p>
-                            <p>Supervisor</p>
-                        </div>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star ralf-colored"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="client">
-                    <img src="images/agency-img20.jpg" alt="imge">
-                    <p class="text">ollitia eligendi vitae tenetur dolore alias est adipisci at maiores voluptatibus itaque, placeat perferendis.</p>
-                    <div class="clientNote">
-                        <div>
-                            <p>Thomas Walter</p>
-                            <p>Customers</p>
-                        </div>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star half-colored"></i>
-                        </div>
-                    </div>
-                </div>
+            <div class="realisationCard">
+              <img src="images/award.png" alt="icon" />
+              <h4>0+</h4>
+              <p>Award Winning</p>
             </div>
-        </section>
-        <section class="contactSection">
-            <div class="contactTop">
-                <div class="contactInfo">
-                    <div class="Tag"><span></span><p>CONTACT US</p><span></span></div>
-                    <h2><span>Contact</span> & Join Togetgher</h2>
-                    <p  class="text">Assumenda vero eos, dolorem amet dignissimos vel ipsa inventore iure distinctio saepe in non nemo, at neque.</p>
-                    <div>
-                       <div class="contactElement">
-                          <img src="images/broche-de-localisation.png" alt="image">
-                          <div>
-                            <p>Office Address :</p>
-                            <p>Level 6, 541 St Kilda Road Melbourne, VIC 3004</p>
-                          </div>
-                       </div>
-                       <div class="contactElement">
-                          <img src="images/appel-telephonique (1).png" alt="image">
-                          <div>
-                            <p>Phone Number:</p>
-                            <p>Telephone:(+111)-1234-6985, Mobile :(-01) 235 692 555</p>
-                          </div>
-                       </div>
-                       <div  class="contactElement">
-                          <img src="images/boite-de-reception.png" alt="image">
-                          <div>
-                            <p>Mail Address :</p>
-                            <p>info@domain.com ,company@domain.com</p>
-                          </div>
-                       </div>
-                    </div>
-                </div>
-                <div class="contactImage">
-                    <img src="images/agency-img28.png" alt="image">
-                </div>
-                <div class="contactMessage">
-                    <h4>Get in Touch !</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..contactSection </p>
-                    <form action="" class="message">
-                        <input type="text" placeholder="Your Name*">
-                        <input type="email" placeholder="Your Mail*">
-                        <textarea  placeholder="Enter Message"></textarea>
-                        <button type="submit">SUBMIT MESSAGE</button>
-                    </form>
-                </div>
+            <div class="realisationCard">
+              <img src="images/rate.png" alt="icon" />
+              <h4>0%</h4>
+              <p>Satisfaction Rate</p>
             </div>
-            <div class="contactBottom">
-                <div class="realisations">
-                    <div class="realisationCard">
-                        <img src="images/project.png" alt="icon">
-                        <h4>0k+</h4>
-                        <p>Completted Projects</p>
-                    </div>
-                    <div class="realisationCard">
-                        <img src="images/customer.png" alt="icon">
-                        <h4>0k+</h4>
-                        <p>Happy Customer</p>
-                    </div>
-                    <div class="realisationCard">
-                        <img src="images/award.png" alt="icon">
-                        <h4>0+</h4>
-                        <p>Award Winning</p>
-                    </div>
-                    <div class="realisationCard">
-                        <img src="images/rate.png" alt="icon">
-                        <h4>0%</h4>
-                        <p>Satisfaction Rate</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="blogSection">
-            <div class="Tag"><span></span><p>OUR BLOGS</p><span></span></div>
-            <h2><span>Blog</span> & Nems From Us !</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error id necessitatibus incidunt placeat at veniam aspernatur perferendis. Quod ipsa praesentium commodi reiciendis similique molestiae tempore repellendus ut iure corporis?</p>
-            <div class="blogContent">
-                <div class="blogBox">
-                    <p class="title">MANAGEMENT</p>
-                    <img src="images/agency-img16.jpg" alt="image">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
-                    <p class="text2"> Voluptate beatae similique praesentium illum a corrupti quae eius vel facilis illo perspiciatis sed nam iure repellendus.</p>
-                </div>
-                <div class="blogBox">
-                    <p class="title">BUSINESS</p>
-                    <img src="images/agency-img15.jpg" alt="image">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
-                    <p class="text2"> Voluptate beatae similique praesentium illum a corrupti quae eius vel facilis illo perspiciatis sed nam iure repellendus.</p>
-                </div>
-                <div class="blogBox">
-                    <p class="title">MANAGEMENT</p>
-                    <img src="images/agency-img14.jpg" alt="image">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
-                    <p class="text2"> Voluptate beatae similique praesentium illum a corrupti quae eius vel facilis illo perspiciatis sed nam iure repellendus.</p>
-                </div>
-            </div>
-        </section>
-        <section class="suscribSection">
-            <div class="suscribeLeft">
-                <div class="Tag"><span></span><p>SUSCRIBE</p><span></span></div>
-                <h2><span>Suscribe</span> To Get Latest Update From Us</h2>
-            </div>
-            <div class="suscribeRight">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. facilis  sit at repellendus id labore corrupti nam nisi odio quaerat?</p>
-                <form action="">
-                    <input type="email" placeholder="Your Mail*">
-                    <button type="submit">SIGN UP!</button>
-                </form>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="blogSection">
+        <div class="Tag">
+          <span></span>
+          <p>OUR BLOGS</p>
+          <span></span>
+        </div>
+        <h2><span>Blog</span> & Nems From Us !</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error id
+          necessitatibus incidunt placeat at veniam aspernatur perferendis. Quod
+          ipsa praesentium commodi reiciendis similique molestiae tempore
+          repellendus ut iure corporis?
+        </p>
+        <div class="blogContent">
+          <div class="blogBox">
+            <p class="title">MANAGEMENT</p>
+            <img src="images/agency-img16.jpg" alt="image" />
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            <p class="text2">
+              Voluptate beatae similique praesentium illum a corrupti quae eius
+              vel facilis illo perspiciatis sed nam iure repellendus.
+            </p>
+          </div>
+          <div class="blogBox">
+            <p class="title">BUSINESS</p>
+            <img src="images/agency-img15.jpg" alt="image" />
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            <p class="text2">
+              Voluptate beatae similique praesentium illum a corrupti quae eius
+              vel facilis illo perspiciatis sed nam iure repellendus.
+            </p>
+          </div>
+          <div class="blogBox">
+            <p class="title">MANAGEMENT</p>
+            <img src="images/agency-img14.jpg" alt="image" />
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            <p class="text2">
+              Voluptate beatae similique praesentium illum a corrupti quae eius
+              vel facilis illo perspiciatis sed nam iure repellendus.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="suscribSection">
+        <div class="suscribeLeft">
+          <div class="Tag">
+            <span></span>
+            <p>SUSCRIBE</p>
+            <span></span>
+          </div>
+          <h2><span>Suscribe</span> To Get Latest Update From Us</h2>
+        </div>
+        <div class="suscribeRight">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. facilis sit
+            at repellendus id labore corrupti nam nisi odio quaerat?
+          </p>
+          <form action="">
+            <input type="email" placeholder="Your Mail*" />
+            <button type="submit">SIGN UP!</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="bottom">
-            <div class="description">
-                <div #logo>
-                    <img src="images/white-logo.png" alt="agence">
-                </div>
-                <p> Aperiam incidunt eos natus ad iure iusto libero dicta quos qui quod! Temporibus amet, nulla ea cumque vel reiciendis atque labore vero?</p>
-                <div class="networkLink">
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-youtube"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="Links">
-                <h4>Useful Links</h4>
-                <ul>
-                    <li>About Us</li>
-                    <li>Careers</li>
-                    <li>New & Articles</li>
-                    <li>Legal Notice</li>
-                </ul>
-            </div>
-
-            <div class="Support">
-                <h4>Support</h4>
-                <ul>
-                    <li>Help Center</li>
-                    <li>Contact Us</li>
-                    <li>FAQ</li>
-                    <li>Parent Community</li>
-                </ul>
-            </div>
-
-            <div class="Contact">
-                <h4>Contact Infos</h4>
-                <p>Feel free to contac & reach us !!</p>
-                <div class="info">
-                    <p><span><img  src="images/broche-de-localisation (1).png" alt="icon"></span>3557 Derek Drive,Orlando,Floride</p>
-                    <p><span><img src="images/telephone.png" alt="icon"></span>+243 84 208 11 80</p>
-                    <p><span><img src="images/boite-de-reception (1).png" alt="icon"></span>info@domain.com</p>
-                </div>
-            </div>
+      <div class="bottom">
+        <div class="description">
+          <div #logo>
+            <img src="images/white-logo.png" alt="agence" />
+          </div>
+          <p>
+            Aperiam incidunt eos natus ad iure iusto libero dicta quos qui quod!
+            Temporibus amet, nulla ea cumque vel reiciendis atque labore vero?
+          </p>
+          <div class="networkLink">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-        <div id="copyright">
-            <p>Copyright © 2024 Nisan-Galilée Kazadi Rights Reserved</p>
+        <div class="Links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>New & Articles</li>
+            <li>Legal Notice</li>
+          </ul>
         </div>
+
+        <div class="Support">
+          <h4>Support</h4>
+          <ul>
+            <li>Help Center</li>
+            <li>Contact Us</li>
+            <li>FAQ</li>
+            <li>Parent Community</li>
+          </ul>
+        </div>
+
+        <div class="Contact">
+          <h4>Contact Infos</h4>
+          <p>Feel free to contac & reach us !!</p>
+          <div class="info">
+            <p>
+              <span
+                ><img
+                  src="images/broche-de-localisation (1).png"
+                  alt="icon" /></span
+              >3557 Derek Drive,Orlando,Floride
+            </p>
+            <p>
+              <span><img src="images/telephone.png" alt="icon" /></span>+243 84
+              208 11 80
+            </p>
+            <p>
+              <span
+                ><img
+                  src="images/boite-de-reception (1).png"
+                  alt="icon" /></span
+              >info@domain.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">
+        <p>Copyright © 2024 Nisan-Galilée Kazadi Rights Reserved</p>
+      </div>
     </footer>
-</body>
-</html>     
+  </body>
+</html>
