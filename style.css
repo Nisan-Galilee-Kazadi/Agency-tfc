@@ -11986,3 +11986,472 @@ footer #copyright p {
     margin-left: 80px;
   }
 }
+
+@media only screen and (max-width: 480px) {
+    /* --- Page 404 Responsive --- */
+    .introSection.error {
+      height: auto; /* Ajuste la hauteur en fonction du contenu */
+      padding: 20px;
+    }
+    
+    .errorSection h4 {
+      font-size: 150px; /* Réduction de la taille du grand numéro d'erreur */
+    }
+    
+    .errorSection .oups {
+      font-size: 40px;
+      margin-top: -80px;
+    }
+    
+    .search {
+      padding: 20px;
+    }
+    
+    .search form {
+      width: 90%;
+      margin: 0 auto;
+    }
+    
+    .search form input {
+      width: 75%;
+      font-size: 14px;
+      padding: 10px;
+    }
+    
+    .search form button {
+      width: 20%;
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* --- Page About Responsive --- */
+    
+    /* Ajustement de la section d'introduction */
+    .introSection.about {
+      height: auto;
+      padding: 20px;
+    }
+    
+    .introSection.about h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+    
+    /* Ajustement de la section About générale */
+    .aboutSection {
+      margin-top: 20px;
+      padding: 0 10px;
+    }
+    
+    /* Réorganisation du bloc supérieur de la section About */
+    .aboutSection .aboutTop {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .aboutSection .aboutTop .aboutTopLeft {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .aboutSection .aboutTop .aboutTopRight {
+      display: none; /* Masque la partie image si nécessaire */
+    }
+    
+    /* Ajustement des cartes et images */
+    .aboutCards {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .aboutCards .card {
+      width: 90%;
+    }
+    
+    .aboutImages {
+      flex-direction: column;
+      padding: 10px;
+      align-items: center;
+    }
+    
+    .aboutImages img:first-child,
+    .aboutImages img:last-child {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+
+  @media only screen and (max-width: 480px) {
+    /* --- Page Blog Responsive --- */
+    
+    /* Section d'introduction de la page Blog */
+    .introSection.blog {
+      height: auto;
+      padding: 20px;
+    }
+    
+    .introSection.blog h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+    
+    /* Ajustements pour la section Blog principale */
+    .blogSection {
+      padding: 10px;
+    }
+    
+    .blogSection h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .blogSection .text {
+      font-size: 14px;
+      padding: 0 10px;
+      text-align: center;
+    }
+    
+    /* Réorganisation du contenu des articles */
+    .blogContent {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+    }
+    
+    .blogContent .blogBox.blog {
+      width: 90%;
+      height: auto; /* Permet à la hauteur de s'adapter au contenu */
+    }
+    
+    .blogBox.blog h4 {
+      font-size: 18px;
+      text-align: center;
+    }
+    
+    .blogBox.blog h3 {
+      font-size: 16px;
+      text-align: center;
+    }
+    
+    .blogBox.blog .text2 {
+      font-size: 12px;
+      text-align: center;
+    }
+    
+    /* Ajustement pour la section Archives (si présente) */
+    .archivesSection {
+      flex-direction: column;
+      padding: 20px;
+    }
+    
+    .archivesInfo {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    /* --- Page Career Responsive --- */
+    
+    /* Section d'introduction */
+    .introSection.career {
+      height: auto;
+      padding: 20px;
+    }
+    
+    .introSection.career h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+    
+    /* Section principale Career */
+    .careerSection {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    /* Contenu des carrières */
+    .careerSection .careerContent {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .careerSection .careerContent .careerBoxs {
+      width: 90%;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .careerSection .careerContent .careerBoxs div {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    /* Formulaire de candidature */
+    .careerFormulaire {
+      width: 90%;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    .careerFormulaire form input,
+    .careerFormulaire form textarea {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    /* --- Page Career Responsive --- */
+    
+    /* Section d'introduction */
+    .introSection.career {
+      height: auto;
+      padding: 20px;
+    }
+    
+    .introSection.career h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+    
+    /* Section principale Career */
+    .careerSection {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    /* Contenu des carrières */
+    .careerSection .careerContent {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .careerSection .careerContent .careerBoxs {
+      width: 90%;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .careerSection .careerContent .careerBoxs div {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    /* Formulaire de candidature */
+    .careerFormulaire {
+      width: 90%;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    .careerFormulaire form input,
+    .careerFormulaire form textarea {
+      width: 100%;
+    }
+  }
+
+  
+  @media only screen and (max-width: 480px) {
+    /* --- Page Career Responsive --- */
+    
+    /* Section d'introduction */
+    .introSection.career {
+      height: auto;
+      padding: 20px;
+    }
+    
+    .introSection.career h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+    
+    /* Section principale Career */
+    .careerSection {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    /* Contenu des carrières */
+    .careerSection .careerContent {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .careerSection .careerContent .careerBoxs {
+      width: 90%;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .careerSection .careerContent .careerBoxs div {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    /* Formulaire de candidature */
+    .careerFormulaire {
+      width: 90%;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    .careerFormulaire form input,
+    .careerFormulaire form textarea {
+      width: 100%;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 480px) {
+    /* --- Page Career Responsive --- */
+    
+    /* Section d'introduction */
+    .introSection.career {
+      height: auto;
+      padding: 20px;
+    }
+    
+    .introSection.career h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+    
+    /* Section principale Career */
+    .careerSection {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    /* Contenu des carrières */
+    .careerSection .careerContent {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .careerSection .careerContent .careerBoxs {
+      width: 90%;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .careerSection .careerContent .careerBoxs div {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    /* Formulaire de candidature */
+    .careerFormulaire {
+      width: 90%;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    .careerFormulaire form input,
+    .careerFormulaire form textarea {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    /* --- Page Contact Responsive --- */
+    
+    /* Section d'introduction */
+    .introSection.contact {
+      height: auto;
+      padding: 20px;
+    }
+    
+    .introSection.contact h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+    
+    /* Section principale de contact */
+    .contactSection {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+    }
+    
+    /* Ajustement du formulaire de contact */
+    .contactForm {
+      width: 90%;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    .contactForm form input,
+    .contactForm form textarea {
+      width: 100%;
+    }
+    
+    /* Ajustement des informations de contact */
+    .contactInfo {
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .contactInfo .infoBox {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+
+  @media only screen and (max-width: 480px) {
+    /* --- Footer Responsive --- */
+    footer {
+      padding: 20px 10px;
+      text-align: center;
+    }
+    
+    footer .bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    footer .bottom .description,
+    footer .bottom .Links,
+    footer .bottom .Support,
+    footer .bottom .Contact {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    footer .bottom .Contact .info {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    footer #copyright p {
+      font-size: 12px;
+    }
+  }
+  
+  
